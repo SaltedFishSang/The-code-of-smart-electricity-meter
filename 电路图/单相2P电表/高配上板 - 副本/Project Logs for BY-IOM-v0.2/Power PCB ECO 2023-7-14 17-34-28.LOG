@@ -1,0 +1,18 @@
+Removed Pin From Net: NetName=485_B Pin=P3-2
+Removed Pin From Net: NetName=GND Pin=P3-3
+Removed Pin From Net: NetName=VCC12 Pin=P3-4
+Removed Pin From Net: NetName=VCC33 Pin=P3-6
+Removed Pin From Net: NetName=UAN Pin=P3-7
+Removed Pin From Net: NetName=UAP Pin=P3-8
+Change Component Footprint: Designator=P3 Old Footprint=HDR1X8 New Footprint=HDR2X6
+Change Component Comment : Designator=P3 Old Comment=Header 8 New Comment=Header 6X2
+Added Pin To Net: NetName=UAN Pin=P3-2
+Added Pin To Net: NetName=485_B Pin=P3-3
+Added Pin To Net: NetName=UAP Pin=P3-4
+Added Pin To Net: NetName=DI Pin=P3-6
+Added Pin To Net: NetName=VCC12 Pin=P3-7
+Added Pin To Net: NetName=GND Pin=P3-8
+Added Pin To Net: NetName=GND Pin=P3-9
+Added Pin To Net: NetName=DO_1 Pin=P3-10
+Added Pin To Net: NetName=VCC33 Pin=P3-11
+Added Pin To Net: NetName=DO_2 Pin=P3-12

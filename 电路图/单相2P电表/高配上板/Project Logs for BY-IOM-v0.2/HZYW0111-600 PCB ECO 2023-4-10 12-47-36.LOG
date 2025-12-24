@@ -1,0 +1,4 @@
+Added Pin To Net: NetName=VCC12 Pin=P3-13
+Change Net Name : Old Net Name=NetP1_1 New Net Name=NetP3_1
+Change Net Name : Old Net Name=NetP1_3 New Net Name=NetP3_3
+Added Member To Class: ClassName=Sheet1 Member=Component P1 Header 2

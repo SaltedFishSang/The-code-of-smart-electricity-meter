@@ -1,0 +1,81 @@
+Dependencies for Project 'TFTLCD', Target 'TFT': (DO NOT MODIFY !)
+CompilerVersion: 5050106::V5.05 update 1 (build 106)::ARMCC
+F (..\Core\core_cm3.c)(0x68C380C6)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\Core -I ..\Device -I ..\ST-lib\inc -I ..\User-IC:\Keil_v5\ARM\Pack\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\core_cm3.o --omf_browse .\objects\core_cm3.crf --depend .\objects\core_cm3.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+F (..\Core\core_cm3.h)(0x68C380C6)()
+F (..\Device\stm32f10x.h)(0x68C380C7)()
+F (..\Device\stm32f10x_conf.h)(0x68C380C7)()
+F (..\Device\system_stm32f10x.c)(0x68C380C7)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\Core -I ..\Device -I ..\ST-lib\inc -I ..\User-IC:\Keil_v5\ARM\Pack\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\system_stm32f10x.o --omf_browse .\objects\system_stm32f10x.crf --depend .\objects\system_stm32f10x.d)
+I (..\Device\stm32f10x.h)(0x68C380C7)
+I (..\Core\core_cm3.h)(0x68C380C6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\Device\system_stm32f10x.h)(0x68C380C7)
+I (..\Device\stm32f10x_conf.h)(0x68C380C7)
+I (..\ST-lib\inc\stm32f10x_gpio.h)(0x68C380D8)
+I (..\ST-lib\inc\stm32f10x_rcc.h)(0x68C380D9)
+I (..\ST-lib\inc\misc.h)(0x68C380D6)
+F (..\Device\system_stm32f10x.h)(0x68C380C7)()
+F (..\Device\startup_stm32f10x_md.s)(0x68C380C7)(--cpu Cortex-M3 -g --apcs=interwork -IC:\Keil_v5\ARM\Pack\Keil\STM32F1xx_DFP\2.1.0\Device\Include--pd "__UVISION_VERSION SETA 538" --pd "STM32F10X_MD SETA 1"--list .\listings\startup_stm32f10x_md.lst --xref -o .\objects\startup_stm32f10x_md.o --depend .\objects\startup_stm32f10x_md.d)
+F (..\ST-lib\inc\stm32f10x_rcc.h)(0x68C380D9)()
+F (..\ST-lib\inc\stm32f10x_gpio.h)(0x68C380D8)()
+F (..\ST-lib\src\stm32f10x_rcc.c)(0x68C380DB)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\Core -I ..\Device -I ..\ST-lib\inc -I ..\User-IC:\Keil_v5\ARM\Pack\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\stm32f10x_rcc.o --omf_browse .\objects\stm32f10x_rcc.crf --depend .\objects\stm32f10x_rcc.d)
+I (..\ST-lib\inc\stm32f10x_rcc.h)(0x68C380D9)
+I (..\Device\stm32f10x.h)(0x68C380C7)
+I (..\Core\core_cm3.h)(0x68C380C6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\Device\system_stm32f10x.h)(0x68C380C7)
+I (..\Device\stm32f10x_conf.h)(0x68C380C7)
+I (..\ST-lib\inc\stm32f10x_gpio.h)(0x68C380D8)
+I (..\ST-lib\inc\misc.h)(0x68C380D6)
+F (..\ST-lib\src\stm32f10x_gpio.c)(0x68C380DB)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\Core -I ..\Device -I ..\ST-lib\inc -I ..\User-IC:\Keil_v5\ARM\Pack\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\stm32f10x_gpio.o --omf_browse .\objects\stm32f10x_gpio.crf --depend .\objects\stm32f10x_gpio.d)
+I (..\ST-lib\inc\stm32f10x_gpio.h)(0x68C380D8)
+I (..\Device\stm32f10x.h)(0x68C380C7)
+I (..\Core\core_cm3.h)(0x68C380C6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\Device\system_stm32f10x.h)(0x68C380C7)
+I (..\Device\stm32f10x_conf.h)(0x68C380C7)
+I (..\ST-lib\inc\stm32f10x_rcc.h)(0x68C380D9)
+I (..\ST-lib\inc\misc.h)(0x68C380D6)
+F (..\User\main.c)(0x68C380CF)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\Core -I ..\Device -I ..\ST-lib\inc -I ..\User-IC:\Keil_v5\ARM\Pack\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (..\Device\stm32f10x.h)(0x68C380C7)
+I (..\Core\core_cm3.h)(0x68C380C6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\Device\system_stm32f10x.h)(0x68C380C7)
+I (..\Device\stm32f10x_conf.h)(0x68C380C7)
+I (..\ST-lib\inc\stm32f10x_gpio.h)(0x68C380D8)
+I (..\ST-lib\inc\stm32f10x_rcc.h)(0x68C380D9)
+I (..\ST-lib\inc\misc.h)(0x68C380D6)
+I (..\User\led.h)(0x68C380CF)
+I (..\User\key.h)(0x68C380CE)
+I (..\User\bmp.h)(0x68C380CB)
+F (..\User\gpio.c)(0x68C380CE)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\Core -I ..\Device -I ..\ST-lib\inc -I ..\User-IC:\Keil_v5\ARM\Pack\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\gpio.o --omf_browse .\objects\gpio.crf --depend .\objects\gpio.d)
+I (..\Device\stm32f10x.h)(0x68C380C7)
+I (..\Core\core_cm3.h)(0x68C380C6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\Device\system_stm32f10x.h)(0x68C380C7)
+I (..\Device\stm32f10x_conf.h)(0x68C380C7)
+I (..\ST-lib\inc\stm32f10x_gpio.h)(0x68C380D8)
+I (..\ST-lib\inc\stm32f10x_rcc.h)(0x68C380D9)
+I (..\ST-lib\inc\misc.h)(0x68C380D6)
+I (..\User\gpio.h)(0x68C380CE)
+F (..\User\gpio.h)(0x68C380CE)()
+F (..\User\key.c)(0x68C380CE)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\Core -I ..\Device -I ..\ST-lib\inc -I ..\User-IC:\Keil_v5\ARM\Pack\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\key.o --omf_browse .\objects\key.crf --depend .\objects\key.d)
+I (..\User\key.h)(0x68C380CE)
+I (..\Device\stm32f10x.h)(0x68C380C7)
+I (..\Core\core_cm3.h)(0x68C380C6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\Device\system_stm32f10x.h)(0x68C380C7)
+I (..\Device\stm32f10x_conf.h)(0x68C380C7)
+I (..\ST-lib\inc\stm32f10x_gpio.h)(0x68C380D8)
+I (..\ST-lib\inc\stm32f10x_rcc.h)(0x68C380D9)
+I (..\ST-lib\inc\misc.h)(0x68C380D6)
+F (..\User\led.c)(0x68C380CF)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\Core -I ..\Device -I ..\ST-lib\inc -I ..\User-IC:\Keil_v5\ARM\Pack\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\led.o --omf_browse .\objects\led.crf --depend .\objects\led.d)
+I (..\User\led.h)(0x68C380CF)
+I (..\Device\stm32f10x.h)(0x68C380C7)
+I (..\Core\core_cm3.h)(0x68C380C6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\Device\system_stm32f10x.h)(0x68C380C7)
+I (..\Device\stm32f10x_conf.h)(0x68C380C7)
+I (..\ST-lib\inc\stm32f10x_gpio.h)(0x68C380D8)
+I (..\ST-lib\inc\stm32f10x_rcc.h)(0x68C380D9)
+I (..\ST-lib\inc\misc.h)(0x68C380D6)

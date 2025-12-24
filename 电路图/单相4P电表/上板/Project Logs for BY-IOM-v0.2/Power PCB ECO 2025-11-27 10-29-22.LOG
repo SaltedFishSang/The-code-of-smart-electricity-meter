@@ -1,0 +1,59 @@
+Added Component: Designator=P5(2.0¥ÁTFT≤ ∆¡)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add Component: Footprint Not Found 
+Add Pin To Net: Unknown Pin: Pin U1-1
+Add Pin To Net: Unknown Pin: Pin U1-3
+Add Pin To Net: Unknown Pin: Pin U1-4
+Add Pin To Net: Unknown Pin: Pin U1-5
+Add Pin To Net: Unknown Pin: Pin U1-6
+Add Pin To Net: Unknown Pin: Pin U1-7
+Add Pin To Net: Unknown Pin: Pin U1-8
+Add Pin To Net: Unknown Pin: Pin U1-9
+Add Pin To Net: Unknown Pin: Pin U1-12
+Add Pin To Net: Unknown Pin: Pin U1-13
+Add Pin To Net: Unknown Pin: Pin U1-15
+Add Pin To Net: Unknown Pin: Pin U1-16
+Add Pin To Net: Unknown Pin: Pin U1-17
+Add Pin To Net: Unknown Pin: Pin U1-18
+Add Pin To Net: Unknown Pin: Pin U1-19
+Add Pin To Net: Unknown Pin: Pin U1-23
+Add Pin To Net: Unknown Pin: Pin U1-24
+Add Pin To Net: Unknown Pin: Pin U1-25
+Add Pin To Net: Unknown Pin: Pin U1-28
+Add Pin To Net: Unknown Pin: Pin U1-29
+Add Pin To Net: Unknown Pin: Pin U1-30
+Add Pin To Net: Unknown Pin: Pin U1-31
+Add Pin To Net: Unknown Pin: Pin U1-32
+Add Pin To Net: Unknown Pin: Pin U1-33
+Add Pin To Net: Unknown Pin: Pin U1-34
+Add Pin To Net: Unknown Pin: Pin U1-35
+Add Pin To Net: Unknown Pin: Pin U1-36
+Add Pin To Net: Unknown Pin: Pin U1-37
+Add Pin To Net: Unknown Pin: Pin U1-38
+Add Pin To Net: Unknown Pin: Pin U1-39
+Add Pin To Net: Unknown Pin: Pin U1-40
+Add Pin To Net: Unknown Pin: Pin U1-41
+Add Pin To Net: Unknown Pin: Pin U1-42
+Add Pin To Net: Unknown Pin: Pin U1-46
+Add Pin To Net: Unknown Pin: Pin U1-47
+Add Pin To Net: Unknown Pin: Pin U1-48
+Add Pin To Net: Unknown Pin: Pin U1-49
+Add Pin To Net: Unknown Pin: Pin U1-50
+Add Pin To Net: Unknown Pin: Pin U1-51
+Add Pin To Net: Unknown Pin: Pin U1-52
+Add Pin To Net: Unknown Pin: Pin U1-53
+Add Pin To Net: Unknown Pin: Pin U1-54
+Add Pin To Net: Unknown Pin: Pin U1-55
+Add Pin To Net: Unknown Pin: Pin U1-56
+Add Pin To Net: Unknown Pin: Pin U1-57
+Add Pin To Net: Unknown Pin: Pin U1-58
+Add Pin To Net: Unknown Pin: Pin U1-59
+Add Pin To Net: Unknown Pin: Pin U1-60
+Add Pin To Net: Unknown Pin: Pin U1-61
+Add Pin To Net: Unknown Pin: Pin U1-62
+Add Pin To Net: Unknown Pin: Pin U1-63
+Add Pin To Net: Unknown Pin: Pin U1-64
+Added Member To Class: ClassName=Sheet1 Member=Component P5 TFT 2.0
+Add Class Member: Failed to add class member : Component U1 *

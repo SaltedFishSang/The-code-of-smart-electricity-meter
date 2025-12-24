@@ -1,0 +1,5 @@
+Build target 'N32WB03X'
+After Build - User command #1: fromelf --bin --output=.\bin\LedBlink.bin .\Objects\LedBlink.axf
+*** Error: CreateProcess failed, Command: 'fromelf --bin --output=.\bin\LedBlink.bin .\Objects\LedBlink.axf'
+".\Objects\LedBlink.axf" - 1 Error(s), 0 Warning(s).
+Target not created.

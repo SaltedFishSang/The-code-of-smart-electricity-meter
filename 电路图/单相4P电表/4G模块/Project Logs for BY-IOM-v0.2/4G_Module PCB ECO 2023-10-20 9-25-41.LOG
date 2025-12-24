@@ -1,0 +1,13 @@
+Change Component Designator: OldDesignator=CARD? NewDesignator=CARD1
+Add Component: Footprint Not Found MARK
+Add Pin To Net: Unknown Pin: Pin CARD1-C1
+Add Pin To Net: Unknown Pin: Pin CARD1-C2
+Add Pin To Net: Unknown Pin: Pin CARD1-C3
+Add Pin To Net: Unknown Pin: Pin CARD1-C5
+Add Pin To Net: Unknown Pin: Pin CARD1-C7
+Add Pin To Net: Unknown Pin: Pin Test_1-1
+Added Pin To Net: NetName=NetCARD1_CD Pin=R?-2
+Added Pin To Net: NetName=NetCARD1_CD Pin=R?-2
+Added Net: Name=NetCARD1_CD
+Added Member To Class: ClassName=4G_Module Member=Component R? 0R
+Add Class Member: Failed to add class member : Component Test_1 MARK

@@ -1,0 +1,32 @@
+Added Component: Designator=CARD1(Nano-SIM)
+Add component (AddParameter): Name = "Add into BOM"; Value = "yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Body Height (Max)"; Value = "1.4mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Card Connection Mode"; Value = "×Ôµ¯Ê½"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Card Type"; Value = "NanoSIM¿¨"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Connector Type"; Value = "¿¨×ù"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Material"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Plating"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Convert to PCB"; Value = "yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet"; Value = "https://atta.szlcsc.com/upload/public/pdf/source/20211019/D7CABD700EC9AD7534EBB952F0541976.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Device"; Value = "SMN-303"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "JLCPCB Part Class"; Value = "Extended Part"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC Part Name"; Value = "×Ôµ¯Ê½ NanoSIM¿¨ ¿¨×ù 6+1Pin ´øCD ·À´ô"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "XUNPU(Ñ¶ÆÕ)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part"; Value = "SMN-303"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "SMN-303"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Range"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "LCSC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Footprint"; Value = "SMD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part"; Value = "C266888"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Symbol"; Value = "SMN-303"; VariantName = "[No Variations]"
+Add Component: Footprint Not Found MARK
+Add Pin To Net: Unknown Pin: Pin CARD1-C1
+Add Pin To Net: Unknown Pin: Pin CARD1-C2
+Add Pin To Net: Unknown Pin: Pin CARD1-C3
+Add Pin To Net: Unknown Pin: Pin CARD1-C5
+Add Pin To Net: Unknown Pin: Pin CARD1-C7
+Add Pin To Net: Unknown Pin: Pin CARD1-CD
+Add Pin To Net: Unknown Pin: Pin Test_1-1
+Added Member To Class: ClassName=4G_Module Member=Component CARD1 SMN-303
+Added Member To Class: ClassName=4G_Module Member=Component R? 0R
+Add Class Member: Failed to add class member : Component Test_1 MARK

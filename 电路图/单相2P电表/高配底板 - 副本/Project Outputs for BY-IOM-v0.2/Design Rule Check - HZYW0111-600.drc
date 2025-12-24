@@ -1,0 +1,188 @@
+Protel Design System Design Rule Check
+PCB File : H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc
+Date     : 2023/6/5
+Time     : 10:26:30
+
+Processing Rule : Clearance Constraint (Gap=5mil) (IsTrack),(IsTrack)
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208668.184mil,210796.786mil)(208668.184mil,207111.746mil) on Keep-Out Layer And Track (209912.279mil,210796.786mil)(208668.184mil,210796.786mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208679.995mil,209426.707mil)(208679.995mil,207891.274mil) on Keep-Out Layer And Track (209702.273mil,209426.06mil)(208954.242mil,209426.06mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208679.995mil,209426.707mil)(208679.995mil,207891.274mil) on Keep-Out Layer And Track (209702.273mil,209819.761mil)(208954.242mil,209819.761mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208679.995mil,209426.707mil)(208679.995mil,207891.274mil) on Keep-Out Layer And Track (209703.617mil,209426.707mil)(208679.995mil,209426.707mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208735.113mil,210359.778mil)(208735.113mil,210883.4mil) on Keep-Out Layer And Track (208739.05mil,210359.778mil)(208739.05mil,210883.4mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208735.113mil,210359.778mil)(208735.113mil,210883.4mil) on Keep-Out Layer And Track (208739.05mil,210359.778mil)(208833.538mil,210359.778mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208735.113mil,210359.778mil)(208735.113mil,210883.4mil) on Keep-Out Layer And Track (208739.05mil,210883.4mil)(209191.806mil,210883.4mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208735.113mil,210359.778mil)(208829.601mil,210359.778mil) on Keep-Out Layer And Track (208739.05mil,210359.778mil)(208739.05mil,210883.4mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208735.113mil,210359.778mil)(208829.601mil,210359.778mil) on Keep-Out Layer And Track (208739.05mil,210359.778mil)(208833.538mil,210359.778mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208735.113mil,210359.778mil)(208829.601mil,210359.778mil) on Keep-Out Layer And Track (208762.672mil,209493.636mil)(208762.672mil,210745.604mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208735.113mil,210359.778mil)(208829.601mil,210359.778mil) on Keep-Out Layer And Track (208833.538mil,209493.636mil)(208833.538mil,210745.604mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208735.113mil,210359.778mil)(208829.601mil,210359.778mil) on Keep-Out Layer And Track (208833.538mil,210036.943mil)(208833.538mil,210359.778mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208735.113mil,210883.4mil)(209187.869mil,210883.4mil) on Keep-Out Layer And Track (208739.05mil,210359.778mil)(208739.05mil,210883.4mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208735.113mil,210883.4mil)(209187.869mil,210883.4mil) on Keep-Out Layer And Track (208739.05mil,210883.4mil)(209191.806mil,210883.4mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208735.113mil,210883.4mil)(209187.869mil,210883.4mil) on Keep-Out Layer And Track (209191.806mil,210036.943mil)(209191.806mil,210883.4mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208739.05mil,210359.778mil)(208833.538mil,210359.778mil) on Keep-Out Layer And Track (208762.672mil,209493.636mil)(208762.672mil,210745.604mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208739.05mil,210359.778mil)(208833.538mil,210359.778mil) on Keep-Out Layer And Track (208766.609mil,209493.636mil)(208766.609mil,210359.778mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208739.05mil,210359.778mil)(208833.538mil,210359.778mil) on Keep-Out Layer And Track (208766.609mil,210359.778mil)(208829.601mil,210359.778mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208739.05mil,210359.778mil)(208833.538mil,210359.778mil) on Keep-Out Layer And Track (208829.601mil,209493.636mil)(208829.601mil,210359.778mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208739.05mil,210359.778mil)(208833.538mil,210359.778mil) on Keep-Out Layer And Track (208829.601mil,210036.943mil)(208829.601mil,210359.778mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208739.05mil,210359.778mil)(208833.538mil,210359.778mil) on Keep-Out Layer And Track (208833.538mil,209493.636mil)(208833.538mil,210745.604mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208739.05mil,210883.4mil)(209191.806mil,210883.4mil) on Keep-Out Layer And Track (209187.869mil,210036.943mil)(209187.869mil,210883.4mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208762.672mil,209493.636mil)(208762.672mil,210745.604mil) on Keep-Out Layer And Track (208762.672mil,209493.636mil)(208762.672mil,210745.604mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208762.672mil,209493.636mil)(208762.672mil,210745.604mil) on Keep-Out Layer And Track (208762.672mil,209493.636mil)(208833.538mil,209493.636mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208762.672mil,209493.636mil)(208762.672mil,210745.604mil) on Keep-Out Layer And Track (208762.672mil,209493.636mil)(208833.538mil,209493.636mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208762.672mil,209493.636mil)(208762.672mil,210745.604mil) on Keep-Out Layer And Track (208762.672mil,210745.604mil)(208833.538mil,210745.604mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208762.672mil,209493.636mil)(208762.672mil,210745.604mil) on Keep-Out Layer And Track (208762.672mil,210745.604mil)(208833.538mil,210745.604mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208762.672mil,209493.636mil)(208762.672mil,210745.604mil) on Keep-Out Layer And Track (208766.609mil,209493.636mil)(208766.609mil,210359.778mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208762.672mil,209493.636mil)(208762.672mil,210745.604mil) on Keep-Out Layer And Track (208766.609mil,209493.636mil)(208829.601mil,209493.636mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208762.672mil,209493.636mil)(208762.672mil,210745.604mil) on Keep-Out Layer And Track (208766.609mil,210359.778mil)(208829.601mil,210359.778mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208762.672mil,209493.636mil)(208762.672mil,210745.604mil) on Keep-Out Layer And Track (209702.273mil,209819.761mil)(208954.242mil,209819.761mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208762.672mil,209493.636mil)(208762.672mil,210745.604mil) on Keep-Out Layer And Track (209702.273mil,209819.761mil)(208954.242mil,209819.761mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208762.672mil,209493.636mil)(208833.538mil,209493.636mil) on Keep-Out Layer And Track (208762.672mil,209493.636mil)(208833.538mil,209493.636mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208762.672mil,209493.636mil)(208833.538mil,209493.636mil) on Keep-Out Layer And Track (208766.609mil,209493.636mil)(208766.609mil,210359.778mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208762.672mil,209493.636mil)(208833.538mil,209493.636mil) on Keep-Out Layer And Track (208766.609mil,209493.636mil)(208829.601mil,209493.636mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208762.672mil,209493.636mil)(208833.538mil,209493.636mil) on Keep-Out Layer And Track (208829.601mil,209493.636mil)(208829.601mil,210359.778mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208762.672mil,209493.636mil)(208833.538mil,209493.636mil) on Keep-Out Layer And Track (208833.538mil,209493.636mil)(208833.538mil,210745.604mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208762.672mil,209493.636mil)(208833.538mil,209493.636mil) on Keep-Out Layer And Track (208833.538mil,209493.636mil)(208833.538mil,210745.604mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208762.672mil,210745.604mil)(208833.538mil,210745.604mil) on Keep-Out Layer And Track (208762.672mil,210745.604mil)(208833.538mil,210745.604mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208762.672mil,210745.604mil)(208833.538mil,210745.604mil) on Keep-Out Layer And Track (208833.538mil,209493.636mil)(208833.538mil,210745.604mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208762.672mil,210745.604mil)(208833.538mil,210745.604mil) on Keep-Out Layer And Track (208833.538mil,209493.636mil)(208833.538mil,210745.604mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208766.609mil,209493.636mil)(208766.609mil,210359.778mil) on Keep-Out Layer And Track (209702.273mil,209819.761mil)(208954.242mil,209819.761mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208766.609mil,209493.636mil)(208829.601mil,209493.636mil) on Keep-Out Layer And Track (208833.538mil,209493.636mil)(208833.538mil,210745.604mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208766.609mil,210359.778mil)(208829.601mil,210359.778mil) on Keep-Out Layer And Track (208833.538mil,209493.636mil)(208833.538mil,210745.604mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208766.609mil,210359.778mil)(208829.601mil,210359.778mil) on Keep-Out Layer And Track (208833.538mil,210036.943mil)(208833.538mil,210359.778mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208829.601mil,209493.636mil)(208829.601mil,210359.778mil) on Keep-Out Layer And Track (208833.538mil,209493.636mil)(208833.538mil,210745.604mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208829.601mil,209493.636mil)(208829.601mil,210359.778mil) on Keep-Out Layer And Track (208833.538mil,210036.943mil)(208833.538mil,210359.778mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208829.601mil,209493.636mil)(208829.601mil,210359.778mil) on Keep-Out Layer And Track (208833.538mil,210036.943mil)(209191.806mil,210036.943mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208829.601mil,209493.636mil)(208829.601mil,210359.778mil) on Keep-Out Layer And Track (209702.273mil,209819.761mil)(208954.242mil,209819.761mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208829.601mil,210036.943mil)(208829.601mil,210359.778mil) on Keep-Out Layer And Track (208833.538mil,209493.636mil)(208833.538mil,210745.604mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208829.601mil,210036.943mil)(208829.601mil,210359.778mil) on Keep-Out Layer And Track (208833.538mil,210036.943mil)(208833.538mil,210359.778mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208829.601mil,210036.943mil)(208829.601mil,210359.778mil) on Keep-Out Layer And Track (208833.538mil,210036.943mil)(209191.806mil,210036.943mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208829.601mil,210036.943mil)(209187.869mil,210036.943mil) on Keep-Out Layer And Track (208833.538mil,209493.636mil)(208833.538mil,210745.604mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208829.601mil,210036.943mil)(209187.869mil,210036.943mil) on Keep-Out Layer And Track (208833.538mil,210036.943mil)(208833.538mil,210359.778mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208829.601mil,210036.943mil)(209187.869mil,210036.943mil) on Keep-Out Layer And Track (208833.538mil,210036.943mil)(209191.806mil,210036.943mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208829.601mil,210036.943mil)(209187.869mil,210036.943mil) on Keep-Out Layer And Track (209191.806mil,210036.943mil)(209191.806mil,210883.4mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208833.538mil,209493.636mil)(208833.538mil,210745.604mil) on Keep-Out Layer And Track (208833.538mil,209493.636mil)(208833.538mil,210745.604mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208833.538mil,209493.636mil)(208833.538mil,210745.604mil) on Keep-Out Layer And Track (208833.538mil,210036.943mil)(208833.538mil,210359.778mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208833.538mil,209493.636mil)(208833.538mil,210745.604mil) on Keep-Out Layer And Track (208833.538mil,210036.943mil)(209191.806mil,210036.943mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208833.538mil,209493.636mil)(208833.538mil,210745.604mil) on Keep-Out Layer And Track (209702.273mil,209819.761mil)(208954.242mil,209819.761mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208833.538mil,209493.636mil)(208833.538mil,210745.604mil) on Keep-Out Layer And Track (209702.273mil,209819.761mil)(208954.242mil,209819.761mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208833.538mil,210036.943mil)(209191.806mil,210036.943mil) on Keep-Out Layer And Track (209187.869mil,210036.943mil)(209187.869mil,210883.4mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208954.242mil,209426.06mil)(208954.242mil,209819.761mil) on Keep-Out Layer And Track (208954.242mil,209426.06mil)(208954.242mil,209819.761mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208954.242mil,209426.06mil)(208954.242mil,209819.761mil) on Keep-Out Layer And Track (209702.273mil,209426.06mil)(208954.242mil,209426.06mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208954.242mil,209426.06mil)(208954.242mil,209819.761mil) on Keep-Out Layer And Track (209702.273mil,209426.06mil)(208954.242mil,209426.06mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208954.242mil,209426.06mil)(208954.242mil,209819.761mil) on Keep-Out Layer And Track (209702.273mil,209819.761mil)(208954.242mil,209819.761mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (208954.242mil,209426.06mil)(208954.242mil,209819.761mil) on Keep-Out Layer And Track (209702.273mil,209819.761mil)(208954.242mil,209819.761mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209187.869mil,210036.943mil)(209187.869mil,210883.4mil) on Keep-Out Layer And Track (209191.806mil,210036.943mil)(209191.806mil,210883.4mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209702.273mil,209426.06mil)(208954.242mil,209426.06mil) on Keep-Out Layer And Track (209702.273mil,209426.06mil)(208954.242mil,209426.06mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209702.273mil,209426.06mil)(208954.242mil,209426.06mil) on Keep-Out Layer And Track (209702.273mil,209426.06mil)(209702.273mil,209819.761mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209702.273mil,209426.06mil)(208954.242mil,209426.06mil) on Keep-Out Layer And Track (209702.273mil,209426.06mil)(209702.273mil,209819.761mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209702.273mil,209426.06mil)(208954.242mil,209426.06mil) on Keep-Out Layer And Track (209703.617mil,209426.707mil)(208679.995mil,209426.707mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209702.273mil,209426.06mil)(208954.242mil,209426.06mil) on Keep-Out Layer And Track (209703.617mil,209426.707mil)(208679.995mil,209426.707mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209702.273mil,209426.06mil)(208954.242mil,209426.06mil) on Keep-Out Layer And Track (209703.617mil,209426.707mil)(209703.617mil,207891.274mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209702.273mil,209426.06mil)(208954.242mil,209426.06mil) on Keep-Out Layer And Track (209703.617mil,209426.707mil)(209703.617mil,207891.274mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209702.273mil,209426.06mil)(209702.273mil,209819.761mil) on Keep-Out Layer And Track (209702.273mil,209426.06mil)(209702.273mil,209819.761mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209702.273mil,209426.06mil)(209702.273mil,209819.761mil) on Keep-Out Layer And Track (209702.273mil,209819.761mil)(208954.242mil,209819.761mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209702.273mil,209426.06mil)(209702.273mil,209819.761mil) on Keep-Out Layer And Track (209702.273mil,209819.761mil)(208954.242mil,209819.761mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209702.273mil,209426.06mil)(209702.273mil,209819.761mil) on Keep-Out Layer And Track (209703.617mil,209426.707mil)(208679.995mil,209426.707mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209702.273mil,209426.06mil)(209702.273mil,209819.761mil) on Keep-Out Layer And Track (209703.617mil,209426.707mil)(208679.995mil,209426.707mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209702.273mil,209426.06mil)(209702.273mil,209819.761mil) on Keep-Out Layer And Track (209703.617mil,209426.707mil)(209703.617mil,207891.274mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209702.273mil,209426.06mil)(209702.273mil,209819.761mil) on Keep-Out Layer And Track (209703.617mil,209426.707mil)(209703.617mil,207891.274mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209702.273mil,209819.761mil)(208954.242mil,209819.761mil) on Keep-Out Layer And Track (209702.273mil,209819.761mil)(208954.242mil,209819.761mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209702.273mil,209819.761mil)(208954.242mil,209819.761mil) on Keep-Out Layer And Track (209703.617mil,209426.707mil)(209703.617mil,207891.274mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209702.273mil,209819.761mil)(208954.242mil,209819.761mil) on Keep-Out Layer And Track (209703.617mil,209426.707mil)(209703.617mil,207891.274mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209702.273mil,209819.761mil)(208954.242mil,209819.761mil) on Keep-Out Layer And Track (209731.176mil,209658.99mil)(209731.176mil,210288.912mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209702.273mil,209819.761mil)(208954.242mil,209819.761mil) on Keep-Out Layer And Track (209731.176mil,209658.99mil)(209731.176mil,210288.912mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209702.273mil,209819.761mil)(208954.242mil,209819.761mil) on Keep-Out Layer And Track (209912.279mil,209658.99mil)(209912.279mil,207111.746mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209702.273mil,209819.761mil)(208954.242mil,209819.761mil) on Keep-Out Layer And Track (209912.279mil,209658.99mil)(209912.279mil,207111.746mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209703.617mil,207891.274mil)(208679.995mil,207891.274mil) on Keep-Out Layer And Track (209703.617mil,209426.707mil)(209703.617mil,207891.274mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209703.617mil,209426.707mil)(208679.995mil,209426.707mil) on Keep-Out Layer And Track (209703.617mil,209426.707mil)(208679.995mil,209426.707mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209703.617mil,209426.707mil)(208679.995mil,209426.707mil) on Keep-Out Layer And Track (209703.617mil,209426.707mil)(209703.617mil,207891.274mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209703.617mil,209426.707mil)(208679.995mil,209426.707mil) on Keep-Out Layer And Track (209703.617mil,209426.707mil)(209703.617mil,207891.274mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209703.617mil,209426.707mil)(209703.617mil,207891.274mil) on Keep-Out Layer And Track (209703.617mil,209426.707mil)(209703.617mil,207891.274mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209731.176mil,209658.99mil)(209731.176mil,210288.912mil) on Keep-Out Layer And Track (209731.176mil,209658.99mil)(209731.176mil,210288.912mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209731.176mil,209658.99mil)(209731.176mil,210288.912mil) on Keep-Out Layer And Track (209731.176mil,209658.99mil)(209912.279mil,209658.99mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209731.176mil,209658.99mil)(209731.176mil,210288.912mil) on Keep-Out Layer And Track (209731.176mil,209658.99mil)(209912.279mil,209658.99mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209731.176mil,209658.99mil)(209731.176mil,210288.912mil) on Keep-Out Layer And Track (209731.176mil,210288.912mil)(209912.279mil,210288.912mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209731.176mil,209658.99mil)(209731.176mil,210288.912mil) on Keep-Out Layer And Track (209731.176mil,210288.912mil)(209912.279mil,210288.912mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209731.176mil,209658.99mil)(209912.279mil,209658.99mil) on Keep-Out Layer And Track (209731.176mil,209658.99mil)(209912.279mil,209658.99mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209731.176mil,209658.99mil)(209912.279mil,209658.99mil) on Keep-Out Layer And Track (209912.279mil,209658.99mil)(209912.279mil,207111.746mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209731.176mil,209658.99mil)(209912.279mil,209658.99mil) on Keep-Out Layer And Track (209912.279mil,209658.99mil)(209912.279mil,207111.746mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209731.176mil,210288.912mil)(209912.279mil,210288.912mil) on Keep-Out Layer And Track (209731.176mil,210288.912mil)(209912.279mil,210288.912mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209731.176mil,210288.912mil)(209912.279mil,210288.912mil) on Keep-Out Layer And Track (209912.279mil,209658.99mil)(209912.279mil,207111.746mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209731.176mil,210288.912mil)(209912.279mil,210288.912mil) on Keep-Out Layer And Track (209912.279mil,209658.99mil)(209912.279mil,207111.746mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209731.176mil,210288.912mil)(209912.279mil,210288.912mil) on Keep-Out Layer And Track (209912.279mil,210288.912mil)(209912.279mil,210796.786mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209731.176mil,210288.912mil)(209912.279mil,210288.912mil) on Keep-Out Layer And Track (209912.279mil,210288.912mil)(209912.279mil,210796.786mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209912.279mil,207025.132mil)(208668.184mil,207025.132mil) on Keep-Out Layer And Track (209912.279mil,207025.132mil)(209912.279mil,207505.447mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209912.279mil,207025.132mil)(208668.184mil,207025.132mil) on Keep-Out Layer And Track (209912.279mil,209658.99mil)(209912.279mil,207111.746mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209912.279mil,207025.132mil)(209912.279mil,207505.447mil) on Keep-Out Layer And Track (209912.279mil,207025.132mil)(209912.279mil,207505.447mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209912.279mil,207025.132mil)(209912.279mil,207505.447mil) on Keep-Out Layer And Track (209912.279mil,207111.746mil)(208668.184mil,207111.746mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209912.279mil,207025.132mil)(209912.279mil,207505.447mil) on Keep-Out Layer And Track (209912.279mil,207505.447mil)(208668.184mil,207505.447mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209912.279mil,207025.132mil)(209912.279mil,207505.447mil) on Keep-Out Layer And Track (209912.279mil,209658.99mil)(209912.279mil,207111.746mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209912.279mil,207025.132mil)(209912.279mil,207505.447mil) on Keep-Out Layer And Track (209912.279mil,209658.99mil)(209912.279mil,207111.746mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209912.279mil,207111.746mil)(208668.184mil,207111.746mil) on Keep-Out Layer And Track (209912.279mil,209658.99mil)(209912.279mil,207111.746mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209912.279mil,209658.99mil)(209912.279mil,207111.746mil) on Keep-Out Layer And Track (209912.279mil,209658.99mil)(209912.279mil,207111.746mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209912.279mil,209658.99mil)(209912.279mil,207111.746mil) on Keep-Out Layer And Track (209912.279mil,210288.912mil)(209912.279mil,210796.786mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209912.279mil,209658.99mil)(209912.279mil,207111.746mil) on Keep-Out Layer And Track (209912.279mil,210288.912mil)(209912.279mil,210796.786mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209912.279mil,209658.99mil)(209912.279mil,207111.746mil) on Keep-Out Layer And Track (209912.279mil,210796.786mil)(208668.184mil,210796.786mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209912.279mil,209658.99mil)(209912.279mil,207111.746mil) on Keep-Out Layer And Track (209912.279mil,210796.786mil)(208668.184mil,210796.786mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209912.279mil,210288.912mil)(209912.279mil,210796.786mil) on Keep-Out Layer And Track (209912.279mil,210288.912mil)(209912.279mil,210796.786mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209912.279mil,210288.912mil)(209912.279mil,210796.786mil) on Keep-Out Layer And Track (209912.279mil,210796.786mil)(208668.184mil,210796.786mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209912.279mil,210288.912mil)(209912.279mil,210796.786mil) on Keep-Out Layer And Track (209912.279mil,210796.786mil)(208668.184mil,210796.786mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 5mil) Between Track (209912.279mil,210796.786mil)(208668.184mil,210796.786mil) on Keep-Out Layer And Track (209912.279mil,210796.786mil)(208668.184mil,210796.786mil) on Keep-Out Layer 
+Rule Violations :124
+
+Processing Rule : Clearance Constraint (Gap=10mil) (IsVia),(IsTrack)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=10mil) (IsVia),(IsVia)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=10mil) (IsVia),(IsPad)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=10mil) (InPoly),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=8mil) (IsTrack),(IsPad)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+   Violation between Un-Routed Net Constraint: Net ACN Between Pad U1-2(135.993mil,2298.465mil) on Multi-Layer And Track (796.96mil,2828.541mil)(796.96mil,2837.912mil) on Bottom Layer 
+Rule Violations :1
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=5mil) (Max=300mil) (Preferred=7mil) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=1mil) (Max=200mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=5mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=0mil) (IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=0mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+
+Violations Detected : 125
+Waived Violations : 0
+Time Elapsed        : 00:00:02

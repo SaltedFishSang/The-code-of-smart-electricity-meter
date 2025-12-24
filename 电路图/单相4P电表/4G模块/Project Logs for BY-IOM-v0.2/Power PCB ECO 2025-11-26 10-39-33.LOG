@@ -1,0 +1,20 @@
+Removed Pin From Net: NetName=GND Pin=C2-1
+Removed Pin From Net: NetName=GND Pin=C3-2
+Removed Pin From Net: NetName=VCC3.8 Pin=L1-2
+Removed Pin From Net: NetName=4G_Reset Pin=P1-3
+Removed Pin From Net: NetName=VCC3.8 Pin=R3-1
+Removed Pin From Net: NetName=GND Pin=R4-2
+Removed Pin From Net: NetName=GND Pin=U1-1
+Removed Member From Class: ClassName=4G_Module Member=C1
+Removed Member From Class: ClassName=4G_Module Member=C2
+Removed Member From Class: ClassName=4G_Module Member=C3
+Removed Member From Class: ClassName=4G_Module Member=L1
+Removed Member From Class: ClassName=4G_Module Member=R3
+Removed Member From Class: ClassName=4G_Module Member=R4
+Removed Member From Class: ClassName=4G_Module Member=U1
+Change Component Comment : Designator=R20 Old Comment=0R/5%/0805 New Comment=0R/5%/0603
+Change Component Comment : Designator=R21 Old Comment=2.2K New Comment=1K
+Change Component Comment : Designator=R22 Old Comment=2.2K New Comment=1K
+Change Component Comment : Designator=Q5 Old Comment=AO3400 New Comment=S8050
+Added Pin To Net: NetName=VCC3.8 Pin=P1-1
+Added Member To Class: ClassName=4G_Module Member=Component C5 47uF/10V

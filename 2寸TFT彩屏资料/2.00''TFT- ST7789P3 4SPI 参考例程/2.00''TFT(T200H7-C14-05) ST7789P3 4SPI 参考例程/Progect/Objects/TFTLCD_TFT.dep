@@ -1,0 +1,80 @@
+Dependencies for Project 'TFTLCD', Target 'TFT': (DO NOT MODIFY !)
+F (..\Core\core_cm3.c)(0x670201B8)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\Core -I..\Device -I..\ST-lib\inc -I..\User-I "D:\SVN\Open\项目资料\TFT产品\T200H7-C14-05\业务版\02-参考程序源码\2.00''TFT(T200H7-C14-05) ST7789P3 4SPI 参考例程\Progect\RTE"-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\core_cm3.o --omf_browse .\objects\core_cm3.crf --depend .\objects\core_cm3.d)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+F (..\Core\core_cm3.h)(0x670201B8)()
+F (..\Device\stm32f10x.h)(0x670201B8)()
+F (..\Device\stm32f10x_conf.h)(0x670201B8)()
+F (..\Device\system_stm32f10x.c)(0x670201B8)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\Core -I..\Device -I..\ST-lib\inc -I..\User-I "D:\SVN\Open\项目资料\TFT产品\T200H7-C14-05\业务版\02-参考程序源码\2.00''TFT(T200H7-C14-05) ST7789P3 4SPI 参考例程\Progect\RTE"-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\system_stm32f10x.o --omf_browse .\objects\system_stm32f10x.crf --depend .\objects\system_stm32f10x.d)
+I (..\Device\stm32f10x.h)(0x670201B8)
+I (..\Core\core_cm3.h)(0x670201B8)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\Device\system_stm32f10x.h)(0x670201B8)
+I (..\Device\stm32f10x_conf.h)(0x670201B8)
+I (..\ST-lib\inc\stm32f10x_gpio.h)(0x670201B8)
+I (..\ST-lib\inc\stm32f10x_rcc.h)(0x670201B8)
+I (..\ST-lib\inc\misc.h)(0x670201B8)
+F (..\Device\system_stm32f10x.h)(0x670201B8)()
+F (..\Device\startup_stm32f10x_md.s)(0x670201B8)(--cpu Cortex-M3 -g --apcs=interwork -I "D:\SVN\Open\项目资料\TFT产品\T200H7-C14-05\业务版\02-参考程序源码\2.00''TFT(T200H7-C14-05) ST7789P3 4SPI 参考例程\Progect\RTE"-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 514" --pd "STM32F10X_MD SETA 1"--list .\listings\startup_stm32f10x_md.lst --xref -o .\objects\startup_stm32f10x_md.o --depend .\objects\startup_stm32f10x_md.d)
+F (..\ST-lib\inc\stm32f10x_rcc.h)(0x670201B8)()
+F (..\ST-lib\inc\stm32f10x_gpio.h)(0x670201B8)()
+F (..\ST-lib\src\stm32f10x_rcc.c)(0x670201B8)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\Core -I..\Device -I..\ST-lib\inc -I..\User-I "D:\SVN\Open\项目资料\TFT产品\T200H7-C14-05\业务版\02-参考程序源码\2.00''TFT(T200H7-C14-05) ST7789P3 4SPI 参考例程\Progect\RTE"-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\stm32f10x_rcc.o --omf_browse .\objects\stm32f10x_rcc.crf --depend .\objects\stm32f10x_rcc.d)
+I (..\ST-lib\inc\stm32f10x_rcc.h)(0x670201B8)
+I (..\Device\stm32f10x.h)(0x670201B8)
+I (..\Core\core_cm3.h)(0x670201B8)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\Device\system_stm32f10x.h)(0x670201B8)
+I (..\Device\stm32f10x_conf.h)(0x670201B8)
+I (..\ST-lib\inc\stm32f10x_gpio.h)(0x670201B8)
+I (..\ST-lib\inc\misc.h)(0x670201B8)
+F (..\ST-lib\src\stm32f10x_gpio.c)(0x670201B8)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\Core -I..\Device -I..\ST-lib\inc -I..\User-I "D:\SVN\Open\项目资料\TFT产品\T200H7-C14-05\业务版\02-参考程序源码\2.00''TFT(T200H7-C14-05) ST7789P3 4SPI 参考例程\Progect\RTE"-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\stm32f10x_gpio.o --omf_browse .\objects\stm32f10x_gpio.crf --depend .\objects\stm32f10x_gpio.d)
+I (..\ST-lib\inc\stm32f10x_gpio.h)(0x670201B8)
+I (..\Device\stm32f10x.h)(0x670201B8)
+I (..\Core\core_cm3.h)(0x670201B8)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\Device\system_stm32f10x.h)(0x670201B8)
+I (..\Device\stm32f10x_conf.h)(0x670201B8)
+I (..\ST-lib\inc\stm32f10x_rcc.h)(0x670201B8)
+I (..\ST-lib\inc\misc.h)(0x670201B8)
+F (..\User\main.c)(0x67BEBB5A)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\Core -I..\Device -I..\ST-lib\inc -I..\User-I "D:\SVN\Open\项目资料\TFT产品\T200H7-C14-05\业务版\02-参考程序源码\2.00''TFT(T200H7-C14-05) ST7789P3 4SPI 参考例程\Progect\RTE"-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (..\Device\stm32f10x.h)(0x670201B8)
+I (..\Core\core_cm3.h)(0x670201B8)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\Device\system_stm32f10x.h)(0x670201B8)
+I (..\Device\stm32f10x_conf.h)(0x670201B8)
+I (..\ST-lib\inc\stm32f10x_gpio.h)(0x670201B8)
+I (..\ST-lib\inc\stm32f10x_rcc.h)(0x670201B8)
+I (..\ST-lib\inc\misc.h)(0x670201B8)
+I (..\User\led.h)(0x670201B8)
+I (..\User\key.h)(0x670201B8)
+I (..\User\bmp.h)(0x67BEBB5A)
+F (..\User\gpio.c)(0x670201B8)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\Core -I..\Device -I..\ST-lib\inc -I..\User-I "D:\SVN\Open\项目资料\TFT产品\T200H7-C14-05\业务版\02-参考程序源码\2.00''TFT(T200H7-C14-05) ST7789P3 4SPI 参考例程\Progect\RTE"-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\gpio.o --omf_browse .\objects\gpio.crf --depend .\objects\gpio.d)
+I (..\Device\stm32f10x.h)(0x670201B8)
+I (..\Core\core_cm3.h)(0x670201B8)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\Device\system_stm32f10x.h)(0x670201B8)
+I (..\Device\stm32f10x_conf.h)(0x670201B8)
+I (..\ST-lib\inc\stm32f10x_gpio.h)(0x670201B8)
+I (..\ST-lib\inc\stm32f10x_rcc.h)(0x670201B8)
+I (..\ST-lib\inc\misc.h)(0x670201B8)
+I (..\User\gpio.h)(0x670201B8)
+F (..\User\gpio.h)(0x670201B8)()
+F (..\User\key.c)(0x670201B8)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\Core -I..\Device -I..\ST-lib\inc -I..\User-I "D:\SVN\Open\项目资料\TFT产品\T200H7-C14-05\业务版\02-参考程序源码\2.00''TFT(T200H7-C14-05) ST7789P3 4SPI 参考例程\Progect\RTE"-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\key.o --omf_browse .\objects\key.crf --depend .\objects\key.d)
+I (..\User\key.h)(0x670201B8)
+I (..\Device\stm32f10x.h)(0x670201B8)
+I (..\Core\core_cm3.h)(0x670201B8)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\Device\system_stm32f10x.h)(0x670201B8)
+I (..\Device\stm32f10x_conf.h)(0x670201B8)
+I (..\ST-lib\inc\stm32f10x_gpio.h)(0x670201B8)
+I (..\ST-lib\inc\stm32f10x_rcc.h)(0x670201B8)
+I (..\ST-lib\inc\misc.h)(0x670201B8)
+F (..\User\led.c)(0x670201B8)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\Core -I..\Device -I..\ST-lib\inc -I..\User-I "D:\SVN\Open\项目资料\TFT产品\T200H7-C14-05\业务版\02-参考程序源码\2.00''TFT(T200H7-C14-05) ST7789P3 4SPI 参考例程\Progect\RTE"-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\led.o --omf_browse .\objects\led.crf --depend .\objects\led.d)
+I (..\User\led.h)(0x670201B8)
+I (..\Device\stm32f10x.h)(0x670201B8)
+I (..\Core\core_cm3.h)(0x670201B8)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\Device\system_stm32f10x.h)(0x670201B8)
+I (..\Device\stm32f10x_conf.h)(0x670201B8)
+I (..\ST-lib\inc\stm32f10x_gpio.h)(0x670201B8)
+I (..\ST-lib\inc\stm32f10x_rcc.h)(0x670201B8)
+I (..\ST-lib\inc\misc.h)(0x670201B8)

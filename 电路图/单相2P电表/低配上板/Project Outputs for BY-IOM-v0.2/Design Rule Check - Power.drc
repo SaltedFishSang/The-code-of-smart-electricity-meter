@@ -1,0 +1,75 @@
+Protel Design System Design Rule Check
+PCB File : F:\上海科安迅光电\智能电表\电路图\单相电表\上板 - 副本 - 副本\Power.PcbDoc
+Date     : 2025/9/16
+Time     : 9:25:06
+
+Processing Rule : Clearance Constraint (Gap=5mil) (IsTrack),(IsTrack)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=10mil) (IsVia),(IsTrack)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=10mil) (IsVia),(IsVia)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=10mil) (IsVia),(IsPad)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=10mil) (InPoly),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=8mil) (IsTrack),(IsPad)
+   Violation between Clearance Constraint: (Collision < 8mil) Between Pad LED1-1(1083.705mil,828.752mil) on Bottom Layer And Track (1071.884mil,786.533mil)(1095.516mil,786.533mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 8mil) Between Pad LED1-2(1083.705mil,746.052mil) on Bottom Layer And Track (1071.884mil,786.533mil)(1095.516mil,786.533mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 8mil) Between Pad LED2-1(1083.705mil,513.791mil) on Bottom Layer And Track (1072.092mil,473.616mil)(1095.724mil,473.616mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 8mil) Between Pad LED2-2(1083.705mil,431.091mil) on Bottom Layer And Track (1072.092mil,473.616mil)(1095.724mil,473.616mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 8mil) Between Pad LED3-1(1083.705mil,198.83mil) on Bottom Layer And Track (1070.22mil,155.438mil)(1093.852mil,155.438mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 8mil) Between Pad LED3-2(1083.705mil,116.13mil) on Bottom Layer And Track (1070.22mil,155.438mil)(1093.852mil,155.438mil) on Keep-Out Layer 
+Rule Violations :6
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+   Violation between Short-Circuit Constraint: Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad LED1-1(1083.705mil,828.752mil) on Bottom Layer Location : [X = 61474.433mil][Y = 24848.748mil]
+   Violation between Short-Circuit Constraint: Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad LED1-2(1083.705mil,746.052mil) on Bottom Layer Location : [X = 61474.433mil][Y = 24802.068mil]
+   Violation between Short-Circuit Constraint: Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad LED2-1(1083.705mil,513.791mil) on Bottom Layer Location : [X = 61474.642mil][Y = 24534.81mil]
+   Violation between Short-Circuit Constraint: Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad LED2-2(1083.705mil,431.091mil) on Bottom Layer Location : [X = 61474.642mil][Y = 24488.13mil]
+   Violation between Short-Circuit Constraint: Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad LED3-1(1083.705mil,198.83mil) on Bottom Layer Location : [X = 61472.769mil][Y = 24218.24mil]
+   Violation between Short-Circuit Constraint: Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad LED3-2(1083.705mil,116.13mil) on Bottom Layer Location : [X = 61473.614mil][Y = 24171.56mil]
+Rule Violations :6
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=5mil) (Max=300mil) (Preferred=7mil) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=1mil) (Max=200mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=5mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=0mil) (IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=0mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+
+Violations Detected : 12
+Waived Violations : 0
+Time Elapsed        : 00:00:02

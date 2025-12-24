@@ -1,0 +1,30 @@
+
+T3F00 000:502 SEGGER J-Link V4.96d Log File (0000ms, 0289ms total)
+T3F00 000:502 DLL Compiled: Jan 29 2015 11:45:37 (0000ms, 0289ms total)
+T3F00 000:502 Logging started @ 2025-12-20 18:44 (0001ms, 0290ms total)
+T3F00 000:503 JLINK_SetWarnOutHandler(...) (0003ms, 0293ms total)
+T3F00 000:506 JLINK_OpenEx(...)
+Firmware: J-Link ARM-OB STM32 compiled Aug 22 2012 19:52:04
+Hardware: V7.00
+S/N: 20090930
+Feature(s): RDI,FlashDL,FlashBP,JFlash,GDBFull  returns O.K. (0277ms, 0570ms total)
+T3F00 000:783 JLINK_SetErrorOutHandler(...) (0000ms, 0570ms total)
+T3F00 000:783 JLINK_ExecCommand("ProjectFile = "D:\智能电表\软件代码\单相4P带屏幕\20251220 - 带Lvgl\N32G457REL7\MDK-ARM\JLinkSettings.ini"", ...)Device "CORTEX-M4" selected.  returns 0x00 (0044ms, 0614ms total)
+T3F00 000:840 JLINK_ExecCommand("Device = N32G457REL7", ...)Device "CORTEX-M4" selected.  returns 0x00 (0024ms, 0638ms total)
+T3F00 000:864 JLINK_ExecCommand("DisableConnectionTimeout", ...)  returns 0x01 (0000ms, 0639ms total)
+T3F00 000:865 JLINK_GetHardwareVersion()  returns 0x11170 (0000ms, 0639ms total)
+T3F00 000:865 JLINK_GetDLLVersion()  returns 49604 (0000ms, 0639ms total)
+T3F00 000:865 JLINK_GetFirmwareString(...) (0000ms, 0639ms total)
+T3F00 000:906 JLINK_GetDLLVersion()  returns 49604 (0000ms, 0639ms total)
+T3F00 000:906 JLINK_GetCompileDateTime() (0000ms, 0639ms total)
+T3F00 000:941 JLINK_GetFirmwareString(...) (0000ms, 0639ms total)
+T3F00 000:958 JLINK_GetHardwareVersion()  returns 0x11170 (0000ms, 0639ms total)
+T3F00 001:009 JLINK_TIF_Select(JLINKARM_TIF_SWD)  returns 0x00 (0002ms, 0641ms total)
+T3F00 001:011 JLINK_SetSpeed(500) (0001ms, 0642ms total)
+T3F00 001:012 JLINK_GetId() >0x108 TIF> >0x108 TIF>
+                JLINK_EMU_HasCapEx(0x0000002C)  returns 0x00 (0000ms, 0000ms total)
+                JLINK_EMU_HasCapEx(0x0000002C)  returns 0x00 (0000ms, 0000ms total)
+                returns 0x00000000 (0207ms, 0849ms total)
+T3F00 002:693 JLINK_Close() (0001ms, 0850ms total)
+T3F00 002:693  (0001ms, 0850ms total)
+T3F00 002:693 Closed (0001ms, 0850ms total)

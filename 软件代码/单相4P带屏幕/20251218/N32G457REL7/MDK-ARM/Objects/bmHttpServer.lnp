@@ -1,0 +1,25 @@
+--cpu Cortex-M4.fp
+".\objects\startup_n32g45x.o"
+".\objects\system_n32g45x.o"
+".\objects\misc.o"
+".\objects\n32g45x_gpio.o"
+".\objects\n32g45x_flash.o"
+".\objects\n32g45x_rcc.o"
+".\objects\n32g45x_tim.o"
+".\objects\n32g45x_usart.o"
+".\objects\n32g45x_adc.o"
+".\objects\main.o"
+".\objects\n32g45x_it.o"
+".\objects\bsp.o"
+".\objects\v_timer.o"
+".\objects\usart.o"
+".\objects\typechange.o"
+".\objects\log.o"
+".\objects\tft.o"
+".\objects\delay.o"
+".\objects\relay.o"
+".\objects\bl0942.o"
+--library_type=microlib --strict --scatter ".\Objects\bmHttpServer.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\bmHttpServer.map" -o .\Objects\bmHttpServer.axf

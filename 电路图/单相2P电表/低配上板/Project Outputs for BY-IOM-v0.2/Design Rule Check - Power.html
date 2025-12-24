@@ -1,0 +1,388 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD22\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">2025/9/16</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">9:25:06</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:02</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///F:\%E4%B8%8A%E6%B5%B7%E7%A7%91%E5%AE%89%E8%BF%85%E5%85%89%E7%94%B5\%E6%99%BA%E8%83%BD%E7%94%B5%E8%A1%A8\%E7%94%B5%E8%B7%AF%E5%9B%BE\%E5%8D%95%E7%9B%B8%E7%94%B5%E8%A1%A8\%E4%B8%8A%E6%9D%BF - %E5%89%AF%E6%9C%AC - %E5%89%AF%E6%9C%AC\Power.PcbDoc" class="file"><acronym title="F:\上海科安迅光电\智能电表\电路图\单相电表\上板 - 副本 - 副本\Power.PcbDoc">F:\上海科安迅光电\智能电表\电路图\单相电表\上板 - 副本 - 副本\Power.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">12</td></tr>
+</table>
+</td>
+</table><a name="IDE0O31KLTELGRLRJKLERUL40O5IAHQYTHUMTBMHLHMFJUVWTZGOJI"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDE5C0IGQTEQ0BN3YTJEW2XZ03OOOA20XS1ECDSOPCSXHI0BPXHYUE">Clearance Constraint (Gap=5mil) (IsTrack),(IsTrack)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDKCHKEDNC2J5MGL4VBAXFR4T4XOEK5YS03EMFIKJF12QPBPAER0WF">Clearance Constraint (Gap=10mil) (IsVia),(IsTrack)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID23OZ5U3E2MAMHXXIGNDTBEIFYHVAHUK0KBJJG2CVB5DUQE53054E">Clearance Constraint (Gap=10mil) (IsVia),(IsVia)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDWYRQV0TWTJFGNCJPVRMONNXBQDZWMKLSI0XVX4HHQYFM3OCAHNUB">Clearance Constraint (Gap=10mil) (IsVia),(IsPad)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID4V2EL0CERM0WDDGWIJXCYQGHTFJB23QRSLPSW5PWVY4FAW4RME5O">Clearance Constraint (Gap=10mil) (InPoly),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDPDORJ25PQIHLBA3U35OJBC0PKU2NS1DZ0ZUYMHVDD31FN33E33">Clearance Constraint (Gap=8mil) (IsTrack),(IsPad)</a></td>
+<td class="column2">6</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID3EXKRMSV432YMYKJ3DVVLPW0OCTCG3NNTCEDCCDHPTROM5UU1PQK">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">6</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDJ4MHKMQUXRPFNGANSWHSXA2XNNGD0GDUJEUEZLEOGKHYFC22TVVJ">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID4K1P4MKTHPAUOAL4WQCTG5XVZGAXNUUD1KICK1YIEH0UTC4FEWL">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDFDUUFNR0VENSNDZ32N0OH2TBUCMC3VNM4PPQO2IZJEZWB5NMIDIJ">Width Constraint (Min=5mil) (Max=300mil) (Preferred=7mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDHD1WUOVXSIBJBYX1ESZDHQF4NO3QWBRNQISAMFLR2PQ5P0RJXIZE">Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDLIE1L5L1ZSQQNEJ40TYI0PYA5K35JMONJVT25MMMKCE0CTS5XTI">Hole Size Constraint (Min=1mil) (Max=200mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDN5YNDXIIGZ0KJE1RI0SZ5SVLAJRV1C1XZXWESUJBKQNNFI3ZFCGL">Hole To Hole Clearance (Gap=5mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDZF4TZ5IJEOCNJFWZMHZ0KPLTDDUVGZNAPKY4SUFYKWLZQMNNUOXC">Minimum Solder Mask Sliver (Gap=0mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDQ5QTILRCFMRZNOC0BTJ2CLTABIZQEYTPRXWDL3OFSOLG2E0JO4HF">Silk To Solder Mask (Clearance=0mil) (IsPad),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDBJFGIDA5RMSCF1RZM34P1A3TRJYYZMW0I51OZMJ3BWSC0PEG11RF">Silk to Silk (Clearance=0mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDLMZL2R2DVLJCJXWOCACRX1SQUKEVWNGD0W0IFPJB4C3YSPSX2MDM">Net Antennae (Tolerance=0mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDHZ55KQZ4PKFRO22FELCDOKFX2IO544KOBBCTZFCNWVXX3UUGEWXH">Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">12</td>
+</tr>
+</table><br><a name="IDPDORJ25PQIHLBA3U35OJBC0PKU2NS1DZ0ZUYMHVDD31FN33E33"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Clearance Constraint (Gap=8mil) (IsTrack),(IsPad)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E4%B8%8A%E6%B5%B7%E7%A7%91%E5%AE%89%E8%BF%85%E5%85%89%E7%94%B5\%E6%99%BA%E8%83%BD%E7%94%B5%E8%A1%A8\%E7%94%B5%E8%B7%AF%E5%9B%BE\%E5%8D%95%E7%9B%B8%E7%94%B5%E8%A1%A8\%E4%B8%8A%E6%9D%BF - %E5%89%AF%E6%9C%AC - %E5%89%AF%E6%9C%AC\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=61459.451mil|Location2.X=61465.784mil|Location1.Y=24821.807mil|Location2.Y=24828.14mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\上海科安迅光电\智能电表\电路图\单相电表\上板 - 副本 - 副本\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=61459.451mil|Location2.X=61465.784mil|Location1.Y=24821.807mil|Location2.Y=24828.14mil|Absolute=True">Clearance Constraint: (Collision &lt; 8mil) Between Pad LED1-1(1083.705mil,828.752mil) on Bottom Layer And Track (1071.884mil,786.533mil)(1095.516mil,786.533mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E4%B8%8A%E6%B5%B7%E7%A7%91%E5%AE%89%E8%BF%85%E5%85%89%E7%94%B5\%E6%99%BA%E8%83%BD%E7%94%B5%E8%A1%A8\%E7%94%B5%E8%B7%AF%E5%9B%BE\%E5%8D%95%E7%9B%B8%E7%94%B5%E8%A1%A8\%E4%B8%8A%E6%9D%BF - %E5%89%AF%E6%9C%AC - %E5%89%AF%E6%9C%AC\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=61459.451mil|Location2.X=61465.784mil|Location1.Y=24821.807mil|Location2.Y=24828.14mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\上海科安迅光电\智能电表\电路图\单相电表\上板 - 副本 - 副本\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=61459.451mil|Location2.X=61465.784mil|Location1.Y=24821.807mil|Location2.Y=24828.14mil|Absolute=True">Clearance Constraint: (Collision &lt; 8mil) Between Pad LED1-2(1083.705mil,746.052mil) on Bottom Layer And Track (1071.884mil,786.533mil)(1095.516mil,786.533mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E4%B8%8A%E6%B5%B7%E7%A7%91%E5%AE%89%E8%BF%85%E5%85%89%E7%94%B5\%E6%99%BA%E8%83%BD%E7%94%B5%E8%A1%A8\%E7%94%B5%E8%B7%AF%E5%9B%BE\%E5%8D%95%E7%9B%B8%E7%94%B5%E8%A1%A8\%E4%B8%8A%E6%9D%BF - %E5%89%AF%E6%9C%AC - %E5%89%AF%E6%9C%AC\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=61459.659mil|Location2.X=61465.993mil|Location1.Y=24508.891mil|Location2.Y=24515.224mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\上海科安迅光电\智能电表\电路图\单相电表\上板 - 副本 - 副本\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=61459.659mil|Location2.X=61465.993mil|Location1.Y=24508.891mil|Location2.Y=24515.224mil|Absolute=True">Clearance Constraint: (Collision &lt; 8mil) Between Pad LED2-1(1083.705mil,513.791mil) on Bottom Layer And Track (1072.092mil,473.616mil)(1095.724mil,473.616mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E4%B8%8A%E6%B5%B7%E7%A7%91%E5%AE%89%E8%BF%85%E5%85%89%E7%94%B5\%E6%99%BA%E8%83%BD%E7%94%B5%E8%A1%A8\%E7%94%B5%E8%B7%AF%E5%9B%BE\%E5%8D%95%E7%9B%B8%E7%94%B5%E8%A1%A8\%E4%B8%8A%E6%9D%BF - %E5%89%AF%E6%9C%AC - %E5%89%AF%E6%9C%AC\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=61459.659mil|Location2.X=61465.993mil|Location1.Y=24508.891mil|Location2.Y=24515.224mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\上海科安迅光电\智能电表\电路图\单相电表\上板 - 副本 - 副本\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=61459.659mil|Location2.X=61465.993mil|Location1.Y=24508.891mil|Location2.Y=24515.224mil|Absolute=True">Clearance Constraint: (Collision &lt; 8mil) Between Pad LED2-2(1083.705mil,431.091mil) on Bottom Layer And Track (1072.092mil,473.616mil)(1095.724mil,473.616mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E4%B8%8A%E6%B5%B7%E7%A7%91%E5%AE%89%E8%BF%85%E5%85%89%E7%94%B5\%E6%99%BA%E8%83%BD%E7%94%B5%E8%A1%A8\%E7%94%B5%E8%B7%AF%E5%9B%BE\%E5%8D%95%E7%9B%B8%E7%94%B5%E8%A1%A8\%E4%B8%8A%E6%9D%BF - %E5%89%AF%E6%9C%AC - %E5%89%AF%E6%9C%AC\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=61457.787mil|Location2.X=61464.12mil|Location1.Y=24190.712mil|Location2.Y=24197.046mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\上海科安迅光电\智能电表\电路图\单相电表\上板 - 副本 - 副本\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=61457.787mil|Location2.X=61464.12mil|Location1.Y=24190.712mil|Location2.Y=24197.046mil|Absolute=True">Clearance Constraint: (Collision &lt; 8mil) Between Pad LED3-1(1083.705mil,198.83mil) on Bottom Layer And Track (1070.22mil,155.438mil)(1093.852mil,155.438mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E4%B8%8A%E6%B5%B7%E7%A7%91%E5%AE%89%E8%BF%85%E5%85%89%E7%94%B5\%E6%99%BA%E8%83%BD%E7%94%B5%E8%A1%A8\%E7%94%B5%E8%B7%AF%E5%9B%BE\%E5%8D%95%E7%9B%B8%E7%94%B5%E8%A1%A8\%E4%B8%8A%E6%9D%BF - %E5%89%AF%E6%9C%AC - %E5%89%AF%E6%9C%AC\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=61457.787mil|Location2.X=61464.12mil|Location1.Y=24190.712mil|Location2.Y=24197.046mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\上海科安迅光电\智能电表\电路图\单相电表\上板 - 副本 - 副本\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=61457.787mil|Location2.X=61464.12mil|Location1.Y=24190.712mil|Location2.Y=24197.046mil|Absolute=True">Clearance Constraint: (Collision &lt; 8mil) Between Pad LED3-2(1083.705mil,116.13mil) on Bottom Layer And Track (1070.22mil,155.438mil)(1093.852mil,155.438mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID3EXKRMSV432YMYKJ3DVVLPW0OCTCG3NNTCEDCCDHPTROM5UU1PQK"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Short-Circuit Constraint (Allowed=No) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E4%B8%8A%E6%B5%B7%E7%A7%91%E5%AE%89%E8%BF%85%E5%85%89%E7%94%B5\%E6%99%BA%E8%83%BD%E7%94%B5%E8%A1%A8\%E7%94%B5%E8%B7%AF%E5%9B%BE\%E5%8D%95%E7%9B%B8%E7%94%B5%E8%A1%A8\%E4%B8%8A%E6%9D%BF - %E5%89%AF%E6%9C%AC - %E5%89%AF%E6%9C%AC\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=61450.118mil|Location2.X=61498.749mil|Location1.Y=24824.433mil|Location2.Y=24873.064mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\上海科安迅光电\智能电表\电路图\单相电表\上板 - 副本 - 副本\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=61450.118mil|Location2.X=61498.749mil|Location1.Y=24824.433mil|Location2.Y=24873.064mil|Absolute=True">Short-Circuit Constraint: Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad LED1-1(1083.705mil,828.752mil) on Bottom Layer Location : [X = 61474.433mil][Y = 24848.748mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E4%B8%8A%E6%B5%B7%E7%A7%91%E5%AE%89%E8%BF%85%E5%85%89%E7%94%B5\%E6%99%BA%E8%83%BD%E7%94%B5%E8%A1%A8\%E7%94%B5%E8%B7%AF%E5%9B%BE\%E5%8D%95%E7%9B%B8%E7%94%B5%E8%A1%A8\%E4%B8%8A%E6%9D%BF - %E5%89%AF%E6%9C%AC - %E5%89%AF%E6%9C%AC\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=61446.453mil|Location2.X=61502.414mil|Location1.Y=24774.088mil|Location2.Y=24830.049mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\上海科安迅光电\智能电表\电路图\单相电表\上板 - 副本 - 副本\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=61446.453mil|Location2.X=61502.414mil|Location1.Y=24774.088mil|Location2.Y=24830.049mil|Absolute=True">Short-Circuit Constraint: Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad LED1-2(1083.705mil,746.052mil) on Bottom Layer Location : [X = 61474.433mil][Y = 24802.068mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E4%B8%8A%E6%B5%B7%E7%A7%91%E5%AE%89%E8%BF%85%E5%85%89%E7%94%B5\%E6%99%BA%E8%83%BD%E7%94%B5%E8%A1%A8\%E7%94%B5%E8%B7%AF%E5%9B%BE\%E5%8D%95%E7%9B%B8%E7%94%B5%E8%A1%A8\%E4%B8%8A%E6%9D%BF - %E5%89%AF%E6%9C%AC - %E5%89%AF%E6%9C%AC\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=61446.343mil|Location2.X=61502.94mil|Location1.Y=24506.511mil|Location2.Y=24563.108mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\上海科安迅光电\智能电表\电路图\单相电表\上板 - 副本 - 副本\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=61446.343mil|Location2.X=61502.94mil|Location1.Y=24506.511mil|Location2.Y=24563.108mil|Absolute=True">Short-Circuit Constraint: Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad LED2-1(1083.705mil,513.791mil) on Bottom Layer Location : [X = 61474.642mil][Y = 24534.81mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E4%B8%8A%E6%B5%B7%E7%A7%91%E5%AE%89%E8%BF%85%E5%85%89%E7%94%B5\%E6%99%BA%E8%83%BD%E7%94%B5%E8%A1%A8\%E7%94%B5%E8%B7%AF%E5%9B%BE\%E5%8D%95%E7%9B%B8%E7%94%B5%E8%A1%A8\%E4%B8%8A%E6%9D%BF - %E5%89%AF%E6%9C%AC - %E5%89%AF%E6%9C%AC\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=61451.074mil|Location2.X=61498.21mil|Location1.Y=24464.561mil|Location2.Y=24511.698mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\上海科安迅光电\智能电表\电路图\单相电表\上板 - 副本 - 副本\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=61451.074mil|Location2.X=61498.21mil|Location1.Y=24464.561mil|Location2.Y=24511.698mil|Absolute=True">Short-Circuit Constraint: Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad LED2-2(1083.705mil,431.091mil) on Bottom Layer Location : [X = 61474.642mil][Y = 24488.13mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E4%B8%8A%E6%B5%B7%E7%A7%91%E5%AE%89%E8%BF%85%E5%85%89%E7%94%B5\%E6%99%BA%E8%83%BD%E7%94%B5%E8%A1%A8\%E7%94%B5%E8%B7%AF%E5%9B%BE\%E5%8D%95%E7%9B%B8%E7%94%B5%E8%A1%A8\%E4%B8%8A%E6%9D%BF - %E5%89%AF%E6%9C%AC - %E5%89%AF%E6%9C%AC\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=61451.31mil|Location2.X=61494.228mil|Location1.Y=24196.781mil|Location2.Y=24239.699mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\上海科安迅光电\智能电表\电路图\单相电表\上板 - 副本 - 副本\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=61451.31mil|Location2.X=61494.228mil|Location1.Y=24196.781mil|Location2.Y=24239.699mil|Absolute=True">Short-Circuit Constraint: Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad LED3-1(1083.705mil,198.83mil) on Bottom Layer Location : [X = 61472.769mil][Y = 24218.24mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E4%B8%8A%E6%B5%B7%E7%A7%91%E5%AE%89%E8%BF%85%E5%85%89%E7%94%B5\%E6%99%BA%E8%83%BD%E7%94%B5%E8%A1%A8\%E7%94%B5%E8%B7%AF%E5%9B%BE\%E5%8D%95%E7%9B%B8%E7%94%B5%E8%A1%A8\%E4%B8%8A%E6%9D%BF - %E5%89%AF%E6%9C%AC - %E5%89%AF%E6%9C%AC\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=61445.253mil|Location2.X=61501.975mil|Location1.Y=24143.199mil|Location2.Y=24199.921mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\上海科安迅光电\智能电表\电路图\单相电表\上板 - 副本 - 副本\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=61445.253mil|Location2.X=61501.975mil|Location1.Y=24143.199mil|Location2.Y=24199.921mil|Absolute=True">Short-Circuit Constraint: Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad LED3-2(1083.705mil,116.13mil) on Bottom Layer Location : [X = 61473.614mil][Y = 24171.56mil]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

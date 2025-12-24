@@ -1,0 +1,13 @@
+Removed Pin From Net: NetName=GND Pin=P2-1
+Removed Pin From Net: NetName=4G_MCU_TXD Pin=P2-2
+Removed Pin From Net: NetName=4G_MCU_RXD Pin=P2-3
+Removed Pin From Net: NetName=GND Pin=P5-1
+Removed Pin From Net: NetName=4G_MCU_TXD Pin=P5-2
+Removed Pin From Net: NetName=4G_MCU_RXD Pin=P5-3
+Removed Pin From Net: NetName=GND_G Pin=P6-1
+Removed Pin From Net: NetName=BL0942_RXD Pin=P6-2
+Removed Pin From Net: NetName=BL0942_TXD Pin=P6-3
+Removed Member From Class: ClassName=MCU Member=P2
+Removed Member From Class: ClassName=MCU Member=P5
+Removed Member From Class: ClassName=MCU Member=P6
+Change Footprint: Footprint Not Found QFN-32_L4.0-W4.0-P0.40-TL-EP2.8

@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=485_A Pin=P3-1
+Removed Pin From Net: NetName=485_B Pin=P3-3
+Removed Pin From Net: NetName=VCC12 Pin=P3-7
+Added Pin To Net: NetName=VCC12 Pin=P3-1

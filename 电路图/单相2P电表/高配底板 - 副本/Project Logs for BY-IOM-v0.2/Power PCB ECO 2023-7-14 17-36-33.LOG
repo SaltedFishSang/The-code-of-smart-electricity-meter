@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=GND Pin=P3-8
+Removed Pin From Net: NetName=GND Pin=P3-9
+Removed Pin From Net: NetName=DO_1 Pin=P3-10
+Removed Pin From Net: NetName=VCC33 Pin=P3-11
+Removed Pin From Net: NetName=DO_2 Pin=P3-12
+Change Component Footprint: Designator=P3 Old Footprint=HDR2X6 New Footprint=HDR2X5
+Change Component Comment : Designator=P3 Old Comment=Header 6X2 New Comment=Header 5X2
+Added Pin To Net: NetName=DO_1 Pin=P3-8
+Added Pin To Net: NetName=VCC33 Pin=P3-9
+Added Pin To Net: NetName=DO_2 Pin=P3-10

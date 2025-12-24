@@ -1,0 +1,17 @@
+.\objects\fsdata.o: ..\Lwip_HTTPS\fsdata.c
+.\objects\fsdata.o: ..\Lwip_HTTPS\fs.h
+.\objects\fsdata.o: ..\lwip\src\include\lwip/opt.h
+.\objects\fsdata.o: ..\src\lwipopts.h
+.\objects\fsdata.o: ..\lwip\src\include\lwip/debug.h
+.\objects\fsdata.o: ..\lwip\src\include\lwip/arch.h
+.\objects\fsdata.o: ..\src\arch/cc.h
+.\objects\fsdata.o: ..\src\arch/cpu.h
+.\objects\fsdata.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\fsdata.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\fsdata.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\fsdata.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\inttypes.h
+.\objects\fsdata.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h
+.\objects\fsdata.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\ctype.h
+.\objects\fsdata.o: ..\lwip\src\include\lwip/opt.h
+.\objects\fsdata.o: ..\lwip\src\include\lwip/def.h
+.\objects\fsdata.o: ..\Lwip_HTTPS\fsdata.h

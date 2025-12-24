@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=MCU_BL0942_Control Pin=P4-2
+Removed Pin From Net: NetName=VCC12 Pin=P4-5
+Added Pin To Net: NetName=VCC12 Pin=P4-2
+Added Pin To Net: NetName=MCU_BL0942_Control Pin=P4-5

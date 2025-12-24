@@ -1,0 +1,51 @@
+Add Component: Footprint Not Found MARK
+Added Component: Designator=U2(ML307A)
+Add component (AddParameter): Name = "PCB DECAL"; Value = "MOD_ML307"; VariantName = "[No Variations]"
+Add Pin To Net: Unknown Pin: Pin CARD?-C1
+Add Pin To Net: Unknown Pin: Pin CARD?-C2
+Add Pin To Net: Unknown Pin: Pin CARD?-C3
+Add Pin To Net: Unknown Pin: Pin CARD?-C5
+Add Pin To Net: Unknown Pin: Pin CARD?-C7
+Add Pin To Net: Unknown Pin: Pin CARD?-CD
+Add Pin To Net: Unknown Pin: Pin Test_1-1
+Added Pin To Net: NetName=GND Pin=U2-1
+Added Pin To Net: NetName=PWR_ON/OFF Pin=U2-7
+Added Pin To Net: NetName=GND Pin=U2-10
+Added Pin To Net: NetName=USIM_DATA Pin=U2-11
+Added Pin To Net: NetName=USIM_RST Pin=U2-12
+Added Pin To Net: NetName=USIM_CLK Pin=U2-13
+Added Pin To Net: NetName=USIM_VDD Pin=U2-14
+Added Pin To Net: NetName=RESET_N Pin=U2-15
+Added Pin To Net: NetName=NET_LIGHT Pin=U2-16
+Added Pin To Net: NetName=MAIN_RXD Pin=U2-17
+Added Pin To Net: NetName=MAIN_TXD Pin=U2-18
+Added Pin To Net: NetName=VDD_EXT Pin=U2-24
+Added Pin To Net: NetName=NET_STATE Pin=U2-25
+Added Pin To Net: NetName=GND Pin=U2-27
+Added Pin To Net: NetName=GND Pin=U2-34
+Added Pin To Net: NetName=NetC28_2 Pin=U2-35
+Added Pin To Net: NetName=GND Pin=U2-36
+Added Pin To Net: NetName=GND Pin=U2-37
+Added Pin To Net: NetName=GND Pin=U2-40
+Added Pin To Net: NetName=GND Pin=U2-41
+Added Pin To Net: NetName=VCC3.8 Pin=U2-42
+Added Pin To Net: NetName=VCC3.8 Pin=U2-43
+Added Pin To Net: NetName=GND Pin=U2-45
+Added Pin To Net: NetName=GND Pin=U2-46
+Added Pin To Net: NetName=GND Pin=U2-47
+Added Pin To Net: NetName=GND Pin=U2-48
+Added Pin To Net: NetName=GND Pin=U2-70
+Added Pin To Net: NetName=GND Pin=U2-71
+Added Pin To Net: NetName=GND Pin=U2-72
+Added Pin To Net: NetName=GND Pin=U2-73
+Added Pin To Net: NetName=USIM_DET Pin=U2-79
+Added Pin To Net: NetName=GND Pin=U2-88
+Added Pin To Net: NetName=GND Pin=U2-89
+Added Pin To Net: NetName=GND Pin=U2-90
+Added Pin To Net: NetName=GND Pin=U2-91
+Added Pin To Net: NetName=GND Pin=U2-92
+Added Pin To Net: NetName=GND Pin=U2-93
+Added Pin To Net: NetName=GND Pin=U2-94
+Added Member To Class: ClassName=4G_Module Member=Component R? 0R
+Add Class Member: Failed to add class member : Component Test_1 MARK
+Added Member To Class: ClassName=4G_Module Member=Component U2 ML307A

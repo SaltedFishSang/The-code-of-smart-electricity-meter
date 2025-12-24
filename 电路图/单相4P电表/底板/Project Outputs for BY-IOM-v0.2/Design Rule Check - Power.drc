@@ -1,0 +1,72 @@
+Protel Design System Design Rule Check
+PCB File : F:\上海科安迅光电\智能电表\电路图\单相4P电表\底板\Power.PcbDoc
+Date     : 2025/11/28
+Time     : 15:35:44
+
+Processing Rule : Clearance Constraint (Gap=5mil) (IsTrack),(IsTrack)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=10mil) (IsVia),(IsTrack)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=10mil) (IsVia),(IsVia)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=10mil) (IsVia),(IsPad)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=10mil) (InPoly),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=8mil) (IsTrack),(IsPad)
+   Violation between Clearance Constraint: (6.429mil < 8mil) Between Pad J3-1(1276.082mil,346.075mil) on Top Layer And Track (0mil,295.276mil)(2755.905mil,295.276mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (2.067mil < 8mil) Between Pad RV1-1(1740.033mil,341.721mil) on Multi-Layer And Track (0mil,295.276mil)(2755.905mil,295.276mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 8mil) Between Pad U1-2(1524.767mil,1045.395mil) on Multi-Layer And Track (1574.777mil,1014.844mil)(1574.777mil,1199.449mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 8mil) Between Pad U1-3(1624.767mil,1045.395mil) on Multi-Layer And Track (1574.777mil,1014.844mil)(1574.777mil,1199.449mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (1.281mil < 8mil) Between Pad U2-2(1773.746mil,677.447mil) on Multi-Layer And Track (1714.348mil,733.099mil)(1804.813mil,733.099mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (6.949mil < 8mil) Between Pad U2-2(1773.746mil,677.447mil) on Multi-Layer And Track (1804.813mil,733.099mil)(1835.436mil,702.476mil) on Keep-Out Layer 
+   Violation between Clearance Constraint: (7.319mil < 8mil) Between Pad U2-2(1773.746mil,677.447mil) on Multi-Layer And Track (1835.436mil,624.539mil)(1835.436mil,702.476mil) on Keep-Out Layer 
+Rule Violations :7
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+   Violation between Short-Circuit Constraint: Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad U1-2(1524.767mil,1045.395mil) on Multi-Layer Location : [X = 61950.769mil][Y = 24788.56mil]
+   Violation between Short-Circuit Constraint: Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad U1-3(1624.767mil,1045.395mil) on Multi-Layer Location : [X = 61980.242mil][Y = 24788.56mil]
+Rule Violations :2
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=5mil) (Max=300mil) (Preferred=7mil) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=1mil) (Max=200mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=5mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=0mil) (IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=0mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+
+Violations Detected : 9
+Waived Violations : 0
+Time Elapsed        : 00:00:02

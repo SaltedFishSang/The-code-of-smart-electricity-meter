@@ -1,0 +1,4 @@
+Change Component Footprint: Designator=P3 Old Footprint=2.0MM¼ä¾à 2*5P Ë«ÅÅ×ù New Footprint=HDR2X5
+Added Component: Designator=Test_1(MARK)
+Added Pin To Net: NetName=VCC33 Pin=Test_1-1
+Added Member To Class: ClassName=Sheet1 Member=Component Test_1 MARK

@@ -1,0 +1,4 @@
+Added Pin To Net: NetName=NetP1_1 Pin=P1-1
+Added Pin To Net: NetName=NetP1_1 Pin=P6-4
+Added Net: Name=NetP1_1
+Added Member To Class: ClassName=Sheet1 Member=Component P1 Header 2

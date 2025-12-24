@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=RS485_DIR Pin=U1-15
+Removed Pin From Net: NetName=RS485_TX Pin=U1-16
+Removed Pin From Net: NetName=RS485_RX Pin=U1-17
+Removed Pin From Net: NetName=MCU_BL0942_Control Pin=U1-28
+Removed Pin From Net: NetName=BL0942_MCU_TXD Pin=U1-29
+Removed Pin From Net: NetName=BL0942_MCU_RXD Pin=U1-30
+Added Pin To Net: NetName=MCU_BL0942_Control Pin=U1-15
+Added Pin To Net: NetName=BL0942_MCU_TXD Pin=U1-16
+Added Pin To Net: NetName=BL0942_MCU_RXD Pin=U1-17
+Added Pin To Net: NetName=RS485_DIR Pin=U1-28
+Added Pin To Net: NetName=RS485_TX Pin=U1-29
+Added Pin To Net: NetName=RS485_RX Pin=U1-30

@@ -1,0 +1,658 @@
+Added Component: Designator=C1(0805R)
+Added Component: Designator=C2(0805R)
+Added Component: Designator=C3(CAPPIND06)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Polarized Capacitor (Radial); 2 Leads"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "RB7.6-15"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=C4(0603R)
+Added Component: Designator=C5(0603R)
+Added Component: Designator=C6(0603R)
+Added Component: Designator=C7(0805R)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Polarized Capacitor (Radial); 2 Leads"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "RB7.6-15"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=C8(0603R)
+Added Component: Designator=C9(0805R)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Polarized Capacitor (Radial); 2 Leads"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "RB7.6-15"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=C10(0603R)
+Added Component: Designator=C11(0603R)
+Added Component: Designator=C12(0603R)
+Added Component: Designator=C13(0603R)
+Added Component: Designator=C14(0603R)
+Added Component: Designator=C15(0603R)
+Added Component: Designator=C16(0603R)
+Added Component: Designator=C17(0603R)
+Added Component: Designator=C18(0603R)
+Added Component: Designator=C19(0603R)
+Added Component: Designator=C20(0603R)
+Added Component: Designator=C21(0603R)
+Added Component: Designator=C22(0603R)
+Added Component: Designator=C23(CAPPIND06)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Polarized Capacitor (Radial); 2 Leads"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "RB7.6-15"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=C24(0603R)
+Added Component: Designator=C25(0603R)
+Added Component: Designator=C31(0603R)
+Added Component: Designator=C32(0603R)
+Added Component: Designator=C33(0603R)
+Added Component: Designator=C34(0603R)
+Added Component: Designator=C35(0603R)
+Added Component: Designator=C36(0603R)
+Added Component: Designator=C37(0603R)
+Added Component: Designator=D1(1206D)
+Added Component: Designator=D2(1206D)
+Added Component: Designator=D3(DO-214AC)
+Added Component: Designator=D4(SOD323)
+Added Component: Designator=D5(DO-214AC)
+Added Component: Designator=D6(DO-214AC)
+Added Component: Designator=D7(DO-214AC 双极性)
+Added Component: Designator=D8(DO-214AC 双极性)
+Added Component: Designator=D9(DO-214AC 双极性)
+Added Component: Designator=F1(R0603)
+Added Component: Designator=F2(R0603)
+Added Component: Designator=J1(贴片焊盘V1（3*2椭圆）)
+Added Component: Designator=J2(贴片焊盘V1（3*2椭圆）)
+Added Component: Designator=J3(贴片焊盘V1（3*2椭圆）)
+Added Component: Designator=J4(贴片焊盘V1（3*2椭圆）)
+Added Component: Designator=J5(贴片焊盘V1（3*2椭圆）)
+Added Component: Designator=J6(贴片焊盘V1（3*2椭圆）)
+Added Component: Designator=J7(贴片焊盘V1（3*2椭圆）)
+Added Component: Designator=J8(贴片焊盘V1（3*2椭圆）)
+Added Component: Designator=L1(贴片电感5020)
+Add component (AddParameter): Name = "Code_IEC"; Value = "1005"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Code_JEITA"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "29-May-2009"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "IPC-7351 Footprint Added."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Chip Inductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "0402-A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=LED1(0603LED)
+Added Component: Designator=P1(CONN-TH_P5.08_KF127-5.08-2P)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=P2(CONN-TH_P5.08_KF127-5.08-2P)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=P3(HDR2X3)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=P4(HDR2X3)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=P5(CONN-TH_P5.08_KF127-5.08-2P)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=Q1(SOT-23)
+Added Component: Designator=R1(0603r)
+Added Component: Designator=R2(0603R)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Axial Device, Thru-Hole; 2 Leads; 0.4 in Pin Spacing"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "AXIAL-0.4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=R3(0603R)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Axial Device, Thru-Hole; 2 Leads; 0.4 in Pin Spacing"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "AXIAL-0.4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=R4(0603R)
+Added Component: Designator=R5(0603R)
+Added Component: Designator=R6(0603R)
+Added Component: Designator=R7(0603R)
+Added Component: Designator=R8(0603R)
+Added Component: Designator=R9(0603R)
+Added Component: Designator=R10(0603R)
+Added Component: Designator=R11(0603R)
+Added Component: Designator=R12(0603r)
+Added Component: Designator=R13(0603R)
+Added Component: Designator=R14(0603R)
+Added Component: Designator=R15(0805R)
+Added Component: Designator=R16(0805R)
+Added Component: Designator=R17(0805R)
+Added Component: Designator=R18(0805R)
+Added Component: Designator=R19(0805R)
+Added Component: Designator=R20(0603R)
+Added Component: Designator=R21(0603R)
+Added Component: Designator=R22(1206)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Axial Device, Thru-Hole; 2 Leads; 0.4 in Pin Spacing"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "AXIAL-0.4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=R23(0805R)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Axial Device, Thru-Hole; 2 Leads; 0.4 in Pin Spacing"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "AXIAL-0.4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=R24(0805R)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Axial Device, Thru-Hole; 2 Leads; 0.4 in Pin Spacing"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "AXIAL-0.4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=R25(0603r)
+Added Component: Designator=R26(0603R)
+Added Component: Designator=R27(0603R)
+Added Component: Designator=R28(0603R)
+Added Component: Designator=R29(0603R)
+Added Component: Designator=R30(0603R)
+Added Component: Designator=R31(0603R)
+Added Component: Designator=R32(0603R)
+Added Component: Designator=R33(0805R)
+Added Component: Designator=R34(0603r)
+Added Component: Designator=R35(0603r)
+Added Component: Designator=R36(0603r)
+Added Component: Designator=R37(0603r)
+Added Component: Designator=R38(0603r)
+Added Component: Designator=R39(0603r)
+Added Component: Designator=R40(0603r)
+Added Component: Designator=R41(0603r)
+Added Component: Designator=R42(0805R)
+Added Component: Designator=R43(0603r)
+Added Component: Designator=R44(0603r)
+Added Component: Designator=R45(0603R)
+Added Component: Designator=R46(0603R)
+Added Component: Designator=R47(0603R)
+Added Component: Designator=R48(0603R)
+Added Component: Designator=R49(0603R)
+Added Component: Designator=R50(0603R)
+Added Component: Designator=R51(0603R)
+Added Component: Designator=RV1(10D821K)
+Add component (AddParameter): Name = "Code_IPC"; Value = "RESC2012"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "29-May-2009"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "IPC-7351 Footprint Added."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Chip Resistor 0805 Case Size"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "6-0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "Mar-2003"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "24-Mar-1999"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=SC1(SuperCap-12.5*20 - 躺着)
+Added Component: Designator=SC2(SuperCap-12.5*20 - 躺着)
+Added Component: Designator=U1(B1205S-1WR3)
+Added Component: Designator=U2(X1071)
+Added Component: Designator=U3(SOT-23-6DBV)
+Added Component: Designator=U4(SOT-23-6)
+Add component (AddParameter): Name = "Add into BOM"; Value = "yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Convert to PCB"; Value = "yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet"; Value = "https://atta.szlcsc.com/upload/public/pdf/source/20190920/C431145_DEC39E836DB2A2F1462A8BB350F12ABB.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Device"; Value = "BL8023HCB6TR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "JLCPCB Part Class"; Value = "Extended Part"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC Part Name"; Value = "BL8023HCB6TR 继电器驱动芯片 停产"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "BL(上海贝岭)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part"; Value = "BL8023HCB6TR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "LCSC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Footprint"; Value = "SOT-23-6"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part"; Value = "C431145"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Symbol"; Value = "BL8023HCB6TR"; VariantName = "[No Variations]"
+Added Component: Designator=U5(BL0942-10pin)
+Add component (AddParameter): Name = "Add into BOM"; Value = "yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Convert to PCB"; Value = "yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet"; Value = "https://atta.szlcsc.com/upload/public/pdf/source/20220627/BFAD44701CA6DE9A8853C5A4834B6884.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Device"; Value = "BL0942_C2837510"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "JLCPCB Part Class"; Value = "Extended Part"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC Part Name"; Value = "BL0942内置时钟免校准计量芯片"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "BL(上海贝岭)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part"; Value = "BL0942"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "LCSC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Footprint"; Value = "SSOP-10-150mil"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part"; Value = "C2837510"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Symbol"; Value = "BL0942"; VariantName = "[No Variations]"
+Added Component: Designator=U6(SOT-223)
+Added Component: Designator=U7(SO8)
+Added Component: Designator=U8(SO8)
+Added Component: Designator=U9(SOT-23-5)
+Added Component: Designator=U10(EL3H7)
+Added Component: Designator=U11(EL3H7)
+Added Component: Designator=U12(EL3H7)
+Added Pin To Net: NetName=VCC33 Pin=C1-1
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Pin To Net: NetName=VCC33_G Pin=C2-1
+Added Pin To Net: NetName=Lin Pin=C2-2
+Added Pin To Net: NetName=VCC12 Pin=C3-1
+Added Pin To Net: NetName=GND Pin=C3-2
+Added Pin To Net: NetName=GND Pin=C4-1
+Added Pin To Net: NetName=VCC12 Pin=C4-2
+Added Pin To Net: NetName=NetC5_1 Pin=C5-1
+Added Pin To Net: NetName=NetC5_2 Pin=C5-2
+Added Pin To Net: NetName=GND Pin=C6-1
+Added Pin To Net: NetName=VCC12 Pin=C6-2
+Added Pin To Net: NetName=VCC12 Pin=C7-1
+Added Pin To Net: NetName=GND Pin=C7-2
+Added Pin To Net: NetName=GND Pin=C8-1
+Added Pin To Net: NetName=GND Pin=C9-2
+Added Pin To Net: NetName=GND Pin=C10-1
+Added Pin To Net: NetName=GND Pin=C11-1
+Added Pin To Net: NetName=VCC12 Pin=C11-2
+Added Pin To Net: NetName=GND Pin=C12-1
+Added Pin To Net: NetName=VCC12 Pin=C12-2
+Added Pin To Net: NetName=Lin Pin=C13-1
+Added Pin To Net: NetName=VCC33_G Pin=C13-2
+Added Pin To Net: NetName=Lin Pin=C14-1
+Added Pin To Net: NetName=VCC33_G Pin=C14-2
+Added Pin To Net: NetName=IP1 Pin=C15-1
+Added Pin To Net: NetName=Lin Pin=C15-2
+Added Pin To Net: NetName=IN1 Pin=C16-1
+Added Pin To Net: NetName=Lin Pin=C16-2
+Added Pin To Net: NetName=VP Pin=C17-1
+Added Pin To Net: NetName=Lin Pin=C17-2
+Added Pin To Net: NetName=GND Pin=C18-1
+Added Pin To Net: NetName=GND Pin=C19-1
+Added Pin To Net: NetName=VCC33 Pin=C19-2
+Added Pin To Net: NetName=GND Pin=C20-1
+Added Pin To Net: NetName=VCC33 Pin=C20-2
+Added Pin To Net: NetName=GND Pin=C21-1
+Added Pin To Net: NetName=VCC33 Pin=C22-1
+Added Pin To Net: NetName=GND Pin=C22-2
+Added Pin To Net: NetName=VCC12 Pin=C23-1
+Added Pin To Net: NetName=GND Pin=C23-2
+Added Pin To Net: NetName=AGND Pin=C24-1
+Added Pin To Net: NetName=VCC33 Pin=C24-2
+Added Pin To Net: NetName=AGND Pin=C25-1
+Added Pin To Net: NetName=VCC33 Pin=C25-2
+Added Pin To Net: NetName=NetC31_1 Pin=C31-1
+Added Pin To Net: NetName=NetC31_2 Pin=C31-2
+Added Pin To Net: NetName=NetC32_1 Pin=C32-1
+Added Pin To Net: NetName=AGND Pin=C32-2
+Added Pin To Net: NetName=LoseCurrent Pin=C33-1
+Added Pin To Net: NetName=AGND Pin=C33-2
+Added Pin To Net: NetName=AGND Pin=C34-1
+Added Pin To Net: NetName=VCC33 Pin=C34-2
+Added Pin To Net: NetName=AGND Pin=C35-1
+Added Pin To Net: NetName=VCC33 Pin=C35-2
+Added Pin To Net: NetName=NetC36_1 Pin=C36-1
+Added Pin To Net: NetName=AGND Pin=C36-2
+Added Pin To Net: NetName=VDD_1.65V Pin=C37-1
+Added Pin To Net: NetName=AGND Pin=C37-2
+Added Pin To Net: NetName=VCC33 Pin=D1-1
+Added Pin To Net: NetName=LoseCurrent Pin=D1-2
+Added Pin To Net: NetName=LoseCurrent Pin=D2-1
+Added Pin To Net: NetName=AGND Pin=D2-2
+Added Pin To Net: NetName=VCC33 Pin=D4-1
+Added Pin To Net: NetName=GND Pin=D4-2
+Added Pin To Net: NetName=GND Pin=D7-1
+Added Pin To Net: NetName=GND Pin=D9-2
+Added Pin To Net: NetName=Relay_O_A Pin=J1-1
+Added Pin To Net: NetName=Relay_O_B Pin=J2-1
+Added Pin To Net: NetName=Nin Pin=J3-1
+Added Pin To Net: NetName=Lin Pin=J4-1
+Added Pin To Net: NetName=NetJ5_1 Pin=J5-1
+Added Pin To Net: NetName=NetJ6_1 Pin=J6-1
+Added Pin To Net: NetName=NetJ7_1 Pin=J7-1
+Added Pin To Net: NetName=NetJ8_1 Pin=J8-1
+Added Pin To Net: NetName=NetC5_1 Pin=L1-1
+Added Pin To Net: NetName=GND Pin=LED1-2
+Added Pin To Net: NetName=NetJ8_1 Pin=P2-1
+Added Pin To Net: NetName=NetJ7_1 Pin=P2-2
+Added Pin To Net: NetName=Relay_C_A Pin=P3-1
+Added Pin To Net: NetName=Relay_C_B Pin=P3-3
+Added Pin To Net: NetName=LoseCurrent Pin=P3-5
+Added Pin To Net: NetName=GND Pin=P4-4
+Added Pin To Net: NetName=VCC33 Pin=P4-6
+Added Pin To Net: NetName=VCC12 Pin=P5-1
+Added Pin To Net: NetName=GND Pin=P5-2
+Added Pin To Net: NetName=NetQ1_1 Pin=Q1-1
+Added Pin To Net: NetName=VCC33_G Pin=Q1-2
+Added Pin To Net: NetName=NetQ1_3 Pin=Q1-3
+Added Pin To Net: NetName=NetC31_2 Pin=R1-1
+Added Pin To Net: NetName=NetR1_2 Pin=R1-2
+Added Pin To Net: NetName=NetR2_2 Pin=R2-2
+Added Pin To Net: NetName=NetR2_2 Pin=R3-1
+Added Pin To Net: NetName=GND Pin=R3-2
+Added Pin To Net: NetName=GND Pin=R4-1
+Added Pin To Net: NetName=NetR4_2 Pin=R4-2
+Added Pin To Net: NetName=GND Pin=R5-1
+Added Pin To Net: NetName=NetR5_2 Pin=R5-2
+Added Pin To Net: NetName=Relay_C_B Pin=R6-1
+Added Pin To Net: NetName=NetR4_2 Pin=R6-2
+Added Pin To Net: NetName=NetR5_2 Pin=R7-1
+Added Pin To Net: NetName=Relay_C_A Pin=R7-2
+Added Pin To Net: NetName=NetQ1_1 Pin=R8-1
+Added Pin To Net: NetName=VCC33_G Pin=R8-2
+Added Pin To Net: NetName=NetQ1_1 Pin=R9-1
+Added Pin To Net: NetName=BL0942_Control Pin=R9-2
+Added Pin To Net: NetName=BL0942_TXD Pin=R10-1
+Added Pin To Net: NetName=VCC33_G Pin=R10-2
+Added Pin To Net: NetName=BL0942_RXD Pin=R11-1
+Added Pin To Net: NetName=VCC33_G Pin=R11-2
+Added Pin To Net: NetName=NetJ7_1 Pin=R12-1
+Added Pin To Net: NetName=NetR1_2 Pin=R12-2
+Added Pin To Net: NetName=NetJ5_1 Pin=R13-1
+Added Pin To Net: NetName=IP1 Pin=R13-2
+Added Pin To Net: NetName=NetJ6_1 Pin=R14-1
+Added Pin To Net: NetName=IN1 Pin=R14-2
+Added Pin To Net: NetName=NetR15_1 Pin=R15-1
+Added Pin To Net: NetName=Nin Pin=R15-2
+Added Pin To Net: NetName=NetR16_1 Pin=R16-1
+Added Pin To Net: NetName=NetR15_1 Pin=R16-2
+Added Pin To Net: NetName=NetR17_1 Pin=R17-1
+Added Pin To Net: NetName=NetR16_1 Pin=R17-2
+Added Pin To Net: NetName=NetR18_1 Pin=R18-1
+Added Pin To Net: NetName=NetR17_1 Pin=R18-2
+Added Pin To Net: NetName=VP Pin=R19-1
+Added Pin To Net: NetName=NetR18_1 Pin=R19-2
+Added Pin To Net: NetName=Lin Pin=R20-1
+Added Pin To Net: NetName=VP Pin=R20-2
+Added Pin To Net: NetName=VCC33 Pin=R21-1
+Added Pin To Net: NetName=GND Pin=R24-1
+Added Pin To Net: NetName=VDD_1.65V Pin=R25-1
+Added Pin To Net: NetName=NetR25_2 Pin=R25-2
+Added Pin To Net: NetName=VCC12 Pin=R26-1
+Added Pin To Net: NetName=GND Pin=R27-1
+Added Pin To Net: NetName=VCC33 Pin=R28-2
+Added Pin To Net: NetName=GND Pin=R29-1
+Added Pin To Net: NetName=VCC33 Pin=R30-2
+Added Pin To Net: NetName=VCC33 Pin=R32-2
+Added Pin To Net: NetName=NetJ8_1 Pin=R33-1
+Added Pin To Net: NetName=NetJ7_1 Pin=R33-2
+Added Pin To Net: NetName=NetC32_1 Pin=R34-1
+Added Pin To Net: NetName=NetC31_1 Pin=R34-2
+Added Pin To Net: NetName=NetR25_2 Pin=R35-1
+Added Pin To Net: NetName=NetC32_1 Pin=R35-2
+Added Pin To Net: NetName=NetR36_1 Pin=R36-1
+Added Pin To Net: NetName=NetJ8_1 Pin=R36-2
+Added Pin To Net: NetName=LoseCurrent Pin=R37-1
+Added Pin To Net: NetName=NetR37_2 Pin=R37-2
+Added Pin To Net: NetName=NetR38_1 Pin=R38-1
+Added Pin To Net: NetName=AGND Pin=R38-2
+Added Pin To Net: NetName=AGND Pin=R39-1
+Added Pin To Net: NetName=NetC31_1 Pin=R39-2
+Added Pin To Net: NetName=AGND Pin=R40-1
+Added Pin To Net: NetName=NetR36_1 Pin=R40-2
+Added Pin To Net: NetName=NetR37_2 Pin=R41-1
+Added Pin To Net: NetName=NetR38_1 Pin=R41-2
+Added Pin To Net: NetName=GND Pin=R42-1
+Added Pin To Net: NetName=AGND Pin=R42-2
+Added Pin To Net: NetName=VCC33 Pin=R43-1
+Added Pin To Net: NetName=NetC36_1 Pin=R43-2
+Added Pin To Net: NetName=NetC36_1 Pin=R44-1
+Added Pin To Net: NetName=AGND Pin=R44-2
+Added Pin To Net: NetName=GND Pin=R45-2
+Added Pin To Net: NetName=VCC33 Pin=R46-1
+Added Pin To Net: NetName=BL0942_RXD Pin=R47-1
+Added Pin To Net: NetName=VCC33_G Pin=R47-2
+Added Pin To Net: NetName=VCC33 Pin=R48-2
+Added Pin To Net: NetName=VCC33_G Pin=R49-1
+Added Pin To Net: NetName=VCC33 Pin=R50-1
+Added Pin To Net: NetName=BL0942_Control Pin=R51-1
+Added Pin To Net: NetName=VCC33_G Pin=R51-2
+Added Pin To Net: NetName=Nin Pin=RV1-1
+Added Pin To Net: NetName=Lin Pin=RV1-2
+Added Pin To Net: NetName=GND Pin=SC2-2
+Added Pin To Net: NetName=GND Pin=U1-1
+Added Pin To Net: NetName=VCC33 Pin=U1-2
+Added Pin To Net: NetName=Lin Pin=U1-3
+Added Pin To Net: NetName=VCC33_G Pin=U1-4
+Added Pin To Net: NetName=Lin Pin=U2-1
+Added Pin To Net: NetName=Nin Pin=U2-2
+Added Pin To Net: NetName=GND Pin=U2-4
+Added Pin To Net: NetName=VCC12 Pin=U2-5
+Added Pin To Net: NetName=GND Pin=U3-1
+Added Pin To Net: NetName=NetC5_1 Pin=U3-2
+Added Pin To Net: NetName=VCC12 Pin=U3-3
+Added Pin To Net: NetName=NetR2_2 Pin=U3-4
+Added Pin To Net: NetName=VCC12 Pin=U3-5
+Added Pin To Net: NetName=NetC5_2 Pin=U3-6
+Added Pin To Net: NetName=Relay_O_B Pin=U4-1
+Added Pin To Net: NetName=GND Pin=U4-2
+Added Pin To Net: NetName=NetR5_2 Pin=U4-3
+Added Pin To Net: NetName=Relay_O_A Pin=U4-4
+Added Pin To Net: NetName=VCC12 Pin=U4-5
+Added Pin To Net: NetName=NetR4_2 Pin=U4-6
+Added Pin To Net: NetName=NetQ1_3 Pin=U5-1
+Added Pin To Net: NetName=IP1 Pin=U5-2
+Added Pin To Net: NetName=IN1 Pin=U5-3
+Added Pin To Net: NetName=VP Pin=U5-4
+Added Pin To Net: NetName=Lin Pin=U5-5
+Added Pin To Net: NetName=VCC33_G Pin=U5-8
+Added Pin To Net: NetName=BL0942_RXD Pin=U5-9
+Added Pin To Net: NetName=BL0942_TXD Pin=U5-10
+Added Pin To Net: NetName=GND Pin=U6-1
+Added Pin To Net: NetName=VCC33 Pin=U6-2
+Added Pin To Net: NetName=VCC33 Pin=U6-2
+Added Pin To Net: NetName=GND Pin=U7-5
+Added Pin To Net: NetName=VCC33 Pin=U7-8
+Added Pin To Net: NetName=NetR37_2 Pin=U8-1
+Added Pin To Net: NetName=NetR38_1 Pin=U8-2
+Added Pin To Net: NetName=NetR25_2 Pin=U8-3
+Added Pin To Net: NetName=AGND Pin=U8-4
+Added Pin To Net: NetName=NetC36_1 Pin=U8-5
+Added Pin To Net: NetName=VDD_1.65V Pin=U8-6
+Added Pin To Net: NetName=VDD_1.65V Pin=U8-7
+Added Pin To Net: NetName=VCC33 Pin=U8-8
+Added Pin To Net: NetName=NetR36_1 Pin=U9-1
+Added Pin To Net: NetName=AGND Pin=U9-2
+Added Pin To Net: NetName=NetR1_2 Pin=U9-3
+Added Pin To Net: NetName=NetC31_2 Pin=U9-4
+Added Pin To Net: NetName=VCC33 Pin=U9-5
+Added Pin To Net: NetName=Lin Pin=U10-3
+Added Pin To Net: NetName=BL0942_RXD Pin=U10-4
+Added Pin To Net: NetName=BL0942_TXD Pin=U11-2
+Added Pin To Net: NetName=GND Pin=U11-3
+Added Pin To Net: NetName=Lin Pin=U12-3
+Added Pin To Net: NetName=BL0942_Control Pin=U12-4
+Added Pin To Net: NetName=485_A Pin=F2-2
+Added Pin To Net: NetName=485_A Pin=P1-2
+Added Net: Name=485_A
+Added Pin To Net: NetName=485_B Pin=F1-2
+Added Pin To Net: NetName=485_B Pin=P1-1
+Added Net: Name=485_B
+Added Pin To Net: NetName=BL0942_MCU_RXD Pin=P4-3
+Added Pin To Net: NetName=BL0942_MCU_RXD Pin=R48-1
+Added Pin To Net: NetName=BL0942_MCU_RXD Pin=U11-4
+Added Net: Name=BL0942_MCU_RXD
+Added Pin To Net: NetName=BL0942_MCU_TXD Pin=P4-1
+Added Pin To Net: NetName=BL0942_MCU_TXD Pin=U10-2
+Added Net: Name=BL0942_MCU_TXD
+Added Pin To Net: NetName=LosePowerCheck Pin=C21-2
+Added Pin To Net: NetName=LosePowerCheck Pin=R26-2
+Added Pin To Net: NetName=LosePowerCheck Pin=R27-2
+Added Net: Name=LosePowerCheck
+Added Pin To Net: NetName=MCU_BL0942_Control Pin=P4-5
+Added Pin To Net: NetName=MCU_BL0942_Control Pin=U12-2
+Added Net: Name=MCU_BL0942_Control
+Added Pin To Net: NetName=NetD5_2 Pin=D5-2
+Added Pin To Net: NetName=NetD5_2 Pin=R22-1
+Added Pin To Net: NetName=NetD5_2 Pin=R23-2
+Added Pin To Net: NetName=NetD5_2 Pin=SC1-1
+Added Net: Name=NetD5_2
+Added Pin To Net: NetName=NetD6_1 Pin=D6-1
+Added Pin To Net: NetName=NetD6_1 Pin=R22-2
+Added Net: Name=NetD6_1
+Added Pin To Net: NetName=NetD7_2 Pin=D7-2
+Added Pin To Net: NetName=NetD7_2 Pin=D8-1
+Added Pin To Net: NetName=NetD7_2 Pin=F1-1
+Added Pin To Net: NetName=NetD7_2 Pin=R29-2
+Added Pin To Net: NetName=NetD7_2 Pin=R31-1
+Added Pin To Net: NetName=NetD7_2 Pin=U7-7
+Added Net: Name=NetD7_2
+Added Pin To Net: NetName=NetD8_2 Pin=D8-2
+Added Pin To Net: NetName=NetD8_2 Pin=D9-1
+Added Pin To Net: NetName=NetD8_2 Pin=F2-1
+Added Pin To Net: NetName=NetD8_2 Pin=R31-2
+Added Pin To Net: NetName=NetD8_2 Pin=R32-1
+Added Pin To Net: NetName=NetD8_2 Pin=U7-6
+Added Net: Name=NetD8_2
+Added Pin To Net: NetName=NetLED1_1 Pin=LED1-1
+Added Pin To Net: NetName=NetLED1_1 Pin=R21-2
+Added Net: Name=NetLED1_1
+Added Pin To Net: NetName=NetR23_1 Pin=R23-1
+Added Pin To Net: NetName=NetR23_1 Pin=R24-2
+Added Pin To Net: NetName=NetR23_1 Pin=SC1-2
+Added Pin To Net: NetName=NetR23_1 Pin=SC2-1
+Added Net: Name=NetR23_1
+Added Pin To Net: NetName=NetR46_2 Pin=R46-2
+Added Pin To Net: NetName=NetR46_2 Pin=U10-1
+Added Net: Name=NetR46_2
+Added Pin To Net: NetName=NetR49_2 Pin=R49-2
+Added Pin To Net: NetName=NetR49_2 Pin=U11-1
+Added Net: Name=NetR49_2
+Added Pin To Net: NetName=NetR50_2 Pin=R50-2
+Added Pin To Net: NetName=NetR50_2 Pin=U12-1
+Added Net: Name=NetR50_2
+Added Pin To Net: NetName=RS485_DIR Pin=P3-4
+Added Pin To Net: NetName=RS485_DIR Pin=R45-1
+Added Pin To Net: NetName=RS485_DIR Pin=U7-2
+Added Pin To Net: NetName=RS485_DIR Pin=U7-3
+Added Net: Name=RS485_DIR
+Added Pin To Net: NetName=RS485_RX Pin=P3-2
+Added Pin To Net: NetName=RS485_RX Pin=R30-1
+Added Pin To Net: NetName=RS485_RX Pin=U7-1
+Added Net: Name=RS485_RX
+Added Pin To Net: NetName=RS485_TX Pin=P3-6
+Added Pin To Net: NetName=RS485_TX Pin=R28-1
+Added Pin To Net: NetName=RS485_TX Pin=U7-4
+Added Net: Name=RS485_TX
+Added Pin To Net: NetName=VCC5.4 Pin=C8-2
+Added Pin To Net: NetName=VCC5.4 Pin=C9-1
+Added Pin To Net: NetName=VCC5.4 Pin=C10-2
+Added Pin To Net: NetName=VCC5.4 Pin=D3-2
+Added Pin To Net: NetName=VCC5.4 Pin=D6-2
+Added Pin To Net: NetName=VCC5.4 Pin=L1-2
+Added Pin To Net: NetName=VCC5.4 Pin=R2-1
+Added Net: Name=VCC5.4
+Added Pin To Net: NetName=VCC5_CAP Pin=C18-2
+Added Pin To Net: NetName=VCC5_CAP Pin=D3-1
+Added Pin To Net: NetName=VCC5_CAP Pin=D5-1
+Added Pin To Net: NetName=VCC5_CAP Pin=U6-3
+Added Net: Name=VCC5_CAP
+Added Class: Name=RS485
+Added Member To Class: ClassName=计量 Member=Component C1 4.7uF/25V
+Added Member To Class: ClassName=计量 Member=Component C2 10uF/25V
+Added Member To Class: ClassName=Power Member=Component C3 100uF/25V
+Added Member To Class: ClassName=Power Member=Component C4 104/25V
+Added Member To Class: ClassName=Power Member=Component C5 104/25V
+Added Member To Class: ClassName=Power Member=Component C6 10uF/25V
+Added Member To Class: ClassName=Power Member=Component C7 22uF/25V
+Added Member To Class: ClassName=Power Member=Component C8 10uF/25V
+Added Member To Class: ClassName=Power Member=Component C9 47uF/10V
+Added Member To Class: ClassName=Power Member=Component C10 104/10V
+Added Member To Class: ClassName=继电器 Member=Component C11 22uF/25V
+Added Member To Class: ClassName=继电器 Member=Component C12 104/25V
+Added Member To Class: ClassName=计量 Member=Component C13 104/25V
+Added Member To Class: ClassName=计量 Member=Component C14 10uF/25V
+Added Member To Class: ClassName=计量 Member=Component C15 68nF/10V
+Added Member To Class: ClassName=计量 Member=Component C16 68nF/10V
+Added Member To Class: ClassName=计量 Member=Component C17 10nF/10V
+Added Member To Class: ClassName=Power Member=Component C18 10uF/10V
+Added Member To Class: ClassName=Power Member=Component C19 10uF/10V
+Added Member To Class: ClassName=Power Member=Component C20 104/10V
+Added Member To Class: ClassName=Power Member=Component C21 104
+Added Member To Class: ClassName=Power Member=Component C23 100uF/25V
+Added Member To Class: ClassName=漏电流检测 Member=Component C24 10uF
+Added Member To Class: ClassName=漏电流检测 Member=Component C25 10uF
+Added Member To Class: ClassName=漏电流检测 Member=Component C31 0.1uF
+Added Member To Class: ClassName=漏电流检测 Member=Component C32 0.1uF
+Added Member To Class: ClassName=漏电流检测 Member=Component C33 0.1uF
+Added Member To Class: ClassName=漏电流检测 Member=Component C34 10uF
+Added Member To Class: ClassName=漏电流检测 Member=Component C35 0.1uF
+Added Member To Class: ClassName=漏电流检测 Member=Component C36 100nF/16V
+Added Member To Class: ClassName=漏电流检测 Member=Component C37 100nF/16V
+Added Member To Class: ClassName=漏电流检测 Member=Component D1 1N4148
+Added Member To Class: ClassName=漏电流检测 Member=Component D2 1N4148
+Added Member To Class: ClassName=Power Member=Component D3 SS34
+Added Member To Class: ClassName=Power Member=Component D4 SD03C
+Added Member To Class: ClassName=Power Member=Component D5 SS34
+Added Member To Class: ClassName=Power Member=Component D6 SS34
+Added Member To Class: ClassName=继电器 Member=Component J1
+Added Member To Class: ClassName=继电器 Member=Component J2 J1
+Added Member To Class: ClassName=计量 Member=Component J3 J1
+Added Member To Class: ClassName=计量 Member=Component J4 J1
+Added Member To Class: ClassName=计量 Member=Component J5 J1
+Added Member To Class: ClassName=计量 Member=Component J6 J1
+Added Member To Class: ClassName=漏电流检测 Member=Component J7 J1
+Added Member To Class: ClassName=漏电流检测 Member=Component J8 J1
+Added Member To Class: ClassName=Power Member=Component L1 4.7uH/3A
+Added Member To Class: ClassName=Power Member=Component LED1 LED
+Added Member To Class: ClassName=漏电流检测 Member=Component P2 Header 2
+Added Member To Class: ClassName=连接 Member=Component P3 Header 3X2
+Added Member To Class: ClassName=连接 Member=Component P4 Header 3X2
+Added Member To Class: ClassName=Power Member=Component P5 Header 2
+Added Member To Class: ClassName=计量 Member=Component Q1 AO3401
+Added Member To Class: ClassName=漏电流检测 Member=Component R1 300K/1%/0603
+Added Member To Class: ClassName=Power Member=Component R2 60.4K
+Added Member To Class: ClassName=Power Member=Component R3 103
+Added Member To Class: ClassName=继电器 Member=Component R4 4.7K/5%
+Added Member To Class: ClassName=继电器 Member=Component R5 4.7K/5%
+Added Member To Class: ClassName=继电器 Member=Component R6 100R/5%
+Added Member To Class: ClassName=继电器 Member=Component R7 100R/5%
+Added Member To Class: ClassName=计量 Member=Component R8 47K/5%/0603
+Added Member To Class: ClassName=计量 Member=Component R9 4.7K/5%/0603
+Added Member To Class: ClassName=计量 Member=Component R10 2K/5%/0603
+Added Member To Class: ClassName=计量 Member=Component R11 2K/5%/0603
+Added Member To Class: ClassName=漏电流检测 Member=Component R12 1K/1%/0603
+Added Member To Class: ClassName=计量 Member=Component R13 510R/1%
+Added Member To Class: ClassName=计量 Member=Component R14 510R/1%
+Added Member To Class: ClassName=计量 Member=Component R15 390K
+Added Member To Class: ClassName=计量 Member=Component R16 390K
+Added Member To Class: ClassName=计量 Member=Component R17 390K
+Added Member To Class: ClassName=计量 Member=Component R18 390K
+Added Member To Class: ClassName=计量 Member=Component R19 390K
+Added Member To Class: ClassName=计量 Member=Component R20 510R/1%
+Added Member To Class: ClassName=Power Member=Component R21 1K/5%/0603
+Added Member To Class: ClassName=Power Member=Component R22 4.99R/2W
+Added Member To Class: ClassName=Power Member=Component R23 270K/1%/0805
+Added Member To Class: ClassName=Power Member=Component R24 270K/1%/0805
+Added Member To Class: ClassName=漏电流检测 Member=Component R25 10K/1%/0603
+Added Member To Class: ClassName=Power Member=Component R26 9K/1%/0603
+Added Member To Class: ClassName=Power Member=Component R27 3K/1%/0603
+Added Member To Class: ClassName=漏电流检测 Member=Component R33 100R/1%
+Added Member To Class: ClassName=漏电流检测 Member=Component R34 15.8K/1%/0603
+Added Member To Class: ClassName=漏电流检测 Member=Component R35 10K/1%/0603
+Added Member To Class: ClassName=漏电流检测 Member=Component R36 1K/1%/0603
+Added Member To Class: ClassName=漏电流检测 Member=Component R37 100R/1%/0603
+Added Member To Class: ClassName=漏电流检测 Member=Component R38 10K/1%/0603
+Added Member To Class: ClassName=漏电流检测 Member=Component R39 150K/1%/0603
+Added Member To Class: ClassName=漏电流检测 Member=Component R40 300K/1%/0603
+Added Member To Class: ClassName=漏电流检测 Member=Component R41 10K/1%/0603
+Added Member To Class: ClassName=漏电流检测 Member=Component R42 0R/5%/0805
+Added Member To Class: ClassName=漏电流检测 Member=Component R43 20K/1%/0603
+Added Member To Class: ClassName=漏电流检测 Member=Component R44 20K/1%/0603
+Added Member To Class: ClassName=计量 Member=Component R46 471
+Added Member To Class: ClassName=计量 Member=Component R47 102
+Added Member To Class: ClassName=计量 Member=Component R48 102
+Added Member To Class: ClassName=计量 Member=Component R49 471
+Added Member To Class: ClassName=计量 Member=Component R50 471
+Added Member To Class: ClassName=计量 Member=Component R51 102
+Added Member To Class: ClassName=计量 Member=Component RV1 7S561K
+Added Member To Class: ClassName=Power Member=Component SC1 10F/2.7V
+Added Member To Class: ClassName=Power Member=Component SC2 10F/2.7V
+Added Member To Class: ClassName=计量 Member=Component U1 B0303S
+Added Member To Class: ClassName=Power Member=Component U2 X1071    90-240V
+Added Member To Class: ClassName=Power Member=Component U3 DIO6930
+Added Member To Class: ClassName=继电器 Member=Component U4 BL8023FCBT6R
+Added Member To Class: ClassName=计量 Member=Component U5 BL0942
+Added Member To Class: ClassName=Power Member=Component U6 BL1117-33CX
+Added Member To Class: ClassName=漏电流检测 Member=Component U8 LM258
+Added Member To Class: ClassName=漏电流检测 Member=Component U9 LM321MFX
+Added Member To Class: ClassName=计量 Member=Component U10 EL3H7
+Added Member To Class: ClassName=计量 Member=Component U11 EL3H7
+Added Member To Class: ClassName=计量 Member=Component U12 EL3H7

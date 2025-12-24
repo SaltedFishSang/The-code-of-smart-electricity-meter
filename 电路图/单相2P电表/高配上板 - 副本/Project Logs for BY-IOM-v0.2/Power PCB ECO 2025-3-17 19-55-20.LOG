@@ -1,0 +1,32 @@
+Change Component Designator: OldDesignator=C? NewDesignator=C4
+Change Component Designator: OldDesignator=C? NewDesignator=C5
+Change Component Designator: OldDesignator=S? NewDesignator=S1
+Change Component Designator: OldDesignator=U? NewDesignator=U3
+Added Component: Designator=U1(QFN32 4X4)
+Add component (AddParameter): Name = "Add into BOM"; Value = "yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Convert to PCB"; Value = "yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Device"; Value = "N32WB031KEQ6-2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "JLCPCB Part Class"; Value = "Extended Part"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC Part Name"; Value = "N32WB031KEQ6-2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Nations(国民技术)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part"; Value = "N32WB031KEQ6-2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "LCSC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Footprint"; Value = "QFN-32"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part"; Value = "C2981446"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Symbol"; Value = "N32WB031KEQ6-2"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetC14_2 Pin=U1-8
+Added Pin To Net: NetName=BL0942_RXD Pin=U1-14
+Added Pin To Net: NetName=BL0942_TXD Pin=U1-15
+Added Pin To Net: NetName=4G_MCU_RXD Pin=U1-16
+Added Pin To Net: NetName=4G_MCU_TXD Pin=U1-17
+Added Pin To Net: NetName=VCC33 Pin=U1-22
+Added Pin To Net: NetName=NetL3_1 Pin=U1-23
+Added Pin To Net: NetName=NetC10_2 Pin=U1-24
+Added Pin To Net: NetName=NetL2_2 Pin=U1-25
+Added Pin To Net: NetName=NetL2_1 Pin=U1-26
+Added Pin To Net: NetName=NetC10_2 Pin=U1-27
+Added Pin To Net: NetName=NetC9_2 Pin=U1-28
+Added Pin To Net: NetName=GND Pin=U1-33
+Added Member To Class: ClassName=MCU Member=Component C5 104
+Added Member To Class: ClassName=MCU Member=Component U1 N32WB031KEQ6-2
