@@ -8646,97 +8646,97 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-       568         76          0         16         44       4969   bl0942.o
-       640         62          0         27         16      36138   bsp.o
-       178          6          0          4          0       3633   circularqueue.o
-        76          4          0          0          0       1494   eprom.o
-       112         12          0          0          0        594   key.o
-        84         40          0          0          0       1708   log.o
-       746         38          0          8          0      17752   lv_anim.o
-       646         34          0          8          0      33510   lv_arc.o
-       420          0          0          0          0       7575   lv_area.o
-      1430         50          0          8          0      24266   lv_bar.o
-      1020         56          0          8          0      15457   lv_btn.o
-      3640         82         45         36          0      20882   lv_btnm.o
-      3460        128        133         84          0      30514   lv_calendar.o
-         0          0          0          0          0        464   lv_canvas.o
-       852         64          0         12          0      20714   lv_cb.o
-      4258         72          0          8          0      32465   lv_chart.o
-        80          0          0          0          0       2865   lv_circ.o
-       248          6          0          0          0       3690   lv_color.o
-      2648         28          0          4          0      17604   lv_cont.o
-      2944        112          0         12          0      31079   lv_ddlist.o
-        74          0          0          0          0      21843   lv_disp.o
-       416         36         36         36          0      21717   lv_draw.o
-      1154         14          0          0          0       4826   lv_draw_arc.o
-      2388         26          0          0          0      24633   lv_draw_basic.o
-       556         36          0          0          0      12760   lv_draw_img.o
-      1174         18          0          0          0      11178   lv_draw_label.o
-      3732          0          0          0          0       6695   lv_draw_line.o
-      8604         48         17          0          0      22865   lv_draw_rect.o
-      1794          0          0          0          0       5563   lv_draw_triangle.o
-        38          0          0          0          0       3489   lv_font.o
-       660         16          0          0          0       7689   lv_font_fmt_txt.o
-         0          0          0          0          0       1776   lv_font_roboto_12.o
-         0          0       9146       3020          0       2104   lv_font_roboto_16.o
-      1592         46          2          8          0       9446   lv_gauge.o
-         0          0          0         12         72       8102   lv_gc.o
-      1234         42         46          0          0      32555   lv_group.o
-       480         46          2          4          0      29018   lv_hal_disp.o
-        20          4          0          0          0      21378   lv_hal_indev.o
-        68         16          0          8          0       2472   lv_hal_tick.o
-      1030         30          0          4          0       6209   lv_img.o
-       488         32          0          2          0       3602   lv_img_cache.o
-      1404         56          0          0          0      14976   lv_img_decoder.o
-       232         12          0          8          0      19881   lv_indev.o
-      1178        112        670        616          0      11045   lv_kb.o
-      3716        108          0          4          0      26988   lv_label.o
-       572         38          0          8          0      16639   lv_led.o
-       956         28          0          4          0       5904   lv_line.o
-      2512        118          0         20          0      18054   lv_list.o
-       866          0          0          0          0      11380   lv_ll.o
-      1030         34          0          4          0       8339   lv_lmeter.o
-       178          6          0        182          0       2152   lv_math.o
-      1330         78          0          4          0      25984   lv_mbox.o
-       580         42          0          8      16384       5712   lv_mem.o
-      5074        118          0         12          0      63530   lv_obj.o
-      5120        108          0          8          0      50816   lv_page.o
-       104         14          0          0       6428       1692   lv_port_disp.o
-       860         56          0          8          0       6503   lv_preload.o
-      1874         36          0          8          0       8987   lv_refr.o
-      2420         62          0          8          0      30111   lv_roller.o
-      2266         36          0          8          0      10357   lv_slider.o
-      1360         12         22          0        780       8258   lv_style.o
-      1034         24          0          4          0       7764   lv_sw.o
-      5642        192          0         20          0      39248   lv_ta.o
-      2150         50          0          8          0      17966   lv_table.o
-      4460        126          0         16          0      23138   lv_tabview.o
-       774         38          0         20          0       5376   lv_task.o
-      2432        424        535         56         60      38280   lv_test_theme_1.o
-       144         24          0          1       6792      26920   lv_theme.o
-      4302         78          2          8       3492      23596   lv_theme_night.o
-      1514         46          0         28          0      13925   lv_txt.o
-       204          6          0          0          0       1693   lv_utils.o
-      1328         74          0          4          0      18310   lv_win.o
-        64         16          0          0          0      21129   main.o
-       572        322        148          0          0       2437   misc.o
-      2666        776          0          0          0       5012   n32g45x_gpio.o
-        52         32          0          0          0       3435   n32g45x_it.o
-       752        370         64          0          0       6587   n32g45x_rcc.o
-      1844        760          0          0          0       5784   n32g45x_tim.o
-      2592       1194         70          0          0       6922   n32g45x_usart.o
-      3896        816          0         22       2743      14670   nbiot.o
-        76          4          0          0          0        588   relay.o
-        56          6          0          0          0       1020   rs485.o
-        36          8        408          0      18432        924   startup_n32g45x.o
-       252         26          0          0          0     359165   system_n32g45x.o
-      1388         22          0          0          0       7573   tft.o
-        32          6         16          0          0       1191   typechange.o
-      1238        122          0          0       2212       9990   usart.o
-       120         20          0          0         80       2710   v_timer.o
+       568         76          0         16         44       5149   bl0942.o
+       640         62          0         27         16      36382   bsp.o
+       178          6          0          4          0       3785   circularqueue.o
+        76          4          0          0          0       1538   eprom.o
+       112         12          0          0          0        614   key.o
+        84         40          0          0          0       1780   log.o
+       746         38          0          8          0      18152   lv_anim.o
+       646         34          0          8          0      34050   lv_arc.o
+       420          0          0          0          0       7843   lv_area.o
+      1430         50          0          8          0      24754   lv_bar.o
+      1020         56          0          8          0      15789   lv_btn.o
+      3640         82         45         36          0      21350   lv_btnm.o
+      3460        128        133         84          0      30998   lv_calendar.o
+         0          0          0          0          0        488   lv_canvas.o
+       852         64          0         12          0      21086   lv_cb.o
+      4258         72          0          8          0      32909   lv_chart.o
+        80          0          0          0          0       2973   lv_circ.o
+       248          6          0          0          0       3734   lv_color.o
+      2648         28          0          4          0      17944   lv_cont.o
+      2944        112          0         12          0      31703   lv_ddlist.o
+        74          0          0          0          0      22195   lv_disp.o
+       416         36         36         36          0      22081   lv_draw.o
+      1154         14          0          0          0       4938   lv_draw_arc.o
+      2388         26          0          0          0      24985   lv_draw_basic.o
+       556         36          0          0          0      12952   lv_draw_img.o
+      1174         18          0          0          0      11330   lv_draw_label.o
+      3732          0          0          0          0       6787   lv_draw_line.o
+      8604         48         17          0          0      23125   lv_draw_rect.o
+      1794          0          0          0          0       5671   lv_draw_triangle.o
+        38          0          0          0          0       3601   lv_font.o
+       660         16          0          0          0       7865   lv_font_fmt_txt.o
+         0          0          0          0          0       1796   lv_font_roboto_12.o
+         0          0       9146       3020          0       2172   lv_font_roboto_16.o
+      1592         46          2          8          0       9638   lv_gauge.o
+         0          0          0         12         72       8238   lv_gc.o
+      1234         42         46          0          0      33115   lv_group.o
+       480         46          2          4          0      29594   lv_hal_disp.o
+        20          4          0          0          0      21670   lv_hal_indev.o
+        68         16          0          8          0       2580   lv_hal_tick.o
+      1030         30          0          4          0       6377   lv_img.o
+       488         32          0          2          0       3730   lv_img_cache.o
+      1404         56          0          0          0      15244   lv_img_decoder.o
+       232         12          0          8          0      20245   lv_indev.o
+      1178        112        670        616          0      11277   lv_kb.o
+      3716        108          0          4          0      27532   lv_label.o
+       572         38          0          8          0      16955   lv_led.o
+       956         28          0          4          0       6060   lv_line.o
+      2512        118          0         20          0      18418   lv_list.o
+       866          0          0          0          0      11736   lv_ll.o
+      1030         34          0          4          0       8587   lv_lmeter.o
+       178          6          0        182          0       2240   lv_math.o
+      1330         78          0          4          0      26540   lv_mbox.o
+       580         42          0          8      16384       5892   lv_mem.o
+      5074        118          0         12          0      65078   lv_obj.o
+      5120        108          0          8          0      51760   lv_page.o
+       104         14          0          0       6428       1760   lv_port_disp.o
+       860         56          0          8          0       6695   lv_preload.o
+      1874         36          0          8          0       9235   lv_refr.o
+      2420         62          0          8          0      30623   lv_roller.o
+      2266         36          0          8          0      10569   lv_slider.o
+      1360         12         22          0        780       8410   lv_style.o
+      1034         24          0          4          0       7956   lv_sw.o
+      5642        192          0         20          0      40012   lv_ta.o
+      2150         50          0          8          0      18366   lv_table.o
+      4460        126          0         16          0      23586   lv_tabview.o
+       774         38          0         20          0       5524   lv_task.o
+      2432        424        535         56         60      38788   lv_test_theme_1.o
+       144         24          0          1       6792      27316   lv_theme.o
+      4302         78          2          8       3492      23908   lv_theme_night.o
+      1514         46          0         28          0      14289   lv_txt.o
+       204          6          0          0          0       1737   lv_utils.o
+      1328         74          0          4          0      18646   lv_win.o
+        64         16          0          0          0      21413   main.o
+       572        322        148          0          0       2529   misc.o
+      2666        776          0          0          0       5116   n32g45x_gpio.o
+        52         32          0          0          0       3587   n32g45x_it.o
+       752        370         64          0          0       6727   n32g45x_rcc.o
+      1844        760          0          0          0       5936   n32g45x_tim.o
+      2592       1194         70          0          0       7086   n32g45x_usart.o
+      3896        816          0         22       2743      15046   nbiot.o
+        76          4          0          0          0        608   relay.o
+        56          6          0          0          0       1060   rs485.o
+        36          8        408          0      18432        940   startup_n32g45x.o
+       252         26          0          0          0     359341   system_n32g45x.o
+      1388         22          0          0          0       7697   tft.o
+        32          6         16          0          0       1259   typechange.o
+      1238        122          0          0       2212      10358   usart.o
+       120         20          0          0         80       2846   v_timer.o
 
     ----------------------------------------------------------------------
-    122920       7940      11414       4436      57540    1579954   Object Totals
+    122920       7940      11414       4436      57540    1603994   Object Totals
          0          0         32          0          0          0   (incl. Generated)
        116          4         20         10          5          0   (incl. Padding)
 
@@ -8803,8 +8803,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-    124888       8000      11548       4452      57540    1519846   Grand Totals
-    124888       8000      11548       2268      57540    1519846   ELF Image Totals (compressed)
+    124888       8000      11548       4452      57540    1543886   Grand Totals
+    124888       8000      11548       2268      57540    1543886   ELF Image Totals (compressed)
     124888       8000      11548       2268          0          0   ROM Totals
 
 ==============================================================================

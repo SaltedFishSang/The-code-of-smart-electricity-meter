@@ -1,0 +1,14 @@
+.\objects\gif.o: ..\lvgl-9.4.0\src\libs\gif\AnimatedGIF\src\gif.c
+.\objects\gif.o: ..\lvgl-9.4.0\src\libs\gif\AnimatedGIF\src\AnimatedGIF.h
+.\objects\gif.o: ..\lvgl-9.4.0\src\libs\gif\AnimatedGIF\src\../../../../misc/lv_fs.h
+.\objects\gif.o: ..\lvgl-9.4.0\src\libs\gif\AnimatedGIF\src\../../../../misc/../lv_conf_internal.h
+.\objects\gif.o: ..\lvgl-9.4.0\src\libs\gif\AnimatedGIF\src\../../../../misc/../lv_conf_kconfig.h
+.\objects\gif.o: ..\lvgl-9.4.0\examples\porting\../../lv_conf.h
+.\objects\gif.o: ..\lvgl-9.4.0\src\libs\gif\AnimatedGIF\src\../../../../misc/lv_types.h
+.\objects\gif.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\gif.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\gif.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\gif.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\inttypes.h
+.\objects\gif.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h
+.\objects\gif.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\gif.o: ..\lvgl-9.4.0\src\libs\gif\AnimatedGIF\src\../../../../stdlib/lv_string.h

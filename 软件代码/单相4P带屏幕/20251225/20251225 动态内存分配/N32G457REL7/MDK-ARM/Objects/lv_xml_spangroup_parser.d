@@ -1,0 +1,13 @@
+.\objects\lv_xml_spangroup_parser.o: ..\lvgl-9.4.0\src\others\xml\parsers\lv_xml_spangroup_parser.c
+.\objects\lv_xml_spangroup_parser.o: ..\lvgl-9.4.0\src\others\xml\parsers\lv_xml_spangroup_parser.h
+.\objects\lv_xml_spangroup_parser.o: ..\lvgl-9.4.0\src\others\xml\parsers\../lv_xml.h
+.\objects\lv_xml_spangroup_parser.o: ..\lvgl-9.4.0\src\others\xml\parsers\../../../misc/lv_types.h
+.\objects\lv_xml_spangroup_parser.o: ..\lvgl-9.4.0\src\others\xml\parsers\../../../misc/../lv_conf_internal.h
+.\objects\lv_xml_spangroup_parser.o: ..\lvgl-9.4.0\src\others\xml\parsers\../../../misc/../lv_conf_kconfig.h
+.\objects\lv_xml_spangroup_parser.o: ..\lvgl-9.4.0\examples\porting\../../lv_conf.h
+.\objects\lv_xml_spangroup_parser.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\lv_xml_spangroup_parser.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\lv_xml_spangroup_parser.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\lv_xml_spangroup_parser.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\inttypes.h
+.\objects\lv_xml_spangroup_parser.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h
+.\objects\lv_xml_spangroup_parser.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h

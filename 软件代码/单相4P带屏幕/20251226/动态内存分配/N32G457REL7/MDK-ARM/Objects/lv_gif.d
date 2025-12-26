@@ -1,0 +1,12 @@
+.\objects\lv_gif.o: ..\lvgl-9.4.0\src\libs\gif\lv_gif.c
+.\objects\lv_gif.o: ..\lvgl-9.4.0\src\libs\gif\lv_gif.h
+.\objects\lv_gif.o: ..\lvgl-9.4.0\src\libs\gif\../../lv_conf_internal.h
+.\objects\lv_gif.o: ..\lvgl-9.4.0\src\libs\gif\../../lv_conf_kconfig.h
+.\objects\lv_gif.o: ..\lvgl-9.4.0\examples\porting\../../lv_conf.h
+.\objects\lv_gif.o: ..\lvgl-9.4.0\src\libs\gif\../../misc/lv_types.h
+.\objects\lv_gif.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\lv_gif.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\lv_gif.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\lv_gif.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\inttypes.h
+.\objects\lv_gif.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h
+.\objects\lv_gif.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h

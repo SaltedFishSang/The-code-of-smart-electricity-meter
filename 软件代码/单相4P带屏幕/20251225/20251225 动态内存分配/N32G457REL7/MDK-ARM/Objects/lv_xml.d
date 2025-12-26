@@ -1,0 +1,12 @@
+.\objects\lv_xml.o: ..\lvgl-9.4.0\src\others\xml\lv_xml.c
+.\objects\lv_xml.o: ..\lvgl-9.4.0\src\others\xml\lv_xml.h
+.\objects\lv_xml.o: ..\lvgl-9.4.0\src\others\xml\../../misc/lv_types.h
+.\objects\lv_xml.o: ..\lvgl-9.4.0\src\others\xml\../../misc/../lv_conf_internal.h
+.\objects\lv_xml.o: ..\lvgl-9.4.0\src\others\xml\../../misc/../lv_conf_kconfig.h
+.\objects\lv_xml.o: ..\lvgl-9.4.0\examples\porting\../../lv_conf.h
+.\objects\lv_xml.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\lv_xml.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\lv_xml.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\lv_xml.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\inttypes.h
+.\objects\lv_xml.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h
+.\objects\lv_xml.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
