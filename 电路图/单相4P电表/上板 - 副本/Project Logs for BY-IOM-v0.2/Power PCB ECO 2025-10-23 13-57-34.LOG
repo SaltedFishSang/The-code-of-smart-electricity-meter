@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=4G_MCU_TXD Pin=U1-16
+Removed Pin From Net: NetName=4G_MCU_RXD Pin=U1-17
+Change Footprint: Footprint Not Found QFN-32_L4.0-W4.0-P0.40-TL-EP2.8
+Added Pin To Net: NetName=4G_MCU_TXD Pin=P2-2
+Added Pin To Net: NetName=4G_MCU_RXD Pin=P2-3
+Added Pin To Net: NetName=LoseCurrent Pin=U1-17
+Added Pin To Net: NetName=4G_MCU_TXD Pin=U1-19
+Added Pin To Net: NetName=4G_MCU_RXD Pin=U1-20
+Added Pin To Net: NetName=USART1_TXD Pin=U1-16
+Added Net: Name=USART1_TXD

@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=UAN Pin=P3-2
+Removed Pin From Net: NetName=UAP Pin=P3-4
+Added Pin To Net: NetName=UAP Pin=P3-2
+Added Pin To Net: NetName=UAN Pin=P3-4

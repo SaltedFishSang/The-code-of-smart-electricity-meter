@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=OSC_IN Pin=U1-3
+Removed Pin From Net: NetName=OSC_OUT Pin=U1-4
+Removed Pin From Net: NetName=OSC32_IN Pin=U1-5
+Removed Pin From Net: NetName=OSC32_OUT Pin=U1-6
+Added Pin To Net: NetName=OSC32_IN Pin=U1-3
+Added Pin To Net: NetName=OSC32_OUT Pin=U1-4
+Added Pin To Net: NetName=OSC_IN Pin=U1-5
+Added Pin To Net: NetName=OSC_OUT Pin=U1-6

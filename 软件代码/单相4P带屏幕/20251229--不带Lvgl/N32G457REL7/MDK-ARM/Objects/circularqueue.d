@@ -56,3 +56,4 @@
 .\objects\circularqueue.o: ..\USR\CircularQueue.h
 .\objects\circularqueue.o: ..\USR\Nbiot.h
 .\objects\circularqueue.o: ..\USR\Key.h
+.\objects\circularqueue.o: ..\USR\LCD_Display.h

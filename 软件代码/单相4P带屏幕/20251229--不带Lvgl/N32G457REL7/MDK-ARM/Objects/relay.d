@@ -56,3 +56,4 @@
 .\objects\relay.o: ..\USR\CircularQueue.h
 .\objects\relay.o: ..\USR\Nbiot.h
 .\objects\relay.o: ..\USR\Key.h
+.\objects\relay.o: ..\USR\LCD_Display.h

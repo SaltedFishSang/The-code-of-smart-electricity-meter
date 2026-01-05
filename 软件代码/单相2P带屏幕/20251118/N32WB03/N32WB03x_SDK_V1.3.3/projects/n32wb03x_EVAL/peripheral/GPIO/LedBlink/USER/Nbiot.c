@@ -495,7 +495,11 @@ u8 LTE_CCLK(void)
     char *p = NULL;
     char *p1 = NULL;
     (void)(*p1);
+    char *p2 = NULL;
+    (void)(*p2);
     char *t;
+    u16 year;
+    u8 month, day;
     u8 h, m, s;
     (void)h;
     (void)m;
@@ -530,13 +534,28 @@ u8 LTE_CCLK(void)
                     p1 += 3;
                     t = p1 + 1;
                     m = Ascii2Dec(p1) * 10 + Ascii2Dec(t);
-                    p += 3;
-                    t = p + 1;
+                    p1 += 3;
+                    t = p1 + 1;
                     s = Ascii2Dec(p1) * 10 + Ascii2Dec(t);
+
+                    p2 = strstr((const char *)g_NBbuf, (const char *)"+CCLK:");
+                    p2 += 8;
+                    t = p2 + 1;
+                    year = Ascii2Dec(p2) * 10 + Ascii2Dec(t) + 2000;
+                    p2 += 3;
+                    t = p2 + 1;
+                    month = Ascii2Dec(p2) * 10 + Ascii2Dec(t);
+                    p2 += 3;
+                    t = p2 + 1;
+                    day = Ascii2Dec(p2) * 10 + Ascii2Dec(t);
                     Rtc_Timeset(h, m, s);
+                    //  if ((h <= 59) && (m <= 59) && (s <= 59))
+
 #if 1
-                    printf("%d:%d:%d\r\n", h, m, s);
+                    printf("ML307R Set Time:%d-%d-%d %d:%d:%d\r\n", year, month, day, h, m, s);
 #endif
+                   // Set_RTC_Time(year - 2000, month, day, h, m, s);
+
                     state = 0;
                     return 1;
                 }

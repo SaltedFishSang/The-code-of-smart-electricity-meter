@@ -1,0 +1,2 @@
+Removed Pin From Net: NetName=RS485_DIR Pin=U1-28
+Added Pin To Net: NetName=Key_switch Pin=U1-28

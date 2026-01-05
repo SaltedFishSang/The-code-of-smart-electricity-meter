@@ -1,0 +1,9 @@
+{
+    "codeBlocks.ignoredLanguageIds": [
+        "cpp",
+        "c",
+        "plaintext",
+        "Log",
+        "ignore"
+    ]
+}

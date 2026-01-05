@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\LedBlink.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\LedBlink.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5050106: Last Updated: Thu Nov 20 17:13:13 2025
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5050106: Last Updated: Fri Jan 02 17:14:17 2026
 <BR><P>
 <H3>Maximum Stack Usage =       3504 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -1823,8 +1823,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LTE_process
 </UL>
 
-<P><STRONG><a name="[fe]"></a>LTE_CCLK</STRONG> (Thumb, 332 bytes, Stack size 32 bytes, nbiot.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = LTE_CCLK &rArr; Rtc_Timeset &rArr; RTC_TimeRegulate &rArr; RTC_ConfigTime &rArr; RTC_WaitForSynchro
+<P><STRONG><a name="[fe]"></a>LTE_CCLK</STRONG> (Thumb, 464 bytes, Stack size 64 bytes, nbiot.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 132<LI>Call Chain = LTE_CCLK &rArr; Rtc_Timeset &rArr; RTC_TimeRegulate &rArr; RTC_ConfigTime &rArr; RTC_WaitForSynchro
 </UL>
 <BR>[Calls]<UL><LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 <LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strchr
@@ -1841,7 +1841,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LTE_process
 </UL>
 
-<P><STRONG><a name="[102]"></a>MQTT_Creat</STRONG> (Thumb, 934 bytes, Stack size 64 bytes, nbiot.o(.text))
+<P><STRONG><a name="[102]"></a>MQTT_Creat</STRONG> (Thumb, 924 bytes, Stack size 64 bytes, nbiot.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 132<LI>Call Chain = MQTT_Creat &rArr; Fiforead &rArr; Out_Queue &rArr; __aeabi_idivmod &rArr; __aeabi_uidivmod
 </UL>
 <BR>[Calls]<UL><LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_switch8
@@ -1858,7 +1858,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LTE_process
 </UL>
 
-<P><STRONG><a name="[105]"></a>LTE_ReceiveSendData</STRONG> (Thumb, 1128 bytes, Stack size 1608 bytes, nbiot.o(.text))
+<P><STRONG><a name="[105]"></a>LTE_ReceiveSendData</STRONG> (Thumb, 1142 bytes, Stack size 1608 bytes, nbiot.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 3496<LI>Call Chain = LTE_ReceiveSendData &rArr; MqttrecedataHandle &rArr; ModbusDataHandle &rArr; ModbusSendAll &rArr; Set_LTE_SendData
 </UL>
 <BR>[Calls]<UL><LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_switch8

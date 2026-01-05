@@ -26,7 +26,7 @@
 #include "Nbiot.h"
 #include "typechange.h"
 #include "Key.h"
-
+#include "LCD_Display.h"
 #define _Printf_DBG 0
 #define LEDNET_ON GPIO_SetBits(GPIOA, GPIO_PIN_7)
 #define LEDNET_OFF GPIO_ResetBits(GPIOA, GPIO_PIN_7)

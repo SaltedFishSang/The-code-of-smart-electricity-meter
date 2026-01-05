@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=Relay_C_B Pin=U1-2
+Removed Pin From Net: NetName=LED_NET Pin=U1-11
+Change Footprint: Footprint Not Found QFN-32_L4.0-W4.0-P0.40-TL-EP2.8
+Added Pin To Net: NetName=LED_NET Pin=U1-2
+Added Pin To Net: NetName=Relay_C_B Pin=U1-11

@@ -316,7 +316,7 @@ void McuDrvUsart2GPIO_Config(void)
 void BspInit(void)
 {
     Vtimer_Init(); // 定时器初始化
-   // EnableDog();   // 看门狗初始化
+                   // EnableDog();   // 看门狗初始化
     QueueInit();   // 创建循环队列
     init_usart5(); // 串口5初始化
     init_usart2(); // 串口2 初始化

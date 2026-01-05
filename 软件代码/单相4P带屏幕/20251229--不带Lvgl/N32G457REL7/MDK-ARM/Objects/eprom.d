@@ -56,3 +56,4 @@
 .\objects\eprom.o: ..\USR\CircularQueue.h
 .\objects\eprom.o: ..\USR\Nbiot.h
 .\objects\eprom.o: ..\USR\Key.h
+.\objects\eprom.o: ..\USR\LCD_Display.h

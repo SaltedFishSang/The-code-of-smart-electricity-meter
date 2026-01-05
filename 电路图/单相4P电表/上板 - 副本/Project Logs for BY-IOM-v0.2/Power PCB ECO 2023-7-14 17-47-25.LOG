@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=GND Pin=P3-7
+Removed Pin From Net: NetName=DO_1 Pin=P3-8
+Added Component: Designator=Test_1(MARK)
+Added Pin To Net: NetName=GND Pin=P3-8
+Added Pin To Net: NetName=VCC33 Pin=Test_1-1
+Added Member To Class: ClassName=Sheet1 Member=Component Test_1 MARK

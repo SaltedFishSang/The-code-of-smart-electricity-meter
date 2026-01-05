@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=LED_Alarm Pin=U1-40
+Removed Pin From Net: NetName=LED_Alarm Pin=U1-41
+Added Pin To Net: NetName=Key_button2 Pin=U1-22
+Added Pin To Net: NetName=LED_Alarm Pin=U1-25

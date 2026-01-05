@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=4G_MCU_TXD Pin=U1-24
+Removed Pin From Net: NetName=4G_MCU_RXD Pin=U1-25
+Removed Pin From Net: NetName=Key_button2 Pin=U1-51
+Removed Pin From Net: NetName=Key_button3 Pin=U1-52
+Removed Member From Class: ClassName=Sheet1 Member=P8
+Added Pin To Net: NetName=4G_MCU_TXD Pin=U1-51
+Added Pin To Net: NetName=4G_MCU_RXD Pin=U1-52
+Added Member To Class: ClassName=Sheet1 Member=Component P5 TFT 2.0

@@ -56,3 +56,4 @@
 .\objects\rs485.o: ..\USR\CircularQueue.h
 .\objects\rs485.o: ..\USR\Nbiot.h
 .\objects\rs485.o: ..\USR\Key.h
+.\objects\rs485.o: ..\USR\LCD_Display.h

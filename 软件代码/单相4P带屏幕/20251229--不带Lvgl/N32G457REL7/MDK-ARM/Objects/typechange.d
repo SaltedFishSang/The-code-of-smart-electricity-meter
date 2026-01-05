@@ -56,3 +56,4 @@
 .\objects\typechange.o: ..\USR\CircularQueue.h
 .\objects\typechange.o: ..\USR\Nbiot.h
 .\objects\typechange.o: ..\USR\Key.h
+.\objects\typechange.o: ..\USR\LCD_Display.h

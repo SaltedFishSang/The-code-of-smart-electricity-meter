@@ -529,6 +529,11 @@
               <FileType>1</FileType>
               <FilePath>..\USR\Key.c</FilePath>
             </File>
+            <File>
+              <FileName>LCD_Display.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\USR\LCD_Display.c</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>

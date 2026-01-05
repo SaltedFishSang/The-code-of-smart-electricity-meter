@@ -24,6 +24,7 @@
 ".\objects\circularqueue.o"
 ".\objects\nbiot.o"
 ".\objects\key.o"
+".\objects\lcd_display.o"
 --library_type=microlib --strict --scatter ".\Objects\bmHttpServer.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

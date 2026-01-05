@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=4G_Reset Pin=U1-23
+Removed Pin From Net: NetName=Key_button1 Pin=U1-50
+Removed Pin From Net: NetName=Key_button4 Pin=U1-53
+Removed Pin From Net: NetName=Key_switch Pin=U1-55
+Added Pin To Net: NetName=4G_Reset Pin=U1-50
+Added Pin To Net: NetName=Lora_MCU_TXD Pin=U1-53
+Added Pin To Net: NetName=Lora_MCU_RXD Pin=U1-54
+Added Pin To Net: NetName=Lora_Reset Pin=U1-55

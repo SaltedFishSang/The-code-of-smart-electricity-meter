@@ -56,4 +56,5 @@
 .\objects\tft.o: ..\USR\CircularQueue.h
 .\objects\tft.o: ..\USR\Nbiot.h
 .\objects\tft.o: ..\USR\Key.h
+.\objects\tft.o: ..\USR\LCD_Display.h
 .\objects\tft.o: ..\USR\lcdfont.h

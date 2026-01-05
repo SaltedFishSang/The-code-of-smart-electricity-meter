@@ -56,3 +56,4 @@
 .\objects\v_timer.o: ..\USR\CircularQueue.h
 .\objects\v_timer.o: ..\USR\Nbiot.h
 .\objects\v_timer.o: ..\USR\Key.h
+.\objects\v_timer.o: ..\USR\LCD_Display.h
