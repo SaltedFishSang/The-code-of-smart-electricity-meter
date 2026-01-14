@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=VCC33 Pin=D1-1
+Removed Pin From Net: NetName=VCC3.8 Pin=D1-2
+Removed Pin From Net: NetName=VCC33 Pin=P1-1
+Removed Member From Class: ClassName=Power Member=D1
+Added Pin To Net: NetName=VCC3.8 Pin=P1-1

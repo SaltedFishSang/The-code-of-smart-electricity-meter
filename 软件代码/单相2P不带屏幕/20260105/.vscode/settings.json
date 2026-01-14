@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "n32wb03x.h": "c",
+        "n32wb03x_exti.h": "c",
+        "bsp.h": "c",
+        "BL0942.C": "cpp"
+    }
+}

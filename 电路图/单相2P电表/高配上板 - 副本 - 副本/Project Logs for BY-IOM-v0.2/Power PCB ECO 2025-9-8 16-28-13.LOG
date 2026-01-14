@@ -1,0 +1,24 @@
+Removed Pin From Net: NetName=4G_MCU_TXD Pin=P1-3
+Removed Pin From Net: NetName=4G_MCU_RXD Pin=P1-4
+Removed Pin From Net: NetName=4G_Reset Pin=P1-5
+Removed Pin From Net: NetName=Relay_C_B Pin=P1-6
+Removed Pin From Net: NetName=Relay_C_A Pin=P1-7
+Removed Pin From Net: NetName=BL0942_Control Pin=P1-8
+Removed Pin From Net: NetName=BL0942_RXD Pin=P1-9
+Removed Pin From Net: NetName=BL0942_TXD Pin=P1-10
+Change Component Footprint: Designator=P1 Old Footprint=HDR2X5 New Footprint=HDR2X6
+Change Footprint: Footprint Not Found QFN-32_L4.0-W4.0-P0.40-TL-EP2.8
+Change Component Comment : Designator=C2 Old Comment=47uF/10V New Comment=22uF/10V
+Change Component Comment : Designator=P1 Old Comment=Header 5X2 New Comment=Header 6X2
+Added Pin To Net: NetName=4G_MCU_TXD Pin=P1-5
+Added Pin To Net: NetName=4G_MCU_RXD Pin=P1-6
+Added Pin To Net: NetName=4G_Reset Pin=P1-7
+Added Pin To Net: NetName=Relay_C_B Pin=P1-8
+Added Pin To Net: NetName=Relay_C_A Pin=P1-9
+Added Pin To Net: NetName=BL0942_Control Pin=P1-10
+Added Pin To Net: NetName=BL0942_RXD Pin=P1-11
+Added Pin To Net: NetName=BL0942_TXD Pin=P1-12
+Added Pin To Net: NetName=GND_G Pin=P1-3
+Added Net: Name=GND_G
+Added Pin To Net: NetName=VCC33_G Pin=P1-4
+Added Net: Name=VCC33_G

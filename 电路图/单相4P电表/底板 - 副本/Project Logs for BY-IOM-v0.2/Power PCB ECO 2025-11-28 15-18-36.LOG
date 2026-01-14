@@ -1,0 +1,31 @@
+Removed Pin From Net: NetName=AGND Pin=C32-2
+Removed Pin From Net: NetName=AGND Pin=C34-1
+Removed Pin From Net: NetName=VCC33 Pin=C34-2
+Removed Pin From Net: NetName=AGND Pin=C35-1
+Removed Pin From Net: NetName=VCC33 Pin=C35-2
+Removed Pin From Net: NetName=NetP2_1 Pin=R12-1
+Removed Pin From Net: NetName=AGND Pin=R39-1
+Removed Pin From Net: NetName=AGND Pin=R40-1
+Removed Pin From Net: NetName=AGND Pin=U9-2
+Removed Pin From Net: NetName=VCC33 Pin=U9-5
+Removed Member From Class: ClassName=漏电流检测 Member=C31
+Removed Member From Class: ClassName=漏电流检测 Member=C34
+Removed Member From Class: ClassName=漏电流检测 Member=C35
+Removed Member From Class: ClassName=漏电流检测 Member=R1
+Removed Member From Class: ClassName=漏电流检测 Member=R12
+Removed Member From Class: ClassName=漏电流检测 Member=R34
+Removed Member From Class: ClassName=漏电流检测 Member=R36
+Removed Member From Class: ClassName=漏电流检测 Member=R39
+Removed Member From Class: ClassName=漏电流检测 Member=R40
+Removed Member From Class: ClassName=漏电流检测 Member=U9
+Change Component Comment : Designator=R35 Old Comment=10K/1%/0603 New Comment=1K/1%/0603
+Change Component Comment : Designator=R38 Old Comment=10K/1%/0603 New Comment=1K/1%/0603
+Change Component Comment : Designator=R25 Old Comment=10K/1%/0603 New Comment=300K/1%/0603
+Change Component Comment : Designator=R41 Old Comment=10K/1%/0603 New Comment=300K/1%/0603
+Added Pin To Net: NetName=NetR38_1 Pin=C32-1
+Added Pin To Net: NetName=NetR37_2 Pin=C32-2
+Added Pin To Net: NetName=AGND Pin=P2-2
+Added Pin To Net: NetName=AGND Pin=R33-1
+Added Pin To Net: NetName=NetP2_1 Pin=R35-2
+Change Net Name : Old Net Name=NetR37_2 New Net Name=NetC32_2
+Change Net Name : Old Net Name=NetR38_1 New Net Name=NetC32_1

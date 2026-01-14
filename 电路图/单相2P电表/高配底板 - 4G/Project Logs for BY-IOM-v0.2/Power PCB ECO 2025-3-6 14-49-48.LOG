@@ -1,0 +1,3 @@
+Removed Pin From Net: NetName=Lin Pin=LED1-2
+Removed Member From Class: ClassName=计量 Member=LED1
+Removed Member From Class: ClassName=计量 Member=R12

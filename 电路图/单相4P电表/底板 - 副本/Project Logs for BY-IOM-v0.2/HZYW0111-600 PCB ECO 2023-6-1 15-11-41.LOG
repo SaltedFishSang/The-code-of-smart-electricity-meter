@@ -1,0 +1,11 @@
+Removed Pin From Net: NetName=GND Pin=P6-1
+Removed Pin From Net: NetName=VCC12 Pin=P6-2
+Added Pin To Net: NetName=VCC12 Pin=P6-3
+Added Pin To Net: NetName=GND Pin=P6-4
+Added Pin To Net: NetName=485_A Pin=P3-1
+Added Pin To Net: NetName=485_A Pin=P6-1
+Added Net: Name=485_A
+Added Pin To Net: NetName=485_B Pin=P3-2
+Added Pin To Net: NetName=485_B Pin=P6-2
+Added Net: Name=485_B
+Added Member To Class: ClassName=Sheet1 Member=Component RV1 14D561

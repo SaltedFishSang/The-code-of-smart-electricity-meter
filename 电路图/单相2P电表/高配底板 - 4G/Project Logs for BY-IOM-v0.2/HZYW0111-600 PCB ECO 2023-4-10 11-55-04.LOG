@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=UAN Pin=P1-7
+Removed Pin From Net: NetName=UAP Pin=P1-9
+Added Pin To Net: NetName=UAN Pin=P1-12
+Added Pin To Net: NetName=UAP Pin=P1-14
+Added Member To Class: ClassName=Sheet1 Member=Component P1 Header 2

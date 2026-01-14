@@ -1,0 +1,24 @@
+Change Footprint: Footprint Not Found SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BL
+Added Component: Designator=U5(BL0942-10pin)
+Add component (AddParameter): Name = "Add into BOM"; Value = "yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Convert to PCB"; Value = "yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet"; Value = "https://atta.szlcsc.com/upload/public/pdf/source/20220627/BFAD44701CA6DE9A8853C5A4834B6884.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Device"; Value = "BL0942_C2837510"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "JLCPCB Part Class"; Value = "Extended Part"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC Part Name"; Value = "BL0942内置时钟免校准计量芯片"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "BL(上海贝岭)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part"; Value = "BL0942"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "LCSC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Footprint"; Value = "SSOP-10-150mil"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part"; Value = "C2837510"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Symbol"; Value = "BL0942"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetQ1_3 Pin=U5-1
+Added Pin To Net: NetName=IP1 Pin=U5-2
+Added Pin To Net: NetName=IN1 Pin=U5-3
+Added Pin To Net: NetName=VP Pin=U5-4
+Added Pin To Net: NetName=Lin Pin=U5-5
+Added Pin To Net: NetName=NetR12_1 Pin=U5-6
+Added Pin To Net: NetName=VCC33 Pin=U5-8
+Added Pin To Net: NetName=BL0942_RXD Pin=U5-9
+Added Pin To Net: NetName=BL0942_TXD Pin=U5-10
+Added Member To Class: ClassName=计量 Member=Component U5 BL0942

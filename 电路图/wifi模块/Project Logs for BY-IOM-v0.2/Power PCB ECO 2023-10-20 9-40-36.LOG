@@ -1,0 +1,255 @@
+Add Component: Footprint Not Found MARK
+Added Pin To Net: NetName=NetC1_1 Pin=C1-1
+Added Pin To Net: NetName=NetC1_2 Pin=C1-2
+Added Pin To Net: NetName=GND Pin=C2-1
+Added Pin To Net: NetName=GND Pin=C3-2
+Added Pin To Net: NetName=GND Pin=C4-1
+Added Pin To Net: NetName=VCC3.8 Pin=C4-2
+Added Pin To Net: NetName=VCC3.8 Pin=C5-1
+Added Pin To Net: NetName=GND Pin=C5-2
+Added Pin To Net: NetName=GND Pin=C6-1
+Added Pin To Net: NetName=VCC3.8 Pin=C6-2
+Added Pin To Net: NetName=VCC3.8 Pin=C7-1
+Added Pin To Net: NetName=NetC7_2 Pin=C7-2
+Added Pin To Net: NetName=VCC3.8 Pin=C12-1
+Added Pin To Net: NetName=GND Pin=C12-2
+Added Pin To Net: NetName=VCC3.8 Pin=C13-1
+Added Pin To Net: NetName=GND Pin=C13-2
+Added Pin To Net: NetName=VCC3.8 Pin=C14-1
+Added Pin To Net: NetName=GND Pin=C14-2
+Added Pin To Net: NetName=VCC3.8 Pin=C15-1
+Added Pin To Net: NetName=GND Pin=C15-2
+Added Pin To Net: NetName=GND Pin=C21-1
+Added Pin To Net: NetName=RESET_N Pin=C21-2
+Added Pin To Net: NetName=GND Pin=C22-1
+Added Pin To Net: NetName=USIM_VDD Pin=C22-2
+Added Pin To Net: NetName=GND Pin=C23-1
+Added Pin To Net: NetName=NetC23_2 Pin=C23-2
+Added Pin To Net: NetName=NetC24_1 Pin=C24-1
+Added Pin To Net: NetName=GND Pin=C24-2
+Added Pin To Net: NetName=NetC25_1 Pin=C25-1
+Added Pin To Net: NetName=GND Pin=C25-2
+Added Pin To Net: NetName=NetC26_1 Pin=C26-1
+Added Pin To Net: NetName=VDD_EXT Pin=C26-2
+Added Pin To Net: NetName=NetC27_1 Pin=C27-1
+Added Pin To Net: NetName=VDD_EXT Pin=C27-2
+Added Pin To Net: NetName=GND Pin=C28-1
+Added Pin To Net: NetName=NetC28_2 Pin=C28-2
+Added Pin To Net: NetName=GND Pin=C29-1
+Added Pin To Net: NetName=NetC29_2 Pin=C29-2
+Added Pin To Net: NetName=USIM_VDD Pin=CARD1-C1
+Added Pin To Net: NetName=NetC24_1 Pin=CARD1-C2
+Added Pin To Net: NetName=NetC25_1 Pin=CARD1-C3
+Added Pin To Net: NetName=GND Pin=CARD1-C5
+Added Pin To Net: NetName=NetC23_2 Pin=CARD1-C7
+Added Pin To Net: NetName=NetC1_1 Pin=L1-1
+Added Pin To Net: NetName=VCC3.8 Pin=L1-2
+Added Pin To Net: NetName=NetLED1_1 Pin=LED1-1
+Added Pin To Net: NetName=GND Pin=LED1-2
+Added Pin To Net: NetName=NetLED2_1 Pin=LED2-1
+Added Pin To Net: NetName=NetLED2_2 Pin=LED2-2
+Added Pin To Net: NetName=NetLED3_1 Pin=LED3-1
+Added Pin To Net: NetName=NetLED3_2 Pin=LED3-2
+Added Pin To Net: NetName=NetLED4_1 Pin=LED4-1
+Added Pin To Net: NetName=4G_MCU_TXD Pin=LED4-2
+Added Pin To Net: NetName=NetLED5_1 Pin=LED5-1
+Added Pin To Net: NetName=4G_MCU_RXD Pin=LED5-2
+Added Pin To Net: NetName=GND Pin=P1-2
+Added Pin To Net: NetName=4G_Reset Pin=P1-3
+Added Pin To Net: NetName=4G_MCU_TXD Pin=P1-4
+Added Pin To Net: NetName=4G_MCU_RXD Pin=P1-5
+Added Pin To Net: NetName=Lora_Reset Pin=P1-6
+Added Pin To Net: NetName=Lora_MCU_TXD Pin=P1-7
+Added Pin To Net: NetName=Lora_MCU_RXD Pin=P1-8
+Added Pin To Net: NetName=NetQ2_1 Pin=Q2-1
+Added Pin To Net: NetName=GND Pin=Q2-2
+Added Pin To Net: NetName=RESET_N Pin=Q2-3
+Added Pin To Net: NetName=NetC27_1 Pin=Q3-1
+Added Pin To Net: NetName=4G_MCU_TXD Pin=Q3-2
+Added Pin To Net: NetName=MAIN_RXD Pin=Q3-3
+Added Pin To Net: NetName=NetC26_1 Pin=Q4-1
+Added Pin To Net: NetName=MAIN_TXD Pin=Q4-2
+Added Pin To Net: NetName=4G_MCU_RXD Pin=Q4-3
+Added Pin To Net: NetName=NetQ5_1 Pin=Q5-1
+Added Pin To Net: NetName=GND Pin=Q5-2
+Added Pin To Net: NetName=NetLED2_2 Pin=Q5-3
+Added Pin To Net: NetName=NetQ6_1 Pin=Q6-1
+Added Pin To Net: NetName=GND Pin=Q6-2
+Added Pin To Net: NetName=NetLED3_2 Pin=Q6-3
+Added Pin To Net: NetName=VCC3.8 Pin=R1-1
+Added Pin To Net: NetName=NetLED1_1 Pin=R1-2
+Added Pin To Net: NetName=VCC3.8 Pin=R3-1
+Added Pin To Net: NetName=NetC7_2 Pin=R3-2
+Added Pin To Net: NetName=NetC7_2 Pin=R4-1
+Added Pin To Net: NetName=GND Pin=R4-2
+Added Pin To Net: NetName=GND Pin=R7-2
+Added Pin To Net: NetName=4G_Reset Pin=R10-1
+Added Pin To Net: NetName=NetQ2_1 Pin=R10-2
+Added Pin To Net: NetName=NetQ2_1 Pin=R11-1
+Added Pin To Net: NetName=GND Pin=R11-2
+Added Pin To Net: NetName=USIM_VDD Pin=R12-1
+Added Pin To Net: NetName=NetC23_2 Pin=R12-2
+Added Pin To Net: NetName=USIM_DATA Pin=R13-1
+Added Pin To Net: NetName=NetC23_2 Pin=R13-2
+Added Pin To Net: NetName=NetC24_1 Pin=R14-1
+Added Pin To Net: NetName=USIM_RST Pin=R14-2
+Added Pin To Net: NetName=NetC25_1 Pin=R15-1
+Added Pin To Net: NetName=USIM_CLK Pin=R15-2
+Added Pin To Net: NetName=NetC26_1 Pin=R16-1
+Added Pin To Net: NetName=VDD_EXT Pin=R16-2
+Added Pin To Net: NetName=VDD_EXT Pin=R17-1
+Added Pin To Net: NetName=MAIN_RXD Pin=R17-2
+Added Pin To Net: NetName=NetC27_1 Pin=R18-1
+Added Pin To Net: NetName=VDD_EXT Pin=R18-2
+Added Pin To Net: NetName=4G_MCU_RXD Pin=R19-1
+Added Pin To Net: NetName=VCC3.8 Pin=R19-2
+Added Pin To Net: NetName=NetC28_2 Pin=R20-1
+Added Pin To Net: NetName=NetC29_2 Pin=R20-2
+Added Pin To Net: NetName=NetLED2_1 Pin=R21-1
+Added Pin To Net: NetName=VCC3.8 Pin=R21-2
+Added Pin To Net: NetName=NetLED3_1 Pin=R22-1
+Added Pin To Net: NetName=VCC3.8 Pin=R22-2
+Added Pin To Net: NetName=NetQ5_1 Pin=R23-2
+Added Pin To Net: NetName=NetQ6_1 Pin=R24-2
+Added Pin To Net: NetName=NetQ5_1 Pin=R25-1
+Added Pin To Net: NetName=GND Pin=R25-2
+Added Pin To Net: NetName=NetQ6_1 Pin=R26-1
+Added Pin To Net: NetName=GND Pin=R26-2
+Added Pin To Net: NetName=VCC3.8 Pin=R27-1
+Added Pin To Net: NetName=NetLED4_1 Pin=R27-2
+Added Pin To Net: NetName=VCC3.8 Pin=R28-1
+Added Pin To Net: NetName=NetLED5_1 Pin=R28-2
+Added Pin To Net: NetName=VDD_EXT Pin=R?-1
+Added Pin To Net: NetName=NetC29_2 Pin=S1-1
+Added Pin To Net: NetName=GND Pin=S1-2
+Added Pin To Net: NetName=GND Pin=S1-2
+Added Pin To Net: NetName=GND Pin=S1-2
+Add Pin To Net: Unknown Pin: Pin Test_1-1
+Added Pin To Net: NetName=GND Pin=U1-1
+Added Pin To Net: NetName=NetC1_1 Pin=U1-2
+Added Pin To Net: NetName=NetC7_2 Pin=U1-4
+Added Pin To Net: NetName=NetC1_2 Pin=U1-6
+Added Pin To Net: NetName=GND Pin=U2-1
+Added Pin To Net: NetName=GND Pin=U2-10
+Added Pin To Net: NetName=USIM_DATA Pin=U2-11
+Added Pin To Net: NetName=USIM_RST Pin=U2-12
+Added Pin To Net: NetName=USIM_CLK Pin=U2-13
+Added Pin To Net: NetName=USIM_VDD Pin=U2-14
+Added Pin To Net: NetName=RESET_N Pin=U2-15
+Added Pin To Net: NetName=MAIN_RXD Pin=U2-17
+Added Pin To Net: NetName=MAIN_TXD Pin=U2-18
+Added Pin To Net: NetName=VDD_EXT Pin=U2-24
+Added Pin To Net: NetName=GND Pin=U2-27
+Added Pin To Net: NetName=GND Pin=U2-34
+Added Pin To Net: NetName=NetC28_2 Pin=U2-35
+Added Pin To Net: NetName=GND Pin=U2-36
+Added Pin To Net: NetName=GND Pin=U2-37
+Added Pin To Net: NetName=GND Pin=U2-40
+Added Pin To Net: NetName=GND Pin=U2-41
+Added Pin To Net: NetName=VCC3.8 Pin=U2-42
+Added Pin To Net: NetName=VCC3.8 Pin=U2-43
+Added Pin To Net: NetName=GND Pin=U2-45
+Added Pin To Net: NetName=GND Pin=U2-46
+Added Pin To Net: NetName=GND Pin=U2-47
+Added Pin To Net: NetName=GND Pin=U2-48
+Added Pin To Net: NetName=GND Pin=U2-70
+Added Pin To Net: NetName=GND Pin=U2-71
+Added Pin To Net: NetName=GND Pin=U2-72
+Added Pin To Net: NetName=GND Pin=U2-73
+Added Pin To Net: NetName=GND Pin=U2-88
+Added Pin To Net: NetName=GND Pin=U2-89
+Added Pin To Net: NetName=GND Pin=U2-90
+Added Pin To Net: NetName=GND Pin=U2-91
+Added Pin To Net: NetName=GND Pin=U2-92
+Added Pin To Net: NetName=GND Pin=U2-93
+Added Pin To Net: NetName=GND Pin=U2-94
+Added Pin To Net: NetName=GND Pin=U3-2
+Added Pin To Net: NetName=NetC25_1 Pin=U3-3
+Added Pin To Net: NetName=NetC23_2 Pin=U3-4
+Added Pin To Net: NetName=USIM_VDD Pin=U3-5
+Added Pin To Net: NetName=NetC24_1 Pin=U3-6
+Added Pin To Net: NetName=NET_LIGHT Pin=R23-1
+Added Pin To Net: NetName=NET_LIGHT Pin=U2-16
+Added Net: Name=NET_LIGHT
+Added Pin To Net: NetName=NET_STATE Pin=R24-1
+Added Pin To Net: NetName=NET_STATE Pin=U2-25
+Added Net: Name=NET_STATE
+Added Pin To Net: NetName=NetCARD1_CD Pin=CARD1-CD
+Added Pin To Net: NetName=NetCARD1_CD Pin=R?-2
+Added Pin To Net: NetName=NetCARD1_CD Pin=R?-2
+Added Net: Name=NetCARD1_CD
+Added Pin To Net: NetName=PWR_ON/OFF Pin=R7-1
+Added Pin To Net: NetName=PWR_ON/OFF Pin=U2-7
+Added Net: Name=PWR_ON/OFF
+Added Pin To Net: NetName=USIM_DET Pin=R?-1
+Added Pin To Net: NetName=USIM_DET Pin=U2-79
+Added Net: Name=USIM_DET
+Added Pin To Net: NetName=VCC12 Pin=C2-2
+Added Pin To Net: NetName=VCC12 Pin=C3-1
+Added Pin To Net: NetName=VCC12 Pin=P1-1
+Added Pin To Net: NetName=VCC12 Pin=U1-3
+Added Pin To Net: NetName=VCC12 Pin=U1-5
+Added Net: Name=VCC12
+Added Member To Class: ClassName=4G_Module Member=Component C1 104/25V
+Added Member To Class: ClassName=4G_Module Member=Component C2 10uF/25V
+Added Member To Class: ClassName=4G_Module Member=Component C3 100uF/10V
+Added Member To Class: ClassName=4G_Module Member=Component C4 10uF/25V
+Added Member To Class: ClassName=4G_Module Member=Component C5 47uF/10V
+Added Member To Class: ClassName=4G_Module Member=Component C6 104/10V
+Added Member To Class: ClassName=4G_Module Member=Component C7 22pF/NC
+Added Member To Class: ClassName=4G_Module Member=Component C12 100uF/10V
+Added Member To Class: ClassName=4G_Module Member=Component C13 10pF
+Added Member To Class: ClassName=4G_Module Member=Component C14 33pF
+Added Member To Class: ClassName=4G_Module Member=Component C15 100nF
+Added Member To Class: ClassName=4G_Module Member=Component C21 10nF
+Added Member To Class: ClassName=4G_Module Member=Component C22 104
+Added Member To Class: ClassName=4G_Module Member=Component C23 33PF
+Added Member To Class: ClassName=4G_Module Member=Component C24 33PF
+Added Member To Class: ClassName=4G_Module Member=Component C25 33PF
+Added Member To Class: ClassName=4G_Module Member=Component C26 1nF/10V/0603
+Added Member To Class: ClassName=4G_Module Member=Component C27 1nF/10V/0603
+Added Member To Class: ClassName=4G_Module Member=Component C28 NC
+Added Member To Class: ClassName=4G_Module Member=Component C29 NC
+Added Member To Class: ClassName=4G_Module Member=Component CARD1 SMN-303
+Added Member To Class: ClassName=4G_Module Member=Component L1 4.7uH/3A
+Added Member To Class: ClassName=4G_Module Member=Component LED1 LED
+Added Member To Class: ClassName=4G_Module Member=Component LED2 LED
+Added Member To Class: ClassName=4G_Module Member=Component LED3 LED
+Added Member To Class: ClassName=4G_Module Member=Component LED4 LED
+Added Member To Class: ClassName=4G_Module Member=Component LED5 LED
+Added Member To Class: ClassName=4G_Module Member=Component P1 Header 8
+Added Member To Class: ClassName=4G_Module Member=Component Q2 S8050
+Added Member To Class: ClassName=4G_Module Member=Component Q3 S8050
+Added Member To Class: ClassName=4G_Module Member=Component Q4 S8050
+Added Member To Class: ClassName=4G_Module Member=Component Q5 AO3400
+Added Member To Class: ClassName=4G_Module Member=Component Q6 S8050
+Added Member To Class: ClassName=4G_Module Member=Component R1 1K/5%/0603
+Added Member To Class: ClassName=4G_Module Member=Component R3 40.2K
+Added Member To Class: ClassName=4G_Module Member=Component R4 103
+Added Member To Class: ClassName=4G_Module Member=Component R7 4.7K
+Added Member To Class: ClassName=4G_Module Member=Component R10 4.7K
+Added Member To Class: ClassName=4G_Module Member=Component R11 47K
+Added Member To Class: ClassName=4G_Module Member=Component R12 10K
+Added Member To Class: ClassName=4G_Module Member=Component R13 0R
+Added Member To Class: ClassName=4G_Module Member=Component R14 0R
+Added Member To Class: ClassName=4G_Module Member=Component R15 0R
+Added Member To Class: ClassName=4G_Module Member=Component R16 4.7K/5%/0603
+Added Member To Class: ClassName=4G_Module Member=Component R17 10K/5%/0603
+Added Member To Class: ClassName=4G_Module Member=Component R18 4.7K/5%/0603
+Added Member To Class: ClassName=4G_Module Member=Component R19 10K/5%/0603
+Added Member To Class: ClassName=4G_Module Member=Component R20 0R/5%/0805
+Added Member To Class: ClassName=4G_Module Member=Component R21 2.2K
+Added Member To Class: ClassName=4G_Module Member=Component R22 2.2K
+Added Member To Class: ClassName=4G_Module Member=Component R23 472/5%/0603
+Added Member To Class: ClassName=4G_Module Member=Component R24 472/5%/0603
+Added Member To Class: ClassName=4G_Module Member=Component R25 47K/5%/0603
+Added Member To Class: ClassName=4G_Module Member=Component R26 47K/5%/0603
+Added Member To Class: ClassName=4G_Module Member=Component R27 1K/5%/0603
+Added Member To Class: ClassName=4G_Module Member=Component R28 1K/5%/0603
+Added Member To Class: ClassName=4G_Module Member=Component R? 0R
+Added Member To Class: ClassName=4G_Module Member=Component R? 10K
+Added Member To Class: ClassName=4G_Module Member=Component S1 SMA
+Add Class Member: Failed to add class member : Component Test_1 MARK
+Added Member To Class: ClassName=4G_Module Member=Component U1 DIO6930
+Added Member To Class: ClassName=4G_Module Member=Component U2 ML307A
+Added Member To Class: ClassName=4G_Module Member=Component U3 SMF05C

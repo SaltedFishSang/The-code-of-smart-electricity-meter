@@ -1,0 +1,4 @@
+Change Footprint: Footprint Not Found QFN-32_L4.0-W4.0-P0.40-TL-EP2.8
+Change Component Footprint: Designator=L2 Old Footprint=贴片电感5020 New Footprint=0603R
+Change Component Footprint: Designator=L3 Old Footprint=贴片电感5020 New Footprint=0603R
+Added Member To Class: ClassName=MCU Member=Component C? 104

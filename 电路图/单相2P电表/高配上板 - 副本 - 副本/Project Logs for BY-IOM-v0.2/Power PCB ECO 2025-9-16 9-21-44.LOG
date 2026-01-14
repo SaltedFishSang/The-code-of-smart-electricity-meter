@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=GND Pin=P6-1
+Removed Pin From Net: NetName=USART2_TXD Pin=P6-2
+Removed Pin From Net: NetName=USART2_RXD Pin=P6-3
+Change Footprint: Footprint Not Found QFN-32_L4.0-W4.0-P0.40-TL-EP2.8
+Added Pin To Net: NetName=GND_G Pin=P6-1
+Added Pin To Net: NetName=BL0942_RXD Pin=P6-2
+Added Pin To Net: NetName=BL0942_TXD Pin=P6-3

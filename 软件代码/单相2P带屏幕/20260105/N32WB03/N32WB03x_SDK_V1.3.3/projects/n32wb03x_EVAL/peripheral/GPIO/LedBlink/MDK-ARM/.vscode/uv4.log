@@ -1,0 +1,9 @@
+*** Using Compiler 'V5.05 update 1 (build 106)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'N32WB03X'
+compiling Display.c...
+linking...
+Program Size: Code=31244 RO-data=2728 RW-data=3064 ZI-data=16656  
+FromELF: creating hex file...
+After Build - User command #1: fromelf --bin --output=.\bin\LedBlink.bin .\Objects\LedBlink.axf
+".\Objects\LedBlink.axf" - 0 Error(s), 0 Warning(s).
+Build Time Elapsed:  00:00:01

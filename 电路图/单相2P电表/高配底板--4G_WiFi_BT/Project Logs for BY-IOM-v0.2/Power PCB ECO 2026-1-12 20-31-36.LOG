@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=VCC33_G Pin=Q1-2
+Removed Pin From Net: NetName=VCC33_G Pin=R8-2
+Removed Pin From Net: NetName=BL0942_Control Pin=R9-2
+Removed Member From Class: ClassName=计量 Member=Q1
+Removed Member From Class: ClassName=计量 Member=R8
+Removed Member From Class: ClassName=计量 Member=R9
+Added Pin To Net: NetName=Lora_MCU_TXD Pin=P1-1
+Added Pin To Net: NetName=Lora_MCU_RXD Pin=P1-2
+Added Pin To Net: NetName=VCC33_G Pin=U5-1
+Change Net Name : Old Net Name=Lora_Reset New Net Name=BLE_Control
+Added Member To Class: ClassName=连接 Member=Component P1 Header 7X2
+Added Member To Class: ClassName=连接 Member=Component P2 Header 8

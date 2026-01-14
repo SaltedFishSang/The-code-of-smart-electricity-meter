@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=WIFI_MCU_TXD Pin=P1-1
+Removed Pin From Net: NetName=WIFI_MCU_RXD Pin=P1-2
+Add Component: Footprint Not Found ANT-F-1-2.4G-1.6mmFR4-WCH
+Add Pin To Net: Unknown Pin: Pin E1-1
+Added Pin To Net: NetName=BLE_MCU_TXD Pin=P1-1
+Added Pin To Net: NetName=BLE_MCU_RXD Pin=P1-2
+Added Pin To Net: NetName=WIFI_MCU_TXD Pin=P1-7
+Added Pin To Net: NetName=WIFI_MCU_RXD Pin=P1-8
+Add Class Member: Failed to add class member : Component E1 Antenna

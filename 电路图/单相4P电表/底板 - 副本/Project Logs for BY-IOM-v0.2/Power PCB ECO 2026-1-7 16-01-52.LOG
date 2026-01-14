@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=VCC33 Pin=P7-1
+Change Component Comment : Designator=C25 Old Comment=10uF New Comment=0.1uF
+Change Component Comment : Designator=U8 Old Comment=LM258 New Comment=LMV358
+Added Pin To Net: NetName=VCC5_CAP Pin=P7-1

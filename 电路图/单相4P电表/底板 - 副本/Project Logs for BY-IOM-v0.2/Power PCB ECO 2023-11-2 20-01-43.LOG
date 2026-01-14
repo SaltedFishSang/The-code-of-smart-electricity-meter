@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=ACN Pin=-1
+Removed Pin From Net: NetName=NetF1_2 Pin=-2
+Change Component Footprint: Designator=P1 Old Footprint=PH2.0垂直白色座子 New Footprint=ZH 1.5MM 1X2P
+Change Component Footprint: Designator=P2 Old Footprint=PH2.0垂直白色座子 New Footprint=ZH 1.5MM 1X2P
+Change Component Comment : Designator=C3 Old Comment=0.1uF/50V New Comment=0.1uF/25V
+Change Component Comment : Designator=C1 Old Comment=1uF/50V New Comment=1uF/25V
+Change Component Comment : Designator=F1 Old Comment=3.15A/300V New Comment=2A/300V
+Change Component Comment : Designator=C8 Old Comment=10uF/25V New Comment=10uF/10V
+Change Component Comment : Designator=C9 Old Comment=47uF/10V New Comment=47uF/25V
+Change Component Comment : Designator=C12 Old Comment=47uF/10V New Comment=47uF/25V
+Change Component Comment : Designator=U2 Old Comment=DIO6930 New Comment=DIO6920
+Added Component: Designator=Test_1(MARK)
+Added Pin To Net: NetName=VCC33 Pin=Test_1-1
+Added Member To Class: ClassName=Sheet1 Member=Component Test_1 MARK

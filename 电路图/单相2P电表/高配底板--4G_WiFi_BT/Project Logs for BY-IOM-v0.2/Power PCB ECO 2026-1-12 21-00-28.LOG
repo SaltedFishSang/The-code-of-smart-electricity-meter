@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=4G_MCU_TXD Pin=P3-1
+Removed Pin From Net: NetName=4G_MCU_RXD Pin=P3-2
+Removed Pin From Net: NetName=Lora_MCU_TXD Pin=P4-1
+Removed Pin From Net: NetName=Lora_MCU_RXD Pin=P4-2
+Removed Member From Class: ClassName=连接 Member=P3
+Removed Member From Class: ClassName=连接 Member=P4

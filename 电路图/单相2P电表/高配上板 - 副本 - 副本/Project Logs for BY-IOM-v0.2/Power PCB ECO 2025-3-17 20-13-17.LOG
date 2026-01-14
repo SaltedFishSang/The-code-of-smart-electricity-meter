@@ -1,0 +1,6 @@
+Change Footprint: Footprint Not Found QFN-32_L4.0-W4.0-P0.40-TL-EP2.8
+Change Component Designator: OldDesignator=C? NewDesignator=C4
+Change Component Designator: OldDesignator=C? NewDesignator=C5
+Change Component Designator: OldDesignator=S? NewDesignator=S1
+Change Component Designator: OldDesignator=U? NewDesignator=U2
+Added Member To Class: ClassName=MCU Member=Component C5 104

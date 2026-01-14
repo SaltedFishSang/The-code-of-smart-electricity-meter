@@ -1,0 +1,15 @@
+Change Footprint: Footprint Not Found SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BL
+Add Component: Footprint Not Found SSOP-10_L4.9-W3.9-P1.00-LS6.0-BL
+Added Pin To Net: NetName=GND Pin=U2-1
+Added Pin To Net: NetName=L_IN Pin=U2-2
+Add Pin To Net: Unknown Pin: Pin U5-1
+Add Pin To Net: Unknown Pin: Pin U5-2
+Add Pin To Net: Unknown Pin: Pin U5-3
+Add Pin To Net: Unknown Pin: Pin U5-4
+Add Pin To Net: Unknown Pin: Pin U5-5
+Add Pin To Net: Unknown Pin: Pin U5-6
+Add Pin To Net: Unknown Pin: Pin U5-8
+Add Pin To Net: Unknown Pin: Pin U5-9
+Add Pin To Net: Unknown Pin: Pin U5-10
+Change Net Name : Old Net Name=GND New Net Name=Lin
+Add Class Member: Failed to add class member : Component U5 BL0942

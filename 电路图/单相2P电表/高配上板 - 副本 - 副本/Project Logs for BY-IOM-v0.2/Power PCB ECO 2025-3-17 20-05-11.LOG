@@ -1,0 +1,5 @@
+Change Component Footprint: Designator=LED1 Old Footprint=LED0805 New Footprint=LED1206
+Change Component Footprint: Designator=LED2 Old Footprint=LED0805 New Footprint=LED1206
+Change Component Footprint: Designator=LED3 Old Footprint=LED0805 New Footprint=LED1206
+Change Component Footprint: Designator=L2 Old Footprint=贴片电感5020 New Footprint=0603R
+Change Component Footprint: Designator=L3 Old Footprint=贴片电感5020 New Footprint=0603R

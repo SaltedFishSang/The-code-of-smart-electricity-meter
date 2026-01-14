@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=4G_Reset Pin=P1-4
+Added Pin To Net: NetName=4G_Reset Pin=P1-3
+Added Pin To Net: NetName=4G_MCU_TXD Pin=P1-4
+Added Pin To Net: NetName=4G_MCU_RXD Pin=P1-5

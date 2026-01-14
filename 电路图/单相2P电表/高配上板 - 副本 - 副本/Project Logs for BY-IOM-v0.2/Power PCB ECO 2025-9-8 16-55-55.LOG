@@ -1,0 +1,55 @@
+Removed Pin From Net: NetName=BL0942_Control Pin=U1-13
+Removed Pin From Net: NetName=4G_MCU_RXD Pin=U1-16
+Removed Pin From Net: NetName=4G_MCU_TXD Pin=U1-17
+Change Footprint: Footprint Not Found QFN-32_L4.0-W4.0-P0.40-TL-EP2.8
+Added Component: Designator=R6(0603R)
+Added Component: Designator=R7(0603R)
+Added Component: Designator=R8(0603R)
+Added Component: Designator=R9(0603R)
+Added Component: Designator=R10(0603R)
+Added Component: Designator=R11(0603R)
+Added Component: Designator=U3(EL3H7)
+Added Component: Designator=U4(EL3H7)
+Added Component: Designator=U5(EL3H7)
+Added Pin To Net: NetName=VCC33 Pin=R6-1
+Added Pin To Net: NetName=4G_MCU_TXD Pin=R7-1
+Added Pin To Net: NetName=VCC33_G Pin=R7-2
+Added Pin To Net: NetName=VCC33 Pin=R8-2
+Added Pin To Net: NetName=VCC33_G Pin=R9-1
+Added Pin To Net: NetName=VCC33 Pin=R10-1
+Added Pin To Net: NetName=BL0942_Control Pin=R11-1
+Added Pin To Net: NetName=VCC33_G Pin=R11-2
+Added Pin To Net: NetName=GND_G Pin=U3-3
+Added Pin To Net: NetName=4G_MCU_TXD Pin=U3-4
+Added Pin To Net: NetName=4G_MCU_RXD Pin=U4-2
+Added Pin To Net: NetName=GND Pin=U4-3
+Added Pin To Net: NetName=GND_G Pin=U5-3
+Added Pin To Net: NetName=BL0942_Control Pin=U5-4
+Added Pin To Net: NetName=MCU_BL0942_Control Pin=U1-13
+Added Pin To Net: NetName=MCU_BL0942_Control Pin=U5-2
+Added Net: Name=MCU_BL0942_Control
+Added Pin To Net: NetName=NetR6_2 Pin=R6-2
+Added Pin To Net: NetName=NetR6_2 Pin=U3-1
+Added Net: Name=NetR6_2
+Added Pin To Net: NetName=NetR9_2 Pin=R9-2
+Added Pin To Net: NetName=NetR9_2 Pin=U4-1
+Added Net: Name=NetR9_2
+Added Pin To Net: NetName=NetR10_2 Pin=R10-2
+Added Pin To Net: NetName=NetR10_2 Pin=U5-1
+Added Net: Name=NetR10_2
+Added Pin To Net: NetName=USART1_RXD Pin=R8-1
+Added Pin To Net: NetName=USART1_RXD Pin=U1-17
+Added Pin To Net: NetName=USART1_RXD Pin=U4-4
+Added Net: Name=USART1_RXD
+Added Pin To Net: NetName=USART1_TXD Pin=U1-16
+Added Pin To Net: NetName=USART1_TXD Pin=U3-2
+Added Net: Name=USART1_TXD
+Added Member To Class: ClassName=MCU Member=Component R6 471
+Added Member To Class: ClassName=MCU Member=Component R7 102
+Added Member To Class: ClassName=MCU Member=Component R8 102
+Added Member To Class: ClassName=MCU Member=Component R9 471
+Added Member To Class: ClassName=MCU Member=Component R10 471
+Added Member To Class: ClassName=MCU Member=Component R11 102
+Added Member To Class: ClassName=MCU Member=Component U3 EL3H7
+Added Member To Class: ClassName=MCU Member=Component U4 EL3H7
+Added Member To Class: ClassName=MCU Member=Component U5 EL3H7

@@ -1,0 +1,727 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD22\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">2023/6/5</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">10:26:30</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:02</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc" class="file"><acronym title="H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc">H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">125</td></tr>
+</table>
+</td>
+</table><a name="ID1C13FXM5RIMIJ4DG5UITWWI4VC2W2CUPYBPKASLCAZ5ZNE02DBF"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDIS0MATSNDPFKPH4Z2DG3C1U34GPPYQ11MHEPKPCFBLVQYOFENDLO">Clearance Constraint (Gap=5mil) (IsTrack),(IsTrack)</a></td>
+<td class="column2">124</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDL0YJXL3BN4TKDH3AB4HOHDTN4JHCUB1XANMGKWJQHYZYYO1NRT4H">Clearance Constraint (Gap=10mil) (IsVia),(IsTrack)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDW3PKQ3VOS1TIOYGU1S2JQSP2GMGCJBZIYCXZAOIVAM1IAM2E4WQH">Clearance Constraint (Gap=10mil) (IsVia),(IsVia)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDZ5DBV5B0TPSYNZ0A0BSOY5LB4FMD3QKTPDKV2WGXOBEAM1NA52OI">Clearance Constraint (Gap=10mil) (IsVia),(IsPad)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDQV2Y0U0SCMGSGZX3DSJPQWGOGIUETSZ2FTU0WGVPK1LCZUGHLE">Clearance Constraint (Gap=10mil) (InPoly),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDS10QRV2N0XYWO2ENLZ52HAOPVBVONRCISC2PVUBIO2OUZWFZANMD">Clearance Constraint (Gap=8mil) (IsTrack),(IsPad)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDD31NYKU20K5CKAOOMPL3B0WACPEMTDPVYORPL5PKQSNRLDRQROVI">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDGXTGCFY1BM0NDBBUEPSIOXDYLHKOLWQ5QXBZYEOBQXJLNWUJMT0C">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">1</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDZ5AWO0AXX25JFOFQCOBDBEUBVKIXXHL1RL0OCJCYJUHKLMV2UOTG">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDJ0CK4Z054DEFE2L51VDB523EDNK34BKZOSY2XFE51KEE2BKURAMD">Width Constraint (Min=5mil) (Max=300mil) (Preferred=7mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID321H3W33HIVBI05C41T4LVHPLFTXJSYQXSKVJGLQFUEFQSOUFBJ">Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDPE30ZPKHSVFKFTU5ILU03IXY0DMJAI1UBKJIVONVQD431KUDGHMN">Hole Size Constraint (Min=1mil) (Max=200mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDFY013Q3SVH5PENC02B5QGBO4UE2YMNI4YCIJBGM2QLEAYF1OQEIF">Hole To Hole Clearance (Gap=5mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDAREUVQ4NTNS3JA4BS4SPI05YQMHQATXH1MAEPSCABGWZF2KUMKI">Minimum Solder Mask Sliver (Gap=0mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDMRBU1UQ1H0OHEWAWNVLBADB4WDDVRGZJT0Z3ZOPPEXPPTTOY32H">Silk To Solder Mask (Clearance=0mil) (IsPad),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDG2AKCM53O4KUJIQ3ZLVR1RJ1LNI3DHG4IQMIYZGOOLELIPIPYOUD">Silk to Silk (Clearance=0mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID34QSGV4SRUB0N243V1WUGRH5UOSLE5TDKAILEUM0PJ401LOETNWH">Net Antennae (Tolerance=0mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID2TNEO125KDFYMXDTXBYGN4QM4BFTNWRFVRUNY0GLK4XMRLRGVW4E">Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">125</td>
+</tr>
+</table><br><a name="IDIS0MATSNDPFKPH4Z2DG3C1U34GPPYQ11MHEPKPCFBLVQYOFENDLO"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Clearance Constraint (Gap=5mil) (IsTrack),(IsTrack)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214014.979mil|Location1.Y=-213033.915mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214014.979mil|Location1.Y=-213033.915mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208668.184mil,210796.786mil)(208668.184mil,207111.746mil) on Keep-Out Layer And Track (209912.279mil,210796.786mil)(208668.184mil,210796.786mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214026.79mil|Location1.Y=-214403.993mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214026.79mil|Location1.Y=-214403.993mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208679.995mil,209426.707mil)(208679.995mil,207891.274mil) on Keep-Out Layer And Track (209702.273mil,209426.06mil)(208954.242mil,209426.06mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214026.79mil|Location1.Y=-214010.939mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214026.79mil|Location1.Y=-214010.939mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208679.995mil,209426.707mil)(208679.995mil,207891.274mil) on Keep-Out Layer And Track (209702.273mil,209819.761mil)(208954.242mil,209819.761mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214026.79mil|Location1.Y=-214403.993mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214026.79mil|Location1.Y=-214403.993mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208679.995mil,209426.707mil)(208679.995mil,207891.274mil) on Keep-Out Layer And Track (209703.617mil,209426.707mil)(208679.995mil,209426.707mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214085.845mil|Location1.Y=-213470.922mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214085.845mil|Location1.Y=-213470.922mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208735.113mil,210359.778mil)(208735.113mil,210883.4mil) on Keep-Out Layer And Track (208739.05mil,210359.778mil)(208739.05mil,210883.4mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214085.845mil|Location1.Y=-213470.922mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214085.845mil|Location1.Y=-213470.922mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208735.113mil,210359.778mil)(208735.113mil,210883.4mil) on Keep-Out Layer And Track (208739.05mil,210359.778mil)(208833.538mil,210359.778mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214085.845mil|Location1.Y=-212947.3mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214085.845mil|Location1.Y=-212947.3mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208735.113mil,210359.778mil)(208735.113mil,210883.4mil) on Keep-Out Layer And Track (208739.05mil,210883.4mil)(209191.806mil,210883.4mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214085.845mil|Location1.Y=-213470.922mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214085.845mil|Location1.Y=-213470.922mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208735.113mil,210359.778mil)(208829.601mil,210359.778mil) on Keep-Out Layer And Track (208739.05mil,210359.778mil)(208739.05mil,210883.4mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214085.845mil|Location1.Y=-213470.922mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214085.845mil|Location1.Y=-213470.922mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208735.113mil,210359.778mil)(208829.601mil,210359.778mil) on Keep-Out Layer And Track (208739.05mil,210359.778mil)(208833.538mil,210359.778mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214109.467mil|Location1.Y=-213470.922mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214109.467mil|Location1.Y=-213470.922mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208735.113mil,210359.778mil)(208829.601mil,210359.778mil) on Keep-Out Layer And Track (208762.672mil,209493.636mil)(208762.672mil,210745.604mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214180.333mil|Location1.Y=-213470.922mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214180.333mil|Location1.Y=-213470.922mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208735.113mil,210359.778mil)(208829.601mil,210359.778mil) on Keep-Out Layer And Track (208833.538mil,209493.636mil)(208833.538mil,210745.604mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214180.333mil|Location1.Y=-213470.922mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214180.333mil|Location1.Y=-213470.922mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208735.113mil,210359.778mil)(208829.601mil,210359.778mil) on Keep-Out Layer And Track (208833.538mil,210036.943mil)(208833.538mil,210359.778mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214085.845mil|Location1.Y=-212947.3mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214085.845mil|Location1.Y=-212947.3mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208735.113mil,210883.4mil)(209187.869mil,210883.4mil) on Keep-Out Layer And Track (208739.05mil,210359.778mil)(208739.05mil,210883.4mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214085.845mil|Location1.Y=-212947.3mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214085.845mil|Location1.Y=-212947.3mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208735.113mil,210883.4mil)(209187.869mil,210883.4mil) on Keep-Out Layer And Track (208739.05mil,210883.4mil)(209191.806mil,210883.4mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214538.601mil|Location1.Y=-212947.3mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214538.601mil|Location1.Y=-212947.3mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208735.113mil,210883.4mil)(209187.869mil,210883.4mil) on Keep-Out Layer And Track (209191.806mil,210036.943mil)(209191.806mil,210883.4mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214109.467mil|Location1.Y=-213470.922mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214109.467mil|Location1.Y=-213470.922mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208739.05mil,210359.778mil)(208833.538mil,210359.778mil) on Keep-Out Layer And Track (208762.672mil,209493.636mil)(208762.672mil,210745.604mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214113.404mil|Location1.Y=-213470.922mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214113.404mil|Location1.Y=-213470.922mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208739.05mil,210359.778mil)(208833.538mil,210359.778mil) on Keep-Out Layer And Track (208766.609mil,209493.636mil)(208766.609mil,210359.778mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214113.404mil|Location1.Y=-213470.922mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214113.404mil|Location1.Y=-213470.922mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208739.05mil,210359.778mil)(208833.538mil,210359.778mil) on Keep-Out Layer And Track (208766.609mil,210359.778mil)(208829.601mil,210359.778mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214176.396mil|Location1.Y=-213470.922mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214176.396mil|Location1.Y=-213470.922mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208739.05mil,210359.778mil)(208833.538mil,210359.778mil) on Keep-Out Layer And Track (208829.601mil,209493.636mil)(208829.601mil,210359.778mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214176.396mil|Location1.Y=-213470.922mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214176.396mil|Location1.Y=-213470.922mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208739.05mil,210359.778mil)(208833.538mil,210359.778mil) on Keep-Out Layer And Track (208829.601mil,210036.943mil)(208829.601mil,210359.778mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214180.333mil|Location1.Y=-213470.922mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214180.333mil|Location1.Y=-213470.922mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208739.05mil,210359.778mil)(208833.538mil,210359.778mil) on Keep-Out Layer And Track (208833.538mil,209493.636mil)(208833.538mil,210745.604mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214534.664mil|Location1.Y=-212947.3mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214534.664mil|Location1.Y=-212947.3mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208739.05mil,210883.4mil)(209191.806mil,210883.4mil) on Keep-Out Layer And Track (209187.869mil,210036.943mil)(209187.869mil,210883.4mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214109.467mil|Location1.Y=-214337.064mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214109.467mil|Location1.Y=-214337.064mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208762.672mil,209493.636mil)(208762.672mil,210745.604mil) on Keep-Out Layer And Track (208762.672mil,209493.636mil)(208762.672mil,210745.604mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214109.467mil|Location1.Y=-214337.064mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214109.467mil|Location1.Y=-214337.064mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208762.672mil,209493.636mil)(208762.672mil,210745.604mil) on Keep-Out Layer And Track (208762.672mil,209493.636mil)(208833.538mil,209493.636mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214109.467mil|Location1.Y=-214337.064mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214109.467mil|Location1.Y=-214337.064mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208762.672mil,209493.636mil)(208762.672mil,210745.604mil) on Keep-Out Layer And Track (208762.672mil,209493.636mil)(208833.538mil,209493.636mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214109.467mil|Location1.Y=-213085.096mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214109.467mil|Location1.Y=-213085.096mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208762.672mil,209493.636mil)(208762.672mil,210745.604mil) on Keep-Out Layer And Track (208762.672mil,210745.604mil)(208833.538mil,210745.604mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214109.467mil|Location1.Y=-213085.096mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214109.467mil|Location1.Y=-213085.096mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208762.672mil,209493.636mil)(208762.672mil,210745.604mil) on Keep-Out Layer And Track (208762.672mil,210745.604mil)(208833.538mil,210745.604mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214109.467mil|Location1.Y=-213470.922mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214109.467mil|Location1.Y=-213470.922mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208762.672mil,209493.636mil)(208762.672mil,210745.604mil) on Keep-Out Layer And Track (208766.609mil,209493.636mil)(208766.609mil,210359.778mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214109.467mil|Location1.Y=-214337.064mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214109.467mil|Location1.Y=-214337.064mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208762.672mil,209493.636mil)(208762.672mil,210745.604mil) on Keep-Out Layer And Track (208766.609mil,209493.636mil)(208829.601mil,209493.636mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214109.467mil|Location1.Y=-213470.922mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214109.467mil|Location1.Y=-213470.922mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208762.672mil,209493.636mil)(208762.672mil,210745.604mil) on Keep-Out Layer And Track (208766.609mil,210359.778mil)(208829.601mil,210359.778mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214109.467mil|Location1.Y=-214010.939mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214109.467mil|Location1.Y=-214010.939mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208762.672mil,209493.636mil)(208762.672mil,210745.604mil) on Keep-Out Layer And Track (209702.273mil,209819.761mil)(208954.242mil,209819.761mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214109.467mil|Location1.Y=-214010.939mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214109.467mil|Location1.Y=-214010.939mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208762.672mil,209493.636mil)(208762.672mil,210745.604mil) on Keep-Out Layer And Track (209702.273mil,209819.761mil)(208954.242mil,209819.761mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214109.467mil|Location1.Y=-214337.064mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214109.467mil|Location1.Y=-214337.064mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208762.672mil,209493.636mil)(208833.538mil,209493.636mil) on Keep-Out Layer And Track (208762.672mil,209493.636mil)(208833.538mil,209493.636mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214113.404mil|Location1.Y=-214337.064mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214113.404mil|Location1.Y=-214337.064mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208762.672mil,209493.636mil)(208833.538mil,209493.636mil) on Keep-Out Layer And Track (208766.609mil,209493.636mil)(208766.609mil,210359.778mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214113.404mil|Location1.Y=-214337.064mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214113.404mil|Location1.Y=-214337.064mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208762.672mil,209493.636mil)(208833.538mil,209493.636mil) on Keep-Out Layer And Track (208766.609mil,209493.636mil)(208829.601mil,209493.636mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214176.396mil|Location1.Y=-214337.064mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214176.396mil|Location1.Y=-214337.064mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208762.672mil,209493.636mil)(208833.538mil,209493.636mil) on Keep-Out Layer And Track (208829.601mil,209493.636mil)(208829.601mil,210359.778mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214180.333mil|Location1.Y=-214337.064mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214180.333mil|Location1.Y=-214337.064mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208762.672mil,209493.636mil)(208833.538mil,209493.636mil) on Keep-Out Layer And Track (208833.538mil,209493.636mil)(208833.538mil,210745.604mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214180.333mil|Location1.Y=-214337.064mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214180.333mil|Location1.Y=-214337.064mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208762.672mil,209493.636mil)(208833.538mil,209493.636mil) on Keep-Out Layer And Track (208833.538mil,209493.636mil)(208833.538mil,210745.604mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214109.467mil|Location1.Y=-213085.096mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214109.467mil|Location1.Y=-213085.096mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208762.672mil,210745.604mil)(208833.538mil,210745.604mil) on Keep-Out Layer And Track (208762.672mil,210745.604mil)(208833.538mil,210745.604mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214180.333mil|Location1.Y=-213085.096mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214180.333mil|Location1.Y=-213085.096mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208762.672mil,210745.604mil)(208833.538mil,210745.604mil) on Keep-Out Layer And Track (208833.538mil,209493.636mil)(208833.538mil,210745.604mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214180.333mil|Location1.Y=-213085.096mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214180.333mil|Location1.Y=-213085.096mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208762.672mil,210745.604mil)(208833.538mil,210745.604mil) on Keep-Out Layer And Track (208833.538mil,209493.636mil)(208833.538mil,210745.604mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214113.404mil|Location1.Y=-214010.939mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214113.404mil|Location1.Y=-214010.939mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208766.609mil,209493.636mil)(208766.609mil,210359.778mil) on Keep-Out Layer And Track (209702.273mil,209819.761mil)(208954.242mil,209819.761mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214180.333mil|Location1.Y=-214337.064mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214180.333mil|Location1.Y=-214337.064mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208766.609mil,209493.636mil)(208829.601mil,209493.636mil) on Keep-Out Layer And Track (208833.538mil,209493.636mil)(208833.538mil,210745.604mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214180.333mil|Location1.Y=-213470.922mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214180.333mil|Location1.Y=-213470.922mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208766.609mil,210359.778mil)(208829.601mil,210359.778mil) on Keep-Out Layer And Track (208833.538mil,209493.636mil)(208833.538mil,210745.604mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214180.333mil|Location1.Y=-213470.922mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214180.333mil|Location1.Y=-213470.922mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208766.609mil,210359.778mil)(208829.601mil,210359.778mil) on Keep-Out Layer And Track (208833.538mil,210036.943mil)(208833.538mil,210359.778mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214180.333mil|Location1.Y=-213470.922mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214180.333mil|Location1.Y=-213470.922mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208829.601mil,209493.636mil)(208829.601mil,210359.778mil) on Keep-Out Layer And Track (208833.538mil,209493.636mil)(208833.538mil,210745.604mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214180.333mil|Location1.Y=-213793.757mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214180.333mil|Location1.Y=-213793.757mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208829.601mil,209493.636mil)(208829.601mil,210359.778mil) on Keep-Out Layer And Track (208833.538mil,210036.943mil)(208833.538mil,210359.778mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214180.333mil|Location1.Y=-213793.757mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214180.333mil|Location1.Y=-213793.757mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208829.601mil,209493.636mil)(208829.601mil,210359.778mil) on Keep-Out Layer And Track (208833.538mil,210036.943mil)(209191.806mil,210036.943mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214176.396mil|Location1.Y=-214010.939mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214176.396mil|Location1.Y=-214010.939mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208829.601mil,209493.636mil)(208829.601mil,210359.778mil) on Keep-Out Layer And Track (209702.273mil,209819.761mil)(208954.242mil,209819.761mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214180.333mil|Location1.Y=-213793.757mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214180.333mil|Location1.Y=-213793.757mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208829.601mil,210036.943mil)(208829.601mil,210359.778mil) on Keep-Out Layer And Track (208833.538mil,209493.636mil)(208833.538mil,210745.604mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214180.333mil|Location1.Y=-213793.757mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214180.333mil|Location1.Y=-213793.757mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208829.601mil,210036.943mil)(208829.601mil,210359.778mil) on Keep-Out Layer And Track (208833.538mil,210036.943mil)(208833.538mil,210359.778mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214180.333mil|Location1.Y=-213793.757mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214180.333mil|Location1.Y=-213793.757mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208829.601mil,210036.943mil)(208829.601mil,210359.778mil) on Keep-Out Layer And Track (208833.538mil,210036.943mil)(209191.806mil,210036.943mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214180.333mil|Location1.Y=-213793.757mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214180.333mil|Location1.Y=-213793.757mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208829.601mil,210036.943mil)(209187.869mil,210036.943mil) on Keep-Out Layer And Track (208833.538mil,209493.636mil)(208833.538mil,210745.604mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214180.333mil|Location1.Y=-213793.757mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214180.333mil|Location1.Y=-213793.757mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208829.601mil,210036.943mil)(209187.869mil,210036.943mil) on Keep-Out Layer And Track (208833.538mil,210036.943mil)(208833.538mil,210359.778mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214180.333mil|Location1.Y=-213793.757mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214180.333mil|Location1.Y=-213793.757mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208829.601mil,210036.943mil)(209187.869mil,210036.943mil) on Keep-Out Layer And Track (208833.538mil,210036.943mil)(209191.806mil,210036.943mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214538.601mil|Location1.Y=-213793.757mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214538.601mil|Location1.Y=-213793.757mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208829.601mil,210036.943mil)(209187.869mil,210036.943mil) on Keep-Out Layer And Track (209191.806mil,210036.943mil)(209191.806mil,210883.4mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214180.333mil|Location1.Y=-214337.064mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214180.333mil|Location1.Y=-214337.064mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208833.538mil,209493.636mil)(208833.538mil,210745.604mil) on Keep-Out Layer And Track (208833.538mil,209493.636mil)(208833.538mil,210745.604mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214180.333mil|Location1.Y=-213793.757mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214180.333mil|Location1.Y=-213793.757mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208833.538mil,209493.636mil)(208833.538mil,210745.604mil) on Keep-Out Layer And Track (208833.538mil,210036.943mil)(208833.538mil,210359.778mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214180.333mil|Location1.Y=-213793.757mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214180.333mil|Location1.Y=-213793.757mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208833.538mil,209493.636mil)(208833.538mil,210745.604mil) on Keep-Out Layer And Track (208833.538mil,210036.943mil)(209191.806mil,210036.943mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214180.333mil|Location1.Y=-214010.939mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214180.333mil|Location1.Y=-214010.939mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208833.538mil,209493.636mil)(208833.538mil,210745.604mil) on Keep-Out Layer And Track (209702.273mil,209819.761mil)(208954.242mil,209819.761mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214180.333mil|Location1.Y=-214010.939mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214180.333mil|Location1.Y=-214010.939mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208833.538mil,209493.636mil)(208833.538mil,210745.604mil) on Keep-Out Layer And Track (209702.273mil,209819.761mil)(208954.242mil,209819.761mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214534.664mil|Location1.Y=-213793.757mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214534.664mil|Location1.Y=-213793.757mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208833.538mil,210036.943mil)(209191.806mil,210036.943mil) on Keep-Out Layer And Track (209187.869mil,210036.943mil)(209187.869mil,210883.4mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214301.036mil|Location1.Y=-214404.64mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214301.036mil|Location1.Y=-214404.64mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208954.242mil,209426.06mil)(208954.242mil,209819.761mil) on Keep-Out Layer And Track (208954.242mil,209426.06mil)(208954.242mil,209819.761mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214301.036mil|Location1.Y=-214404.64mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214301.036mil|Location1.Y=-214404.64mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208954.242mil,209426.06mil)(208954.242mil,209819.761mil) on Keep-Out Layer And Track (209702.273mil,209426.06mil)(208954.242mil,209426.06mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214301.036mil|Location1.Y=-214404.64mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214301.036mil|Location1.Y=-214404.64mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208954.242mil,209426.06mil)(208954.242mil,209819.761mil) on Keep-Out Layer And Track (209702.273mil,209426.06mil)(208954.242mil,209426.06mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214301.036mil|Location1.Y=-214010.939mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214301.036mil|Location1.Y=-214010.939mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208954.242mil,209426.06mil)(208954.242mil,209819.761mil) on Keep-Out Layer And Track (209702.273mil,209819.761mil)(208954.242mil,209819.761mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214301.036mil|Location1.Y=-214010.939mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214301.036mil|Location1.Y=-214010.939mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (208954.242mil,209426.06mil)(208954.242mil,209819.761mil) on Keep-Out Layer And Track (209702.273mil,209819.761mil)(208954.242mil,209819.761mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214538.601mil|Location1.Y=-213793.757mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=100004mil|Location2.X=214538.601mil|Location1.Y=-213793.757mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209187.869mil,210036.943mil)(209187.869mil,210883.4mil) on Keep-Out Layer And Track (209191.806mil,210036.943mil)(209191.806mil,210883.4mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214454.395mil|Location2.X=-100004mil|Location1.Y=-214404.64mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214454.395mil|Location2.X=-100004mil|Location1.Y=-214404.64mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209702.273mil,209426.06mil)(208954.242mil,209426.06mil) on Keep-Out Layer And Track (209702.273mil,209426.06mil)(208954.242mil,209426.06mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214454.395mil|Location2.X=-100004mil|Location1.Y=-214404.64mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214454.395mil|Location2.X=-100004mil|Location1.Y=-214404.64mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209702.273mil,209426.06mil)(208954.242mil,209426.06mil) on Keep-Out Layer And Track (209702.273mil,209426.06mil)(209702.273mil,209819.761mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214454.395mil|Location2.X=-100004mil|Location1.Y=-214404.64mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214454.395mil|Location2.X=-100004mil|Location1.Y=-214404.64mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209702.273mil,209426.06mil)(208954.242mil,209426.06mil) on Keep-Out Layer And Track (209702.273mil,209426.06mil)(209702.273mil,209819.761mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214453.051mil|Location2.X=-100004mil|Location1.Y=-214404.64mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214453.051mil|Location2.X=-100004mil|Location1.Y=-214404.64mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209702.273mil,209426.06mil)(208954.242mil,209426.06mil) on Keep-Out Layer And Track (209703.617mil,209426.707mil)(208679.995mil,209426.707mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214453.051mil|Location2.X=-100004mil|Location1.Y=-214403.993mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214453.051mil|Location2.X=-100004mil|Location1.Y=-214403.993mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209702.273mil,209426.06mil)(208954.242mil,209426.06mil) on Keep-Out Layer And Track (209703.617mil,209426.707mil)(208679.995mil,209426.707mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214453.051mil|Location2.X=-100004mil|Location1.Y=-214404.64mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214453.051mil|Location2.X=-100004mil|Location1.Y=-214404.64mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209702.273mil,209426.06mil)(208954.242mil,209426.06mil) on Keep-Out Layer And Track (209703.617mil,209426.707mil)(209703.617mil,207891.274mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214453.051mil|Location2.X=-100004mil|Location1.Y=-214403.993mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214453.051mil|Location2.X=-100004mil|Location1.Y=-214403.993mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209702.273mil,209426.06mil)(208954.242mil,209426.06mil) on Keep-Out Layer And Track (209703.617mil,209426.707mil)(209703.617mil,207891.274mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214454.395mil|Location2.X=-100004mil|Location1.Y=-214404.64mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214454.395mil|Location2.X=-100004mil|Location1.Y=-214404.64mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209702.273mil,209426.06mil)(209702.273mil,209819.761mil) on Keep-Out Layer And Track (209702.273mil,209426.06mil)(209702.273mil,209819.761mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214454.395mil|Location2.X=-100004mil|Location1.Y=-214010.939mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214454.395mil|Location2.X=-100004mil|Location1.Y=-214010.939mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209702.273mil,209426.06mil)(209702.273mil,209819.761mil) on Keep-Out Layer And Track (209702.273mil,209819.761mil)(208954.242mil,209819.761mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214454.395mil|Location2.X=-100004mil|Location1.Y=-214010.939mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214454.395mil|Location2.X=-100004mil|Location1.Y=-214010.939mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209702.273mil,209426.06mil)(209702.273mil,209819.761mil) on Keep-Out Layer And Track (209702.273mil,209819.761mil)(208954.242mil,209819.761mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214454.395mil|Location2.X=-100004mil|Location1.Y=-214403.993mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214454.395mil|Location2.X=-100004mil|Location1.Y=-214403.993mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209702.273mil,209426.06mil)(209702.273mil,209819.761mil) on Keep-Out Layer And Track (209703.617mil,209426.707mil)(208679.995mil,209426.707mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214453.051mil|Location2.X=-100004mil|Location1.Y=-214403.993mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214453.051mil|Location2.X=-100004mil|Location1.Y=-214403.993mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209702.273mil,209426.06mil)(209702.273mil,209819.761mil) on Keep-Out Layer And Track (209703.617mil,209426.707mil)(208679.995mil,209426.707mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214454.395mil|Location2.X=-100004mil|Location1.Y=-214010.939mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214454.395mil|Location2.X=-100004mil|Location1.Y=-214010.939mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209702.273mil,209426.06mil)(209702.273mil,209819.761mil) on Keep-Out Layer And Track (209703.617mil,209426.707mil)(209703.617mil,207891.274mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214453.051mil|Location2.X=-100004mil|Location1.Y=-214403.993mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214453.051mil|Location2.X=-100004mil|Location1.Y=-214403.993mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209702.273mil,209426.06mil)(209702.273mil,209819.761mil) on Keep-Out Layer And Track (209703.617mil,209426.707mil)(209703.617mil,207891.274mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214454.395mil|Location2.X=-100004mil|Location1.Y=-214010.939mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214454.395mil|Location2.X=-100004mil|Location1.Y=-214010.939mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209702.273mil,209819.761mil)(208954.242mil,209819.761mil) on Keep-Out Layer And Track (209702.273mil,209819.761mil)(208954.242mil,209819.761mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214453.051mil|Location2.X=-100004mil|Location1.Y=-214010.939mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214453.051mil|Location2.X=-100004mil|Location1.Y=-214010.939mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209702.273mil,209819.761mil)(208954.242mil,209819.761mil) on Keep-Out Layer And Track (209703.617mil,209426.707mil)(209703.617mil,207891.274mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214453.051mil|Location2.X=-100004mil|Location1.Y=-214010.939mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214453.051mil|Location2.X=-100004mil|Location1.Y=-214010.939mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209702.273mil,209819.761mil)(208954.242mil,209819.761mil) on Keep-Out Layer And Track (209703.617mil,209426.707mil)(209703.617mil,207891.274mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214425.492mil|Location2.X=-100004mil|Location1.Y=-214010.939mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214425.492mil|Location2.X=-100004mil|Location1.Y=-214010.939mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209702.273mil,209819.761mil)(208954.242mil,209819.761mil) on Keep-Out Layer And Track (209731.176mil,209658.99mil)(209731.176mil,210288.912mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214425.492mil|Location2.X=-100004mil|Location1.Y=-214010.939mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214425.492mil|Location2.X=-100004mil|Location1.Y=-214010.939mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209702.273mil,209819.761mil)(208954.242mil,209819.761mil) on Keep-Out Layer And Track (209731.176mil,209658.99mil)(209731.176mil,210288.912mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=-214010.939mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=-214010.939mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209702.273mil,209819.761mil)(208954.242mil,209819.761mil) on Keep-Out Layer And Track (209912.279mil,209658.99mil)(209912.279mil,207111.746mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=-214010.939mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=-214010.939mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209702.273mil,209819.761mil)(208954.242mil,209819.761mil) on Keep-Out Layer And Track (209912.279mil,209658.99mil)(209912.279mil,207111.746mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214453.051mil|Location2.X=-100004mil|Location1.Y=100004mil|Location2.Y=213561.636mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214453.051mil|Location2.X=-100004mil|Location1.Y=100004mil|Location2.Y=213561.636mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209703.617mil,207891.274mil)(208679.995mil,207891.274mil) on Keep-Out Layer And Track (209703.617mil,209426.707mil)(209703.617mil,207891.274mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214453.051mil|Location2.X=-100004mil|Location1.Y=-214403.993mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214453.051mil|Location2.X=-100004mil|Location1.Y=-214403.993mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209703.617mil,209426.707mil)(208679.995mil,209426.707mil) on Keep-Out Layer And Track (209703.617mil,209426.707mil)(208679.995mil,209426.707mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214453.051mil|Location2.X=-100004mil|Location1.Y=-214403.993mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214453.051mil|Location2.X=-100004mil|Location1.Y=-214403.993mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209703.617mil,209426.707mil)(208679.995mil,209426.707mil) on Keep-Out Layer And Track (209703.617mil,209426.707mil)(209703.617mil,207891.274mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214453.051mil|Location2.X=-100004mil|Location1.Y=-214403.993mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214453.051mil|Location2.X=-100004mil|Location1.Y=-214403.993mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209703.617mil,209426.707mil)(208679.995mil,209426.707mil) on Keep-Out Layer And Track (209703.617mil,209426.707mil)(209703.617mil,207891.274mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214453.051mil|Location2.X=-100004mil|Location1.Y=-214403.993mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214453.051mil|Location2.X=-100004mil|Location1.Y=-214403.993mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209703.617mil,209426.707mil)(209703.617mil,207891.274mil) on Keep-Out Layer And Track (209703.617mil,209426.707mil)(209703.617mil,207891.274mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214425.492mil|Location2.X=-100004mil|Location1.Y=-214171.71mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214425.492mil|Location2.X=-100004mil|Location1.Y=-214171.71mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209731.176mil,209658.99mil)(209731.176mil,210288.912mil) on Keep-Out Layer And Track (209731.176mil,209658.99mil)(209731.176mil,210288.912mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214425.492mil|Location2.X=-100004mil|Location1.Y=-214171.71mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214425.492mil|Location2.X=-100004mil|Location1.Y=-214171.71mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209731.176mil,209658.99mil)(209731.176mil,210288.912mil) on Keep-Out Layer And Track (209731.176mil,209658.99mil)(209912.279mil,209658.99mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214425.492mil|Location2.X=-100004mil|Location1.Y=-214171.71mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214425.492mil|Location2.X=-100004mil|Location1.Y=-214171.71mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209731.176mil,209658.99mil)(209731.176mil,210288.912mil) on Keep-Out Layer And Track (209731.176mil,209658.99mil)(209912.279mil,209658.99mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214425.492mil|Location2.X=-100004mil|Location1.Y=-213541.788mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214425.492mil|Location2.X=-100004mil|Location1.Y=-213541.788mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209731.176mil,209658.99mil)(209731.176mil,210288.912mil) on Keep-Out Layer And Track (209731.176mil,210288.912mil)(209912.279mil,210288.912mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214425.492mil|Location2.X=-100004mil|Location1.Y=-213541.788mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214425.492mil|Location2.X=-100004mil|Location1.Y=-213541.788mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209731.176mil,209658.99mil)(209731.176mil,210288.912mil) on Keep-Out Layer And Track (209731.176mil,210288.912mil)(209912.279mil,210288.912mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214425.492mil|Location2.X=-100004mil|Location1.Y=-214171.71mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214425.492mil|Location2.X=-100004mil|Location1.Y=-214171.71mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209731.176mil,209658.99mil)(209912.279mil,209658.99mil) on Keep-Out Layer And Track (209731.176mil,209658.99mil)(209912.279mil,209658.99mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=-214171.71mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=-214171.71mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209731.176mil,209658.99mil)(209912.279mil,209658.99mil) on Keep-Out Layer And Track (209912.279mil,209658.99mil)(209912.279mil,207111.746mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=-214171.71mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=-214171.71mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209731.176mil,209658.99mil)(209912.279mil,209658.99mil) on Keep-Out Layer And Track (209912.279mil,209658.99mil)(209912.279mil,207111.746mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214425.492mil|Location2.X=-100004mil|Location1.Y=-213541.788mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214425.492mil|Location2.X=-100004mil|Location1.Y=-213541.788mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209731.176mil,210288.912mil)(209912.279mil,210288.912mil) on Keep-Out Layer And Track (209731.176mil,210288.912mil)(209912.279mil,210288.912mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=-213541.788mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=-213541.788mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209731.176mil,210288.912mil)(209912.279mil,210288.912mil) on Keep-Out Layer And Track (209912.279mil,209658.99mil)(209912.279mil,207111.746mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=-213541.788mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=-213541.788mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209731.176mil,210288.912mil)(209912.279mil,210288.912mil) on Keep-Out Layer And Track (209912.279mil,209658.99mil)(209912.279mil,207111.746mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=-213541.788mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=-213541.788mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209731.176mil,210288.912mil)(209912.279mil,210288.912mil) on Keep-Out Layer And Track (209912.279mil,210288.912mil)(209912.279mil,210796.786mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=-213541.788mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=-213541.788mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209731.176mil,210288.912mil)(209912.279mil,210288.912mil) on Keep-Out Layer And Track (209912.279mil,210288.912mil)(209912.279mil,210796.786mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=100004mil|Location2.Y=212695.495mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=100004mil|Location2.Y=212695.495mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209912.279mil,207025.132mil)(208668.184mil,207025.132mil) on Keep-Out Layer And Track (209912.279mil,207025.132mil)(209912.279mil,207505.447mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=100004mil|Location2.Y=212695.495mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=100004mil|Location2.Y=212695.495mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209912.279mil,207025.132mil)(208668.184mil,207025.132mil) on Keep-Out Layer And Track (209912.279mil,209658.99mil)(209912.279mil,207111.746mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=100004mil|Location2.Y=212695.495mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=100004mil|Location2.Y=212695.495mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209912.279mil,207025.132mil)(209912.279mil,207505.447mil) on Keep-Out Layer And Track (209912.279mil,207025.132mil)(209912.279mil,207505.447mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=100004mil|Location2.Y=212782.109mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=100004mil|Location2.Y=212782.109mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209912.279mil,207025.132mil)(209912.279mil,207505.447mil) on Keep-Out Layer And Track (209912.279mil,207111.746mil)(208668.184mil,207111.746mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=100004mil|Location2.Y=213175.81mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=100004mil|Location2.Y=213175.81mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209912.279mil,207025.132mil)(209912.279mil,207505.447mil) on Keep-Out Layer And Track (209912.279mil,207505.447mil)(208668.184mil,207505.447mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=100004mil|Location2.Y=212695.495mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=100004mil|Location2.Y=212695.495mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209912.279mil,207025.132mil)(209912.279mil,207505.447mil) on Keep-Out Layer And Track (209912.279mil,209658.99mil)(209912.279mil,207111.746mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=100004mil|Location2.Y=212782.109mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=100004mil|Location2.Y=212782.109mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209912.279mil,207025.132mil)(209912.279mil,207505.447mil) on Keep-Out Layer And Track (209912.279mil,209658.99mil)(209912.279mil,207111.746mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=100004mil|Location2.Y=212782.109mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=100004mil|Location2.Y=212782.109mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209912.279mil,207111.746mil)(208668.184mil,207111.746mil) on Keep-Out Layer And Track (209912.279mil,209658.99mil)(209912.279mil,207111.746mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=-214171.71mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=-214171.71mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209912.279mil,209658.99mil)(209912.279mil,207111.746mil) on Keep-Out Layer And Track (209912.279mil,209658.99mil)(209912.279mil,207111.746mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=-213541.788mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=-213541.788mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209912.279mil,209658.99mil)(209912.279mil,207111.746mil) on Keep-Out Layer And Track (209912.279mil,210288.912mil)(209912.279mil,210796.786mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=-213541.788mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=-213541.788mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209912.279mil,209658.99mil)(209912.279mil,207111.746mil) on Keep-Out Layer And Track (209912.279mil,210288.912mil)(209912.279mil,210796.786mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=-213033.915mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=-213033.915mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209912.279mil,209658.99mil)(209912.279mil,207111.746mil) on Keep-Out Layer And Track (209912.279mil,210796.786mil)(208668.184mil,210796.786mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=-213033.915mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=-213033.915mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209912.279mil,209658.99mil)(209912.279mil,207111.746mil) on Keep-Out Layer And Track (209912.279mil,210796.786mil)(208668.184mil,210796.786mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=-213541.788mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=-213541.788mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209912.279mil,210288.912mil)(209912.279mil,210796.786mil) on Keep-Out Layer And Track (209912.279mil,210288.912mil)(209912.279mil,210796.786mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=-213033.915mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=-213033.915mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209912.279mil,210288.912mil)(209912.279mil,210796.786mil) on Keep-Out Layer And Track (209912.279mil,210796.786mil)(208668.184mil,210796.786mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=-213033.915mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=-213033.915mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209912.279mil,210288.912mil)(209912.279mil,210796.786mil) on Keep-Out Layer And Track (209912.279mil,210796.786mil)(208668.184mil,210796.786mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=-213033.915mil|Location2.Y=-100004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-214244.389mil|Location2.X=-100004mil|Location1.Y=-213033.915mil|Location2.Y=-100004mil|Absolute=True">Clearance Constraint: (Collision &lt; 5mil) Between Track (209912.279mil,210796.786mil)(208668.184mil,210796.786mil) on Keep-Out Layer And Track (209912.279mil,210796.786mil)(208668.184mil,210796.786mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDGXTGCFY1BM0NDBBUEPSIOXDYLHKOLWQ5QXBZYEOBQXJLNWUJMT0C"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Un-Routed Net Constraint ( (All) )</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=H:\%E6%B1%89%E8%AE%AF%E6%A1%91%E5%BB%BA\fuheshibie\%E7%94%B5%E8%B7%AF%E5%9B%BE%E8%AE%BE%E8%AE%A10524\%E7%94%B5%E6%BA%90%E6%9D%BF - %E5%89%AF%E6%9C%AC\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5378.221mil|Location2.X=6239.188mil|Location1.Y=7866.661mil|Location2.Y=8606.108mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=H:\汉讯桑建\fuheshibie\电路图设计0524\电源板 - 副本\HZYW0111-600.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5378.221mil|Location2.X=6239.188mil|Location1.Y=7866.661mil|Location2.Y=8606.108mil|Absolute=True">Un-Routed Net Constraint: Net ACN Between Pad U1-2(135.993mil,2298.465mil) on Multi-Layer And Track (796.96mil,2828.541mil)(796.96mil,2837.912mil) on Bottom Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

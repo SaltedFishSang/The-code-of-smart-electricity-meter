@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=4G_MCU_TXD Pin=P1-6
+Removed Pin From Net: NetName=BL0942_Control Pin=P1-7
+Removed Pin From Net: NetName=4G_MCU_RXD Pin=P1-8
+Added Pin To Net: NetName=Relay_C_B Pin=P1-6
+Added Pin To Net: NetName=Relay_C_A Pin=P1-7
+Added Pin To Net: NetName=BL0942_Control Pin=P1-8

@@ -1,0 +1,50 @@
+Add Component: Footprint Not Found MARK
+Added Component: Designator=U2()
+Add Pin To Net: Unknown Pin: Pin CARD?-C1
+Add Pin To Net: Unknown Pin: Pin CARD?-C2
+Add Pin To Net: Unknown Pin: Pin CARD?-C3
+Add Pin To Net: Unknown Pin: Pin CARD?-C5
+Add Pin To Net: Unknown Pin: Pin CARD?-C7
+Add Pin To Net: Unknown Pin: Pin CARD?-CD
+Add Pin To Net: Unknown Pin: Pin Test_1-1
+Add Pin To Net: Unknown Pin: Pin U2-1
+Add Pin To Net: Unknown Pin: Pin U2-7
+Add Pin To Net: Unknown Pin: Pin U2-10
+Add Pin To Net: Unknown Pin: Pin U2-11
+Add Pin To Net: Unknown Pin: Pin U2-12
+Add Pin To Net: Unknown Pin: Pin U2-13
+Add Pin To Net: Unknown Pin: Pin U2-14
+Add Pin To Net: Unknown Pin: Pin U2-15
+Add Pin To Net: Unknown Pin: Pin U2-16
+Add Pin To Net: Unknown Pin: Pin U2-17
+Add Pin To Net: Unknown Pin: Pin U2-18
+Add Pin To Net: Unknown Pin: Pin U2-24
+Add Pin To Net: Unknown Pin: Pin U2-25
+Add Pin To Net: Unknown Pin: Pin U2-27
+Add Pin To Net: Unknown Pin: Pin U2-34
+Add Pin To Net: Unknown Pin: Pin U2-35
+Add Pin To Net: Unknown Pin: Pin U2-36
+Add Pin To Net: Unknown Pin: Pin U2-37
+Add Pin To Net: Unknown Pin: Pin U2-40
+Add Pin To Net: Unknown Pin: Pin U2-41
+Add Pin To Net: Unknown Pin: Pin U2-42
+Add Pin To Net: Unknown Pin: Pin U2-43
+Add Pin To Net: Unknown Pin: Pin U2-45
+Add Pin To Net: Unknown Pin: Pin U2-46
+Add Pin To Net: Unknown Pin: Pin U2-47
+Add Pin To Net: Unknown Pin: Pin U2-48
+Add Pin To Net: Unknown Pin: Pin U2-70
+Add Pin To Net: Unknown Pin: Pin U2-71
+Add Pin To Net: Unknown Pin: Pin U2-72
+Add Pin To Net: Unknown Pin: Pin U2-73
+Add Pin To Net: Unknown Pin: Pin U2-79
+Add Pin To Net: Unknown Pin: Pin U2-88
+Add Pin To Net: Unknown Pin: Pin U2-89
+Add Pin To Net: Unknown Pin: Pin U2-90
+Add Pin To Net: Unknown Pin: Pin U2-91
+Add Pin To Net: Unknown Pin: Pin U2-92
+Add Pin To Net: Unknown Pin: Pin U2-93
+Add Pin To Net: Unknown Pin: Pin U2-94
+Added Member To Class: ClassName=4G_Module Member=Component R? 0R
+Add Class Member: Failed to add class member : Component Test_1 MARK
+Add Class Member: Failed to add class member : Component U2 ML307A

@@ -1,0 +1,184 @@
+Removed Pin From Net: NetName=GND Pin=C22-1
+Removed Pin From Net: NetName=GND Pin=C23-1
+Removed Pin From Net: NetName=GND Pin=C24-2
+Removed Pin From Net: NetName=GND Pin=C25-2
+Removed Pin From Net: NetName=GND Pin=C28-1
+Removed Pin From Net: NetName=GND Pin=C29-1
+Removed Pin From Net: NetName=GND Pin=CARD1-C5
+Removed Pin From Net: NetName=GND Pin=Q5-2
+Removed Pin From Net: NetName=GND Pin=Q6-2
+Removed Pin From Net: NetName=GND Pin=R7-2
+Removed Pin From Net: NetName=VCC3.8 Pin=R19-2
+Removed Pin From Net: NetName=VCC3.8 Pin=R21-2
+Removed Pin From Net: NetName=VCC3.8 Pin=R22-2
+Removed Pin From Net: NetName=GND Pin=R25-2
+Removed Pin From Net: NetName=GND Pin=R26-2
+Removed Pin From Net: NetName=GND Pin=S1-2
+Removed Pin From Net: NetName=GND Pin=S1-2
+Removed Pin From Net: NetName=GND Pin=S1-2
+Removed Pin From Net: NetName=GND Pin=U2-1
+Removed Pin From Net: NetName=GND Pin=U2-10
+Removed Pin From Net: NetName=RESET_N Pin=U2-15
+Removed Pin From Net: NetName=GND Pin=U2-27
+Removed Pin From Net: NetName=GND Pin=U2-34
+Removed Pin From Net: NetName=GND Pin=U2-36
+Removed Pin From Net: NetName=GND Pin=U2-37
+Removed Pin From Net: NetName=GND Pin=U2-40
+Removed Pin From Net: NetName=GND Pin=U2-41
+Removed Pin From Net: NetName=VCC3.8 Pin=U2-42
+Removed Pin From Net: NetName=VCC3.8 Pin=U2-43
+Removed Pin From Net: NetName=GND Pin=U2-45
+Removed Pin From Net: NetName=GND Pin=U2-46
+Removed Pin From Net: NetName=GND Pin=U2-47
+Removed Pin From Net: NetName=GND Pin=U2-48
+Removed Pin From Net: NetName=GND Pin=U2-70
+Removed Pin From Net: NetName=GND Pin=U2-71
+Removed Pin From Net: NetName=GND Pin=U2-72
+Removed Pin From Net: NetName=GND Pin=U2-73
+Removed Pin From Net: NetName=GND Pin=U2-88
+Removed Pin From Net: NetName=GND Pin=U2-89
+Removed Pin From Net: NetName=GND Pin=U2-90
+Removed Pin From Net: NetName=GND Pin=U2-91
+Removed Pin From Net: NetName=GND Pin=U2-92
+Removed Pin From Net: NetName=GND Pin=U2-93
+Removed Pin From Net: NetName=GND Pin=U2-94
+Removed Pin From Net: NetName=GND Pin=U3-2
+Removed Member From Class: ClassName=4G_Module Member=C22
+Removed Member From Class: ClassName=4G_Module Member=C23
+Removed Member From Class: ClassName=4G_Module Member=C24
+Removed Member From Class: ClassName=4G_Module Member=C25
+Removed Member From Class: ClassName=4G_Module Member=C26
+Removed Member From Class: ClassName=4G_Module Member=C27
+Removed Member From Class: ClassName=4G_Module Member=C28
+Removed Member From Class: ClassName=4G_Module Member=C29
+Removed Member From Class: ClassName=4G_Module Member=CARD1
+Removed Member From Class: ClassName=4G_Module Member=LED2
+Removed Member From Class: ClassName=4G_Module Member=LED3
+Removed Member From Class: ClassName=4G_Module Member=Q3
+Removed Member From Class: ClassName=4G_Module Member=Q4
+Removed Member From Class: ClassName=4G_Module Member=Q5
+Removed Member From Class: ClassName=4G_Module Member=Q6
+Removed Member From Class: ClassName=4G_Module Member=R12
+Removed Member From Class: ClassName=4G_Module Member=R13
+Removed Member From Class: ClassName=4G_Module Member=R14
+Removed Member From Class: ClassName=4G_Module Member=R15
+Removed Member From Class: ClassName=4G_Module Member=R16
+Removed Member From Class: ClassName=4G_Module Member=R17
+Removed Member From Class: ClassName=4G_Module Member=R18
+Removed Member From Class: ClassName=4G_Module Member=R19
+Removed Member From Class: ClassName=4G_Module Member=R20
+Removed Member From Class: ClassName=4G_Module Member=R21
+Removed Member From Class: ClassName=4G_Module Member=R22
+Removed Member From Class: ClassName=4G_Module Member=R23
+Removed Member From Class: ClassName=4G_Module Member=R24
+Removed Member From Class: ClassName=4G_Module Member=R25
+Removed Member From Class: ClassName=4G_Module Member=R26
+Removed Member From Class: ClassName=4G_Module Member=S1
+Change Component Footprint: Designator=U2 Old Footprint=ML307A New Footprint=ESP12E
+Change Component Footprint: Designator=U3 Old Footprint=SC70-6L New Footprint=CH9141K
+Change Component Comment : Designator=R5 Old Comment=0R New Comment=10K
+Change Component Comment : Designator=R7 Old Comment=4.7K New Comment=10K
+Change Component Comment : Designator=C3 Old Comment=100uF/10V New Comment=47uF/25V
+Change Component Comment : Designator=R4 Old Comment=103 New Comment=12K
+Change Component Comment : Designator=U2 Old Comment=ML307A New Comment=ESP8266
+Change Component Comment : Designator=U3 Old Comment=SMF05C New Comment=CH9141K
+Change component parameters: Designator = "R7" ("R7"); Footprint = "0603R"; UniqueID = "\GCAASGCL" ("\GCAASGCL")
+Change component parameters (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageDescription"; Value = "Axial Device, Thru-Hole; 2 Leads; 0.4 in Pin Spacing"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "AXIAL-0.4"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Change component parameters: Designator = "U2" ("U2"); Footprint = "ML307A"; UniqueID = "\SZPMMWFV" ("\SZPMMWFV")
+Change component parameters (AddParameter): Name = "Symbol"; Value = "ESP-12E"; VariantName = "[No Variations]"
+Change component parameters: Designator = "U3" ("U3"); Footprint = "SC70-6L"; UniqueID = "\VKPJOAAH" ("\VKPJOAAH")
+Change component parameters (AddParameter): Name = "Symbol"; Value = "CH9141K"; VariantName = "[No Variations]"
+Added Component: Designator=C7(0603R)
+Added Component: Designator=C8(0603R)
+Added Component: Designator=E1(ANT-F-1-2.4G-1.6mmFR4-WCH)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "PIN1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "24-Mar-1999"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=R6(0603R)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Axial Device, Thru-Hole; 2 Leads; 0.4 in Pin Spacing"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "AXIAL-0.4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=R8(0603R)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Axial Device, Thru-Hole; 2 Leads; 0.4 in Pin Spacing"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "AXIAL-0.4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=Y1(3225)
+Added Pin To Net: NetName=GND Pin=C7-1
+Added Pin To Net: NetName=VCC3.8 Pin=C7-2
+Added Pin To Net: NetName=GND Pin=C8-1
+Added Pin To Net: NetName=RESET_N Pin=R2-1
+Added Pin To Net: NetName=VCC3.8 Pin=R2-2
+Added Pin To Net: NetName=VCC3.8 Pin=R5-2
+Added Pin To Net: NetName=VCC3.8 Pin=R6-1
+Added Pin To Net: NetName=VCC3.8 Pin=R7-2
+Added Pin To Net: NetName=GND Pin=R8-2
+Added Pin To Net: NetName=RESET_N Pin=U2-1
+Added Pin To Net: NetName=VCC3.8 Pin=U2-8
+Added Pin To Net: NetName=GND Pin=U2-15
+Added Pin To Net: NetName=VCC3.8 Pin=U3-2
+Added Pin To Net: NetName=GND Pin=U3-3
+Added Pin To Net: NetName=GND Pin=U3-11
+Added Pin To Net: NetName=GND Pin=Y1-2
+Added Pin To Net: NetName=GND Pin=Y1-4
+Change Net Name : Old Net Name=4G_Reset New Net Name=WIFI_Reset
+Change Net Name : Old Net Name=Lora_Reset New Net Name=BLE_Reset
+Change Net Name : Old Net Name=VCC3.8 New Net Name=VCC3.3
+Added Pin To Net: NetName=BLE_MCU_RXD Pin=P1-8
+Added Pin To Net: NetName=BLE_MCU_RXD Pin=U3-9
+Added Net: Name=BLE_MCU_RXD
+Added Pin To Net: NetName=BLE_MCU_TXD Pin=P1-7
+Added Pin To Net: NetName=BLE_MCU_TXD Pin=U3-8
+Added Net: Name=BLE_MCU_TXD
+Added Pin To Net: NetName=NetC8_2 Pin=C8-2
+Added Pin To Net: NetName=NetC8_2 Pin=U3-7
+Added Net: Name=NetC8_2
+Added Pin To Net: NetName=NetE1_1 Pin=E1-1
+Added Pin To Net: NetName=NetE1_1 Pin=U3-6
+Added Net: Name=NetE1_1
+Added Pin To Net: NetName=NetR5_1 Pin=R5-1
+Added Pin To Net: NetName=NetR5_1 Pin=U3-10
+Added Net: Name=NetR5_1
+Added Pin To Net: NetName=NetR6_2 Pin=R6-2
+Added Pin To Net: NetName=NetR6_2 Pin=U2-3
+Added Net: Name=NetR6_2
+Added Pin To Net: NetName=NetR7_1 Pin=R7-1
+Added Pin To Net: NetName=NetR7_1 Pin=U2-18
+Added Net: Name=NetR7_1
+Added Pin To Net: NetName=NetR8_1 Pin=R8-1
+Added Pin To Net: NetName=NetR8_1 Pin=U2-16
+Added Net: Name=NetR8_1
+Added Pin To Net: NetName=WIFI_MCU_RXD Pin=LED5-2
+Added Pin To Net: NetName=WIFI_MCU_RXD Pin=P1-5
+Added Pin To Net: NetName=WIFI_MCU_RXD Pin=U2-22
+Added Net: Name=WIFI_MCU_RXD
+Added Pin To Net: NetName=WIFI_MCU_TXD Pin=LED4-2
+Added Pin To Net: NetName=WIFI_MCU_TXD Pin=P1-4
+Added Pin To Net: NetName=WIFI_MCU_TXD Pin=U2-21
+Added Net: Name=WIFI_MCU_TXD
+Added Pin To Net: NetName=X32MI Pin=U3-4
+Added Pin To Net: NetName=X32MI Pin=Y1-1
+Added Net: Name=X32MI
+Added Pin To Net: NetName=X32MO Pin=U3-5
+Added Pin To Net: NetName=X32MO Pin=Y1-3
+Added Net: Name=X32MO
+Change Class Name : Old Net Name=4G_Module New Net Name=Wifi
+Added Member To Class: ClassName=Wifi Member=Component C5 47uF/10V
+Added Member To Class: ClassName=Wifi Member=Component C7 2.2uF
+Added Member To Class: ClassName=Wifi Member=Component C8 2.2uF
+Added Member To Class: ClassName=Wifi Member=Component E1 Antenna
+Added Member To Class: ClassName=Wifi Member=Component R6 10K
+Added Member To Class: ClassName=Wifi Member=Component R8 10K
+Added Member To Class: ClassName=Wifi Member=Component Y1 32MHZ/8PF

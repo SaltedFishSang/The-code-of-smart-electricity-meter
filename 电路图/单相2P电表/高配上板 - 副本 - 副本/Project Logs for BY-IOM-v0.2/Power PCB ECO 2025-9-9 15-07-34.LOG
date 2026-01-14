@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=VCC33 Pin=D1-1
+Removed Pin From Net: NetName=VCC3.8 Pin=D1-2
+Removed Pin From Net: NetName=VCC3.8 Pin=P1-1
+Removed Member From Class: ClassName=Á¬½Ó Member=D1
+Change Footprint: Footprint Not Found QFN-32_L4.0-W4.0-P0.40-TL-EP2.8
+Added Pin To Net: NetName=VCC33 Pin=P1-1

@@ -1,0 +1,14 @@
+.\objects\dhcp.o: ..\lwip\src\core\ipv4\dhcp.c
+.\objects\dhcp.o: ..\lwip\src\include\lwip/opt.h
+.\objects\dhcp.o: ..\src\lwipopts.h
+.\objects\dhcp.o: ..\lwip\src\include\lwip/debug.h
+.\objects\dhcp.o: ..\lwip\src\include\lwip/arch.h
+.\objects\dhcp.o: ..\src\arch/cc.h
+.\objects\dhcp.o: ..\src\arch/cpu.h
+.\objects\dhcp.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\dhcp.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\dhcp.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\dhcp.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\inttypes.h
+.\objects\dhcp.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h
+.\objects\dhcp.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\ctype.h
+.\objects\dhcp.o: ..\lwip\src\include\lwip/opt.h

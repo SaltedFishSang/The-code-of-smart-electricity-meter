@@ -1,0 +1,6 @@
+Change Footprint: Footprint Not Found QFN-32_L4.0-W4.0-P0.40-TL-EP2.8
+Add Component: Footprint Not Found Ss-12D00
+Add Pin To Net: Unknown Pin: Pin P4-2
+Added Pin To Net: NetName=Module Pin=U1-21
+Added Net: Name=Module
+Add Class Member: Failed to add class member : Component P4 Header 3

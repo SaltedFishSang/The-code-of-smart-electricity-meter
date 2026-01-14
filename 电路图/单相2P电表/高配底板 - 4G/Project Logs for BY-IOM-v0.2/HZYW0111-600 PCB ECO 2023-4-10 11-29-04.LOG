@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=VCC12 Pin=P7-7
+Added Pin To Net: NetName=VCC12 Pin=P7-11
+Added Member To Class: ClassName=Sheet1 Member=Component R1 6.8R/3W
+Added Member To Class: ClassName=Sheet1 Member=Component U1 LD10-23B12R2

@@ -1,0 +1,65 @@
+Protel Design System Design Rule Check
+PCB File : F:\上海科安迅光电\智能电表\电路图\wifi模块\Power.PcbDoc
+Date     : 2026/1/10
+Time     : 17:18:09
+
+Processing Rule : Clearance Constraint (Gap=10mil) (IsVia),(InPoly)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=10mil) (Isvia),(Istrack)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=10mil) (IsVia),(Isvia)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=10mil) (Isvia),(IsPad)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=10mil) (InPoly),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=5mil) (Istrack),(IsTrack)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+   Violation between Short-Circuit Constraint: Between Area Fill (20440.814mil,-3783.962mil) (20654.899mil,-3715.09mil) on Bottom Layer And Area Fill (20599.209mil,-3717.065mil) (20634.642mil,-3508.167mil) on Bottom Layer Location : [X = 30978.894mil][Y = 3653.245mil]
+   Violation between Short-Circuit Constraint: Between Area Fill (20440.814mil,-3783.962mil) (20654.899mil,-3715.09mil) on Bottom Layer And Pad E1-0(20617.068mil,-3712.907mil) on Bottom Layer Location : [X = 30979.036mil][Y = 3653.355mil]
+   Violation between Short-Circuit Constraint: Between Area Fill (20440.814mil,-3783.962mil) (20654.899mil,-3715.09mil) on Bottom Layer And Pad E1-0(20617.196mil,-3713.128mil) on Bottom Layer Location : [X = 30979.164mil][Y = 3653.245mil]
+   Violation between Short-Circuit Constraint: Between Area Fill (20599.209mil,-3717.065mil) (20634.642mil,-3508.167mil) on Bottom Layer And Pad E1-0(20617.068mil,-3712.907mil) on Bottom Layer Location : [X = 30979.036mil][Y = 3656.415mil]
+   Violation between Short-Circuit Constraint: Between Area Fill (20599.209mil,-3717.065mil) (20634.642mil,-3508.167mil) on Bottom Layer And Pad E1-0(20617.196mil,-3713.128mil) on Bottom Layer Location : [X = 30979.164mil][Y = 3656.194mil]
+Rule Violations :5
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=5mil) (Max=300mil) (Preferred=7mil) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=1mil) (Max=100mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=7mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=0mil) (IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=0mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+
+Violations Detected : 5
+Waived Violations : 0
+Time Elapsed        : 00:00:01
