@@ -1345,7 +1345,7 @@ I (..\USR\RTC.h)(0x6953AFB5)
 I (..\USR\Modbus.h)(0x6954AEB7)
 I (..\USR\MQTT.h)(0x6954D8F6)
 I (..\USR\protection.h)(0x68F1D1B6)
-F (..\USR\Nbiot.c)(0x6956887F)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O2 -Otime --apcs=interwork --split_sections -I ..\inc -I ..\src -I ..\src\arch -I ..\lwip\src\include -I ..\lwip\src -I ..\bsp\inc -I ..\lwip\src\include\lwip\apps -I ..\firmware\n32g45x_std_periph_driver\inc -I ..\firmware\CMSIS\core -I ..\firmware\CMSIS\device -I ..\USR --diag_suppress=68  --diag_suppress=111 --diag_suppress=550-IC:\Keil_v5\ARM\Pack\Nationstech\N32G45x_DFP\1.0.1\firmware\CMSIS\device-D__UVISION_VERSION="538" -DN32G45X -DN32G457 -DUSE_STDPERIPH_DRIVER -DN32G45X -DUSE_STDPERIPH_DRIVER -DSYSCLK_FREQ="100000000" -DUSE_FULL_ASSERT="1"-o .\objects\nbiot.o --omf_browse .\objects\nbiot.crf --depend .\objects\nbiot.d)
+F (..\USR\Nbiot.c)(0x696B9084)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O2 -Otime --apcs=interwork --split_sections -I ..\inc -I ..\src -I ..\src\arch -I ..\lwip\src\include -I ..\lwip\src -I ..\bsp\inc -I ..\lwip\src\include\lwip\apps -I ..\firmware\n32g45x_std_periph_driver\inc -I ..\firmware\CMSIS\core -I ..\firmware\CMSIS\device -I ..\USR --diag_suppress=68  --diag_suppress=111 --diag_suppress=550-IC:\Keil_v5\ARM\Pack\Nationstech\N32G45x_DFP\1.0.1\firmware\CMSIS\device-D__UVISION_VERSION="538" -DN32G45X -DN32G457 -DUSE_STDPERIPH_DRIVER -DN32G45X -DUSE_STDPERIPH_DRIVER -DSYSCLK_FREQ="100000000" -DUSE_FULL_ASSERT="1"-o .\objects\nbiot.o --omf_browse .\objects\nbiot.crf --depend .\objects\nbiot.d)
 I (..\USR\BSP.h)(0x695669D6)
 I (..\firmware\CMSIS\device\n32g45x.h)(0x600A6C7E)
 I (..\firmware\CMSIS\core\core_cm4.h)(0x60F11BEE)

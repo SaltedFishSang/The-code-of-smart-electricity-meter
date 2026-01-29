@@ -1,0 +1,6 @@
+Change Component Designator: OldDesignator=R? NewDesignator=R2
+Change Component Designator: OldDesignator=R? NewDesignator=R5
+Add Component: Footprint Not Found MARK
+Add Pin To Net: Unknown Pin: Pin Test_1-1
+Added Member To Class: ClassName=4G_Module Member=Component R2 10K
+Add Class Member: Failed to add class member : Component Test_1 MARK

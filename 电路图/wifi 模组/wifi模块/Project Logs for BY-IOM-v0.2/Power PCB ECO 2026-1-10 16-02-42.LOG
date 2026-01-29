@@ -1,0 +1,11 @@
+Removed Pin From Net: NetName=GND Pin=C21-1
+Removed Pin From Net: NetName=GND Pin=Q2-2
+Removed Pin From Net: NetName=VCC3.3 Pin=R2-2
+Removed Pin From Net: NetName=WIFI_Reset Pin=R10-1
+Removed Pin From Net: NetName=GND Pin=R11-2
+Removed Member From Class: ClassName=Wifi Member=C21
+Removed Member From Class: ClassName=Wifi Member=Q2
+Removed Member From Class: ClassName=Wifi Member=R2
+Removed Member From Class: ClassName=Wifi Member=R10
+Removed Member From Class: ClassName=Wifi Member=R11
+Added Pin To Net: NetName=WIFI_Reset Pin=U2-1
