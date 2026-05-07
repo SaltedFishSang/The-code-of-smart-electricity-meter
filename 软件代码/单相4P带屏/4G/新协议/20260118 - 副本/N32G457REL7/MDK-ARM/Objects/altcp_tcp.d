@@ -1,0 +1,14 @@
+.\objects\altcp_tcp.o: ..\lwip\src\core\altcp_tcp.c
+.\objects\altcp_tcp.o: ..\lwip\src\include\lwip/opt.h
+.\objects\altcp_tcp.o: ..\src\lwipopts.h
+.\objects\altcp_tcp.o: ..\lwip\src\include\lwip/debug.h
+.\objects\altcp_tcp.o: ..\lwip\src\include\lwip/arch.h
+.\objects\altcp_tcp.o: ..\src\arch/cc.h
+.\objects\altcp_tcp.o: ..\src\arch/cpu.h
+.\objects\altcp_tcp.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\altcp_tcp.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\altcp_tcp.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\altcp_tcp.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\inttypes.h
+.\objects\altcp_tcp.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h
+.\objects\altcp_tcp.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\ctype.h
+.\objects\altcp_tcp.o: ..\lwip\src\include\lwip/opt.h
