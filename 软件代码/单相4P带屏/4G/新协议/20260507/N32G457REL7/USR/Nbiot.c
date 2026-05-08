@@ -514,12 +514,12 @@ u8 LTE_CCLK(void)
             p = strstr((const char *)g_NBbuf, (const char *)"+CCLK:");
             if (p != NULL)
             {
-							   //printf("%s",p);
-							
+                // printf("%s",p);
+
                 p1 = strstr((const char *)g_NBbuf, (const char *)",");
                 if (p1 != NULL)
                 {
-									 // printf("%s",p);
+                    // printf("%s",p);
                     getcclknum = 0;
                     p1 += 1;
                     t = p1 + 1;
@@ -590,8 +590,8 @@ u8 MQTT_Creat(void)
     char *p = NULL;
     char *p1 = NULL;
     u8 stringlen[40];
-	 u8 string1[40];
-	  int rand1=0;
+    u8 string1[40];
+    int rand1 = 0;
     switch (state)
     {
     case 0:
@@ -650,8 +650,8 @@ u8 MQTT_Creat(void)
         sprintf(stringlen, "%d", 11080);
         Uart4Send((u8 *)stringlen, strlen(stringlen));
         Uart4Send(",\"", 2);
-		    rand1 = rand();
-		    sprintf(string1,"%d",rand1);
+        rand1 = rand();
+        sprintf(string1, "%d", rand1);
         Uart4Send(string1, strlen(string1));
         Uart4Send("\",", 2);
         Uart4Send("\"D:53d60063-67f2-4e65-a9bf-27b113e03520:S\",\"0270e90e8ace7b63e6c5\"\r\n", 67);
@@ -817,7 +817,7 @@ void LTE_ReceiveSendData(void)
                         memset(rec, 0, 200);
                         memcpy(rec, p3 + 1, length);
                         /// printf("length == %d\r\n", length);
-                         //UART5Send(rec, length);
+                        // UART5Send(rec, length);
                         // printf("\r\n");
                         // //  MqttrecedataHandle(rec, length, flag);
 
@@ -826,7 +826,7 @@ void LTE_ReceiveSendData(void)
                             /*RTC时间校准*/
                             MqttrecedataHandle(rec, length, 0);
                         }
-                        else// (length > 14)
+                        else // (length > 14)
                         {
                             /*下发485控制命令*/
                             MqttrecedataHandle(rec, length, 1);
@@ -911,15 +911,12 @@ void LTE_ReceiveSendData(void)
             p = strstr((const char *)g_NBbuf, (const char *)"OK");
             if (p != NULL)
             {
-                // g_mqtt_errnum = 0;
-                // g_mqtt_errnumsum = 0;
                 state = 0;
             }
             else
             {
                 LTE_REBOOT();
                 state = 0;
-                // m_senddataflag = 0;
             }
         }
         break;

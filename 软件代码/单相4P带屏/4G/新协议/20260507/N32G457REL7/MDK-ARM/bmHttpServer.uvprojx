@@ -457,7 +457,7 @@
             <File>
               <FileName>n32g45x_exti.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\20251230--不带Lvgl\N32G457REL7\firmware\n32g45x_std_periph_driver\src\n32g45x_exti.c</FilePath>
+              <FilePath>..\firmware\n32g45x_std_periph_driver\src\n32g45x_exti.c</FilePath>
             </File>
           </Files>
         </Group>

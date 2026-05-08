@@ -384,7 +384,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\20251230--不带Lvgl\N32G457REL7\firmware\n32g45x_std_periph_driver\src\n32g45x_exti.c</PathWithFileName>
+      <PathWithFileName>..\firmware\n32g45x_std_periph_driver\src\n32g45x_exti.c</PathWithFileName>
       <FilenameWithoutPath>n32g45x_exti.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>

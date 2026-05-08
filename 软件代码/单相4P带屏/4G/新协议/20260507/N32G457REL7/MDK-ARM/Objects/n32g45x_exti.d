@@ -1,4 +1,4 @@
-.\objects\n32g45x_exti.o: ..\..\..\20251230--不带Lvgl\N32G457REL7\firmware\n32g45x_std_periph_driver\src\n32g45x_exti.c
+.\objects\n32g45x_exti.o: ..\firmware\n32g45x_std_periph_driver\src\n32g45x_exti.c
 .\objects\n32g45x_exti.o: ..\firmware\n32g45x_std_periph_driver\inc\n32g45x_exti.h
 .\objects\n32g45x_exti.o: ..\firmware\CMSIS\device\n32g45x.h
 .\objects\n32g45x_exti.o: ..\firmware\CMSIS\core\core_cm4.h
