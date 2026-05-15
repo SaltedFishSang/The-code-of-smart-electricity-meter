@@ -88,7 +88,6 @@ void LedRun(void)
         if (ledon == 1)
         {
             Get_RTC_Time();
-            // Display_page1();
             GPIO_SetBits(GPIOA, GPIO_PIN_5); // 输出高电平
         }
         else

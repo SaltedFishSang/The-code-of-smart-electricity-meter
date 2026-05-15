@@ -108,7 +108,7 @@ void Display_page1(void)
         TFTLCD_ShowIntNum(0, 8, RtcTime.years, 4, BLACK, LGRAY, 24);
         TFTLCD_ShowIntNum(60, 8, RtcTime.months, 2, BLACK, LGRAY, 24);
         TFTLCD_ShowIntNum(96, 8, RtcTime.days, 2, BLACK, LGRAY, 24);
-		    TFTLCD_ShowIntNum(204, 8, RtcTime.weekday, 1, BLACK, LGRAY, 24);
+        TFTLCD_ShowIntNum(204, 8, RtcTime.weekday, 1, BLACK, LGRAY, 24);
         break;
     case 2:
         /*显示时间*/
@@ -121,7 +121,7 @@ void Display_page1(void)
         break;
     case 4:
         /*显示电流*/
-				  TFTLCD_ShowIntNum(88, 96, BL0942_EleData.current, 5, BLACK, LGRAY, 24);
+        TFTLCD_ShowIntNum(88, 96, BL0942_EleData.current, 5, BLACK, LGRAY, 24);
         break;
     case 5:
         /*显示功率*/

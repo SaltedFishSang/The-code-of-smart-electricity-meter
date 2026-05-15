@@ -589,8 +589,8 @@ u8 MQTT_Creat(void)
     static u8 state = 0;
     char *p = NULL;
     char *p1 = NULL;
-    u8 stringlen[40];
-    u8 string1[40];
+    char stringlen[40];
+    char string1[40];
     int rand1 = 0;
     switch (state)
     {
@@ -646,13 +646,13 @@ u8 MQTT_Creat(void)
         // sprintf(stringlen, "%d.%d.%d.%d\",", 8, 134, 155, 133);
         // sprintf(stringlen, "%d.%d.%d.%d\",", 39, 98, 162, 116);
         sprintf(stringlen, "%d.%d.%d.%d\",", 49, 234, 184, 198);
-        Uart4Send((u8 *)stringlen, strlen(stringlen));
+        Uart4Send((u8 *)stringlen, strlen((char *)stringlen));
         sprintf(stringlen, "%d", 11080);
-        Uart4Send((u8 *)stringlen, strlen(stringlen));
+        Uart4Send((u8 *)stringlen, strlen((char *)stringlen));
         Uart4Send(",\"", 2);
         rand1 = rand();
         sprintf(string1, "%d", rand1);
-        Uart4Send(string1, strlen(string1));
+        Uart4Send((u8 *)string1, strlen(string1));
         Uart4Send("\",", 2);
         Uart4Send("\"D:53d60063-67f2-4e65-a9bf-27b113e03520:S\",\"0270e90e8ace7b63e6c5\"\r\n", 67);
         NB_Start_TimeOutTimer(2000);
@@ -679,7 +679,7 @@ u8 MQTT_Creat(void)
         NB_ClearRxBuf();
         Uart4Send("AT+MQTTSUB=0,\"control/", 22);
         sprintf(stringlen, "%s", g_Equipment_number);
-        Uart4Send(stringlen, strlen(stringlen));
+        Uart4Send((u8 *)stringlen, strlen(stringlen));
         Uart4Send("\",0\r\n", 5);
         NB_Start_TimeOutTimer(5000);
         state = 7;
@@ -706,7 +706,7 @@ u8 MQTT_Creat(void)
         NB_ClearRxBuf();
         Uart4Send("AT+MQTTSUB=0,\"status_reply/", 27);
         sprintf(stringlen, "%s", g_Equipment_number);
-        Uart4Send(stringlen, strlen(stringlen));
+        Uart4Send((u8 *)stringlen, strlen(stringlen));
         Uart4Send("\",0\r\n", 5);
         NB_Start_TimeOutTimer(5000);
         state = 9;
@@ -895,7 +895,7 @@ void LTE_ReceiveSendData(void)
         Uart4Send("\",", 2);
         Uart4Send("0,0,0,", 6);
         sprintf(stringlen, "%d", m_DataTxCnt);
-        Uart4Send(stringlen, strlen(stringlen));
+        Uart4Send((u8 *)stringlen, strlen(stringlen));
         Uart4Send(",\"", 2);
         Uart4Send(m_DataTxBuf, m_DataTxCnt);
         Uart4Send("\"\r\n", 3);

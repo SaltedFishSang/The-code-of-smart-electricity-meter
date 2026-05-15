@@ -21,24 +21,24 @@ void NVIC_Configuration(void)
     NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
     NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
     NVIC_Init(&NVIC_InitStructure);
-	
-	  NVIC_InitStructure.NVIC_IRQChannel = USART3_IRQn;
+
+    NVIC_InitStructure.NVIC_IRQChannel = USART3_IRQn;
     NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
     NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
     NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
     NVIC_Init(&NVIC_InitStructure);
-	
-		NVIC_InitStructure.NVIC_IRQChannel = UART4_IRQn;
+
+    NVIC_InitStructure.NVIC_IRQChannel = UART4_IRQn;
     NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 2;
     NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
     NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
     NVIC_Init(&NVIC_InitStructure);
-		
-		    /*Set key input interrupt priority*/
-    NVIC_InitStructure.NVIC_IRQChannel                   = EXTI2_IRQn;
+
+    /*Set key input interrupt priority*/
+    NVIC_InitStructure.NVIC_IRQChannel = EXTI2_IRQn;
     NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
-    NVIC_InitStructure.NVIC_IRQChannelSubPriority        = 1;
-    NVIC_InitStructure.NVIC_IRQChannelCmd                = ENABLE;
+    NVIC_InitStructure.NVIC_IRQChannelSubPriority = 1;
+    NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
     NVIC_Init(&NVIC_InitStructure);
 }
 /*!
@@ -87,7 +87,7 @@ void init_usart2(void)
 {
     GPIO_InitType GPIO_InitStructure;
     USART_InitType USART_InitStructure;
-    GPIO_InitStructure.Pin = GPIO_PIN_2;  
+    GPIO_InitStructure.Pin = GPIO_PIN_2;
     GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;
     GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
     GPIO_InitPeripheral(GPIOA, &GPIO_InitStructure);
@@ -139,14 +139,13 @@ void init_usart3(void)
     USART_InitStructure.Mode = USART_MODE_TX | USART_MODE_RX;
     // init uart
     USART_Init(USART3, &USART_InitStructure);
-    USART_ConfigInt(USART3, USART_INT_RXDNE, ENABLE); 
+    USART_ConfigInt(USART3, USART_INT_RXDNE, ENABLE);
     // enable uart
     USART_Enable(USART3, ENABLE);
 }
 
-
 /*!
-    \brief     init usar4 ¥Æø4≥ı ºªØ  RS485 π”√
+    \brief     init usar4 ¥Æ4≥ı ºªØ  RS485 π”√
     \param[in]  none
     \param[out] none
     \retval     none
@@ -173,7 +172,7 @@ void init_usart4(void)
     USART_InitStructure.Mode = USART_MODE_TX | USART_MODE_RX;
     // init uart
     USART_Init(UART4, &USART_InitStructure);
-    USART_ConfigInt(UART4, USART_INT_RXDNE, ENABLE); 
+    USART_ConfigInt(UART4, USART_INT_RXDNE, ENABLE);
     // enable uart
     USART_Enable(UART4, ENABLE);
 }
@@ -402,23 +401,19 @@ void Uart3Task(void)
 {
     if (Uart3_UartStaus())
     {
-			  RS485_DIR_TX;
-			  Uart3Send(Uart3.RxBuf,Uart3.RxLen);
-			  delay_ms(100);
-			  RS485_DIR_RX;
+        RS485_DIR_TX;
+        Uart3Send(Uart3.RxBuf, Uart3.RxLen);
+        delay_ms(100);
+        RS485_DIR_RX;
         Uart3ClearRxBuf();
     }
 }
 
-
-
-
-
 void UART4_IRQHandler(void)
 {
     u8 rec;
-		       rec = USART_ReceiveData(UART4);
-          In_Queue(MyQueue, rec);
+    rec = USART_ReceiveData(UART4);
+    In_Queue(MyQueue, rec);
 }
 
 /*!

@@ -90,8 +90,8 @@ void keybuttontask(void)
             if (Modbus_ReadDI(2) == 0) // 没有远程锁扣的情况下 才可以一??分合??
             {
                 Modbus_WirteDI(4, 0);
-							  Eprom_WirteModbusDI(4, 0);
-							  DisplayClockState(0);
+                Eprom_WirteModbusDI(4, 0);
+                DisplayClockState(0);
                 if (Modbus_ReadDI(1) == 1)
                 {
                     Relay_Control(0);
@@ -109,7 +109,6 @@ void keybuttontask(void)
                     Eprom_WirteModbusDI(1, 1);
                     ModbusSendAll();
                 }
-               
             }
         }
         else

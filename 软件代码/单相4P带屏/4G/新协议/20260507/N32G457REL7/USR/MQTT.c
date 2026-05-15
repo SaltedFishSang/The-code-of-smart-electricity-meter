@@ -85,31 +85,31 @@ void HeartInfoLimit(void)
         sprintf(send3, "\"Lock\":\"%s\"", (flag == 1) ? "on" : "off");
         strcat(send2, send3);
 
-        sprintf(send3, "\"V\":\"%s\"", flag);
+        sprintf(send3, "\"V\":\"%d\"", flag);
         strcat(send2, send3);
 
-        sprintf(send3, "\"C\":\"%s\"", flag);
+        sprintf(send3, "\"C\":\"%d\"", flag);
         strcat(send2, send3);
 
-        sprintf(send3, "\"P\":\"%s\"", flag);
+        sprintf(send3, "\"P\":\"%d\"", flag);
         strcat(send2, send3);
 
-        sprintf(send3, "\"Pf\":\"%s\"", flag);
+        sprintf(send3, "\"Pf\":\"%d\"", flag);
         strcat(send2, send3);
 
-        sprintf(send3, "\"E\":\"%s\"", flag);
+        sprintf(send3, "\"E\":\"%d\"", flag);
         strcat(send2, send3);
 
-        sprintf(send3, "\"OverV\":\"%s\"", flag);
+        sprintf(send3, "\"OverV\":\"%d\"", flag);
         strcat(send2, send3);
 
-        sprintf(send3, "\"UnderV\":\"%s\"", flag);
+        sprintf(send3, "\"UnderV\":\"%d\"", flag);
         strcat(send2, send3);
 
-        sprintf(send3, "\"OverC\":\"%s\"", flag);
+        sprintf(send3, "\"OverC\":\"%d\"", flag);
         strcat(send2, send3);
 
-        sprintf(send3, "\"OverP\":\"%s\"", flag);
+        sprintf(send3, "\"OverP\":\"%d\"", flag);
         strcat(send2, send3);
 
         strcat(send2, "}]");

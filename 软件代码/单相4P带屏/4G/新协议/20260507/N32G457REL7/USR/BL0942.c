@@ -176,7 +176,7 @@ void BL0942GetEleData(u8 *data)
         mid_energy = 0;
         Modbus_WrieteInput(8, (BL0942_EleData.energy >> 16));
         Modbus_WrieteInput(9, (BL0942_EleData.energy & 0xffff));
-			  Eprom_write_Energy(); 
+        Eprom_write_Energy();
     }
 #if BL0942_DEBUG
     printf("BL0942_EleData.vol == %d V \r\n", BL0942_EleData.vol);
@@ -188,10 +188,10 @@ void BL0942GetEleData(u8 *data)
     Modbus_WrieteInput(5, BL0942_EleData.current / 10); // 写入第一路电流
     Modbus_WrieteInput(7, BL0942_EleData.power);        // 写入第1路功率
     Modbus_WrieteInput(6, BL0942_EleData.freq);         // 写入第1路功率因素
-//    BL0942_EleData.vol = 0;
-//    BL0942_EleData.current = 0; // mA
-//    BL0942_EleData.power = 0;
-//    BL0942_EleData.energy = 0; // 保留小数点后三位
+    //    BL0942_EleData.vol = 0;
+    //    BL0942_EleData.current = 0; // mA
+    //    BL0942_EleData.power = 0;
+    //    BL0942_EleData.energy = 0; // 保留小数点后三位
 }
 /*!
     \brief      BL0942Task  BL0942任务
